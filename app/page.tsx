@@ -115,12 +115,11 @@ export default function Home() {
             {/* TITLE */}
             <div className="inline-block rounded-3xl bg-black/50 backdrop-blur-md p-8 border border-white/10">
 
-              <h2 className="text-5xl font-black leading-[1.05] tracking-tight md:text-7xl">
-                Грузоподъемные
-                <br />
-                решения нового
-                <br />
-                поколения
+              <h2 className="text-5xl font-black leading-[0.95] tracking-tight md:text-7xl">
+                <span className="block">Грузоподъемные</span>
+                <span className="block">решения</span>
+                <span className="block">нового</span>
+                <span className="block">поколения</span>
               </h2>
 
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
