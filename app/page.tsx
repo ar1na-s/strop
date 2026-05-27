@@ -118,8 +118,7 @@ export default function Home() {
               <h2 className="text-5xl font-black leading-[0.95] tracking-tight md:text-7xl">
                 <span className="block">Грузоподъемные</span>
                 <span className="block">решения</span>
-                <span className="block">нового</span>
-                <span className="block">поколения</span>
+                <span className="block">нового поколения</span>
               </h2>
 
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
@@ -150,7 +149,7 @@ export default function Home() {
           </div>
 
           {/* RIGHT BLOCK */}
-          <div className="grid grid-cols-2 gap-5">
+          <div className="grid grid-cols-2 gap-5 lg:ml-32">
 
             {[
               ["500+", "тонн"],
