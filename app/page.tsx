@@ -149,7 +149,7 @@ export default function Home() {
           </div>
 
           {/* RIGHT BLOCK */}
-          <div className="grid grid-cols-2 gap-5 lg:ml-32">
+          <div className="grid grid-cols-2 gap-5 lg:ml-64">
 
             {[
               ["500+", "тонн"],
