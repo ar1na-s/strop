@@ -50,7 +50,7 @@ export default function Home() {
 
           {/* LOGO */}
           <div>
-            <h1 className="text-5xl font-black tracking-tight">
+            <h1 className="text-3xl lg:text-4xl font-black tracking-tight whitespace-nowrap">
               ТТК-Билдинг
             </h1>
           </div>
@@ -181,18 +181,9 @@ export default function Home() {
 
               <div className="mt-10 flex flex-wrap gap-4">
 
-                <button
-                  onClick={() =>
-                    alert("Форма заявки скоро будет подключена")
-                  }
-                  className="rounded-2xl bg-blue-600 px-7 py-4 text-lg font-bold hover:bg-blue-700 transition"
-                >
-                  Задать вопрос
-                </button>
 
-                <button className="rounded-2xl border border-white/20 bg-white/5 px-7 py-4 text-lg font-bold hover:border-blue-500 hover:text-blue-400 transition">
-                  Каталог
-                </button>
+
+
 
               </div>
 
@@ -303,6 +294,18 @@ export default function Home() {
         </p>
 
       </section>
+      <div className="mt-16">
+
+        <button
+          onClick={() => {
+            window.location.href = "mailto:info@ttk-b.com";
+          }}
+          className="rounded-2xl bg-blue-600 px-8 py-5 text-lg font-black hover:bg-blue-700 transition"
+        >
+          Задать вопрос
+        </button>
+
+      </div>
 
       {/* CONTACTS */}
 
