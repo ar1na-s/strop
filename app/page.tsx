@@ -52,7 +52,7 @@ export default function Home() {
           <div className="mr-10 flex items-center gap-4">
 
             <img
-              src="/logo.png"
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
               alt="ТТК-Билдинг"
               className="h-12 w-auto"
             />
