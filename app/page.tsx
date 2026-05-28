@@ -49,10 +49,18 @@ export default function Home() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-3 lg:px-4 py-5">
 
           {/* LOGO */}
-          <div className="mr-10">
+          <div className="mr-10 flex items-center gap-4">
+
+            <img
+              src="/logo.png"
+              alt="ТТК-Билдинг"
+              className="h-12 w-auto"
+            />
+
             <h1 className="text-3xl lg:text-4xl font-black tracking-tight whitespace-nowrap">
               ТТК-Билдинг
             </h1>
+
           </div>
 
           {/* DESKTOP MENU */}
