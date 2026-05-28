@@ -46,17 +46,17 @@ export default function Home() {
 
       <header className="sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur-xl">
 
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-3 lg:px-4 py-5">
 
           {/* LOGO */}
-          <div>
+          <div className="mr-10">
             <h1 className="text-3xl lg:text-4xl font-black tracking-tight whitespace-nowrap">
               ТТК-Билдинг
             </h1>
           </div>
 
           {/* DESKTOP MENU */}
-          <nav className="hidden items-center gap-10 md:flex">
+          <nav className="hidden items-center gap-10 md:ml-auto md:flex">
 
             <a className="text-xl font-black hover:text-blue-400 transition cursor-pointer">
               Каталог
