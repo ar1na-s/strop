@@ -27,10 +27,10 @@ export default function Home() {
 
       {/* NAVBAR */}
       <header className="sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-3 lg:px-4 py-5">
+        <div className="flex w-full items-center justify-between px-6 py-5">
 
           {/* LOGO */}
-          <div className="mr-10 flex items-center gap-4">
+          <div className="flex items-center gap-4 ml-2">
             <img src="/logo.png" alt="ТТК-Билдинг" className="h-14 w-auto object-contain" />
 
             <h1 className="text-3xl lg:text-4xl font-black tracking-tight whitespace-nowrap">
@@ -39,30 +39,18 @@ export default function Home() {
           </div>
 
           {/* DESKTOP MENU */}
-          <nav className="hidden items-center gap-10 md:ml-auto md:flex">
+          <nav className="hidden items-center gap-8 md:flex ml-auto">
 
-            <a className="text-xl font-black hover:text-blue-400 transition cursor-pointer">Каталог</a>
-            <a className="text-xl font-black hover:text-blue-400 transition cursor-pointer">Производство</a>
-            <a className="text-xl font-black hover:text-blue-400 transition cursor-pointer">Доставка</a>
-            <a className="text-xl font-black hover:text-blue-400 transition cursor-pointer">Контакты</a>
+            <a>Каталог</a>
+            <a>Производство</a>
+            <a>Доставка</a>
+            <a>Контакты</a>
 
-            <input
-              type="text"
-              placeholder="Поиск..."
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              className="rounded-full border border-white/10 bg-white/10 px-5 py-3 text-sm outline-none focus:border-blue-500"
-            />
+            {/* поиск */}
+            <div>...</div>
 
-            <button
-              onClick={() => alert(`Товаров: ${cartCount}\nСумма: ${cartTotal} ₽`)}
-              className="relative rounded-full border border-white/10 bg-white/10 px-5 py-3"
-            >
-              🛒
-              <span className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-blue-600 text-[10px] font-bold">
-                {cartCount}
-              </span>
-            </button>
+            {/* корзина */}
+            <button>...</button>
 
           </nav>
 
@@ -111,7 +99,9 @@ export default function Home() {
             </h2>
 
             <p className="mt-6 text-lg text-slate-300">
-              Производство строп, траверс и грузоподъемного оборудования.
+              Производство строп текстильных, цепных,
+              канатных, траверс для промышленности,
+              логистики и строительства.
             </p>
 
           </div>
@@ -119,8 +109,8 @@ export default function Home() {
           {/* RIGHT */}
           <div className="grid grid-cols-2 gap-5 lg:ml-52">
             {[
-              ["500+", "тонн"],
-              ["10+", "лет опыта"],
+              ["до 500", "тонн"],
+              ["более 10", "лет опыта"],
               ["РФ", "доставка"],
               ["24/7", "поддержка"],
             ].map(([a, b]) => (
@@ -177,7 +167,76 @@ export default function Home() {
 
         </div>
       </section>
+      {/* CONTACT MAP SECTION */}
+      <section className="border-t border-white/10 bg-black px-6 py-20">
 
+        <div className="mx-auto max-w-7xl">
+
+          {/* MAP */}
+          <div className="overflow-hidden rounded-3xl border border-white/10">
+
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?ll=37.3977%2C55.7193&z=16&pt=37.3977%2C55.7193%2Cpm2rdm"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+            />
+
+          </div>
+
+          {/* BUTTON */}
+          <div className="mt-6">
+            <a
+              href="https://yandex.ru/maps/?rtext=~55.7193,37.3977&rtt=auto"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-2xl bg-blue-600 px-6 py-3 font-bold text-white hover:bg-blue-700 transition"
+            >
+              Построить маршрут
+            </a>
+          </div>
+
+          {/* INFO */}
+          <div className="mt-10 grid gap-10 md:grid-cols-3">
+
+            {/* ADDRESS */}
+            <div>
+              <h3 className="text-xl font-black">Адрес</h3>
+
+              <p className="mt-3 text-slate-300 leading-7">
+                БЦ «Гранд Сетунь Плаза»<br />
+                Москва, ул. Горбунова, 2 стр.3<br />
+                офис А-214, 2 этаж<br />
+                Можайский район, 121596
+              </p>
+            </div>
+
+            {/* CONTACTS */}
+            <div>
+              <h3 className="text-xl font-black">Контакты</h3>
+
+              <p className="mt-3 text-slate-300 leading-7">
+                +7 (495) 995-23-60<br />
+                +7 (495) 995-23-92<br />
+                info@ttk-b.com
+              </p>
+            </div>
+
+            {/* REQUISITES */}
+            <div>
+              <h3 className="text-xl font-black">Реквизиты</h3>
+
+              <p className="mt-3 text-slate-300 leading-7">
+                ИНН: 7731460616<br />
+                ОГРН: 5137746132827
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
     </main>
   );
 }
