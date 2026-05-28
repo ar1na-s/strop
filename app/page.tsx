@@ -203,7 +203,7 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-black">Адрес</h3>
 
-              <p className="mt-3 text-slate-300 leading-7">
+              <p className="text-slate-400 font-bold uppercase tracking-wide">
                 БЦ «Гранд Сетунь Плаза»<br />
                 Москва, ул. Горбунова, 2 стр.3<br />
                 офис А-214, 2 этаж<br />
@@ -215,18 +215,27 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-black">Контакты</h3>
 
-              <p className="mt-3 text-slate-300 leading-7">
+              <p className="text-slate-400 font-bold uppercase tracking-wide">
                 +7 (495) 995-23-60<br />
                 +7 (495) 995-23-92<br />
                 info@ttk-b.com
               </p>
+            </div>
+            <div>
+              <div className="text-slate-400 font-bold uppercase tracking-wide">
+                Часы работы
+              </div>
+
+              <div className="text-slate-400 font-bold uppercase tracking-wide">
+                Пн–Пт: 09:00–18:00
+              </div>
             </div>
 
             {/* REQUISITES */}
             <div>
               <h3 className="text-xl font-black">Реквизиты</h3>
 
-              <p className="mt-3 text-slate-300 leading-7">
+              <p className="text-slate-400 font-bold uppercase tracking-wide">
                 ИНН: 7731460616<br />
                 ОГРН: 5137746132827
               </p>
