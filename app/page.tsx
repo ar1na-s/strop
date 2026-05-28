@@ -52,10 +52,11 @@ export default function Home() {
           <div className="mr-10 flex items-center gap-4">
 
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+              src="/logo.png"
               alt="ТТК-Билдинг"
-              className="h-12 w-auto"
+              className="h-14 w-auto object-contain"
             />
+
 
             <h1 className="text-3xl lg:text-4xl font-black tracking-tight whitespace-nowrap">
               ТТК-Билдинг
