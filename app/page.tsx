@@ -52,7 +52,7 @@ export default function Home() {
           <div className="mr-10 flex items-center gap-4">
 
             <img
-              src="/app/public/logo.png"
+              src="/test.png"
               alt="ТТК-Билдинг"
               className="h-14 w-auto object-contain"
             />
