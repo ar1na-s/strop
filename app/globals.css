@@ -13,3 +13,10 @@ body {
   background: #edf2f7;
   font-family: Arial, sans-serif;
 }
+html,
+body,
+#__next,
+main {
+  margin: 0 !important;
+  padding: 0 !important;
+}

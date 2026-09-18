@@ -52,23 +52,8 @@ export default function RootLayout({
         {/* FLOAT CONTACT BUTTONS */}
         <div className="fixed bottom-5 right-5 flex flex-col gap-3 z-50">
 
-          {/* TELEGRAM */}
-          <a
-            href="https://t.me/your_username"
-            target="_blank"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-full shadow-lg transition text-center"
-          >
-            Telegram
-          </a>
 
-          {/* MAX */}
-          <a
-            href="https://max.ru/"
-            target="_blank"
-            className="bg-black hover:bg-gray-800 text-white px-4 py-3 rounded-full shadow-lg transition text-center"
-          >
-            MAX
-          </a>
+
 
         </div>
 
