@@ -1,0 +1,11 @@
+[[redirects]]
+from = "https://www.strop.su/*"
+to = "https://strop.su/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "http://www.strop.su/*"
+to = "https://strop.su/:splat"
+status = 301
+force = true

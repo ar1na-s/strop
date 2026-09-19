@@ -1,0 +1,104 @@
+.site {
+  overflow-wrap: anywhere;
+}
+
+.site input,
+.site textarea,
+.site select {
+  min-width: 0;
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .header {
+    background: rgba(11, 27, 51, 0.94) !important;
+  }
+
+  .header:global(.sticky) {
+    background: rgba(255, 255, 255, 0.97) !important;
+  }
+
+  /* Keep the complete photograph above the copy on narrow screens. */
+  .hero {
+    padding-top: 68px;
+    min-height: 0;
+    background: #0b1b33;
+  }
+
+  .heroImage {
+    position: relative;
+    aspect-ratio: 2070 / 1371;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .heroShade {
+    display: none;
+  }
+
+  .heroContent {
+    padding-top: 24px;
+    padding-bottom: 32px;
+    gap: 24px;
+  }
+
+  .heroContent > div:first-child {
+    padding: 20px;
+  }
+
+  .heroContent h1 {
+    font-size: clamp(1.625rem, 7vw, 2.5rem);
+    line-height: 1.12;
+  }
+
+  .heroContent > div:last-child {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .heroContent > div:last-child > div {
+    padding: 16px;
+  }
+
+  .direction {
+    min-height: 0;
+  }
+
+  .directionImage {
+    position: relative;
+    height: 220px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: none;
+  }
+
+  .directionShade {
+    display: none;
+  }
+
+  .directionContent {
+    position: relative;
+  }
+
+  .site input,
+  .site textarea,
+  .site select {
+    font-size: 16px;
+  }
+
+  .site button,
+  .site a {
+    touch-action: manipulation;
+  }
+
+  .assistant {
+    bottom: calc(5rem + env(safe-area-inset-bottom));
+    max-height: calc(100dvh - 6rem - env(safe-area-inset-bottom));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  .assistant > div,
+  .assistant > form {
+    flex-shrink: 0;
+  }
+}

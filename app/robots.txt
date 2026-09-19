@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://ttk-b.com/sitemap.xml

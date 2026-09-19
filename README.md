@@ -2,6 +2,10 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+The public domain is `https://strop.su`. `netlify.toml` redirects both HTTP and
+HTTPS requests from `www.strop.su` to the HTTPS domain without `www`, preserving
+the requested path. The sitemap and robots configuration use the same domain.
+
 First, run the development server:
 
 ```bash

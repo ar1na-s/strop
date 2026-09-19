@@ -1,7 +1,8 @@
 "use client";
 
-import { useState, Suspense, useRef } from "react";
+import { useState, Suspense, useRef, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
+import styles from "./page.module.css";
 
 const PAYMENT_URL = "https://yookassa.ru/checkout/PASTE_YOUR_LINK_HERE";
 
@@ -205,7 +206,9 @@ function ProductVisual({ product }: { product: Product }) {
           src={imageSrc}
           alt={product.name}
           onError={() => setImageFailed(true)}
-          className="relative z-[1] max-h-full max-w-full object-contain drop-shadow-2xl transition-transform duration-700 group-hover/card:scale-[1.06]"
+          loading="lazy"
+          decoding="async"
+          className="relative z-[1] h-full w-full object-contain drop-shadow-2xl transition-transform duration-700 group-hover/card:scale-[1.06]"
         />
       ) : (
         <>
@@ -462,9 +465,9 @@ function HomeContent() {
       if (!res.ok || !data.ok) throw new Error(data.error || "Ошибка отправки");
       setRequestStatus("ok");
       setRequestForm({ name: "", phone: "", company: "", email: "", message: "" });
-    } catch (err: any) {
+    } catch (err: unknown) {
       setRequestStatus("error");
-      setRequestError(err.message || "Не удалось отправить заявку");
+      setRequestError(err instanceof Error ? err.message : "Не удалось отправить заявку");
     }
   };
 
@@ -657,11 +660,19 @@ function HomeContent() {
   };
 
   const isHomePage = pageView === "home";
+  const isOverlayOpen = !!selectedProduct || isCartOpen || isFilterModalOpen || isMobileMenuOpen;
+
+  useEffect(() => {
+    if (!isOverlayOpen) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => { document.body.style.overflow = previousOverflow; };
+  }, [isOverlayOpen]);
 
   return (
-    <main className="min-h-screen bg-white text-[#0B1B33]">
+    <main className={`${styles.site} min-h-screen bg-white text-[#0B1B33]`}>
       <header
-        className={`${isHomePage ? "fixed" : "sticky"} top-0 left-0 right-0 z-50 transition-all duration-300`}
+        className={`${styles.header} ${isHomePage ? "fixed" : "sticky"} top-0 left-0 right-0 z-50 transition-all duration-300`}
         style={
           isHomePage
             ? { background: "transparent" }
@@ -717,6 +728,8 @@ function HomeContent() {
                   : "border border-[#0B1B33]/15 bg-white text-[#0B1B33]"
               }`}
               aria-label="Меню"
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-menu"
             >
               <span className="text-xl md:text-2xl">{isMobileMenuOpen ? "✕" : "☰"}</span>
             </button>
@@ -726,7 +739,7 @@ function HomeContent() {
 
       {isMobileMenuOpen && (
         <div className="fixed inset-0 z-40 lg:hidden" style={{ background: "rgba(11,27,51,0.6)", backdropFilter: "blur(8px)" }} onClick={() => setIsMobileMenuOpen(false)}>
-          <div className="absolute top-[68px] left-0 right-0 bg-white shadow-2xl" onClick={(e) => e.stopPropagation()}>
+          <div id="mobile-menu" className="absolute top-[68px] md:top-[92px] bottom-0 left-0 right-0 overflow-y-auto bg-white shadow-2xl" onClick={(e) => e.stopPropagation()}>
             <nav className="flex flex-col p-4">
               <button type="button" onClick={() => openPage("home")} className={`rounded-2xl px-5 py-4 text-left text-lg font-black transition ${isHomePage ? "bg-[#0B1B33] text-white" : "text-[#0B1B33] hover:bg-[#F4F7FB]"}`}>Главная</button>
               <button type="button" onClick={() => openPage("catalog")} className={`mt-2 rounded-2xl px-5 py-4 text-left text-lg font-black transition ${pageView === "catalog" ? "bg-[#0B1B33] text-white" : "text-[#0B1B33] hover:bg-[#F4F7FB]"}`}>Каталог</button>
@@ -739,11 +752,11 @@ function HomeContent() {
 
       {pageView === "home" && (
         <>
-          <section className="relative overflow-hidden min-h-[640px] md:min-h-screen">
-            <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/photo-site4.png')" }} />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/30" />
+          <section className={`${styles.hero} relative overflow-hidden min-h-[640px] md:min-h-screen`}>
+            <div className={`${styles.heroImage} absolute inset-0 bg-cover bg-center`} style={{ backgroundImage: "url('/images/photo-site4.png')" }} />
+            <div className={`${styles.heroShade} absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/30`} />
 
-            <div className="relative mx-auto grid max-w-[1600px] gap-8 md:gap-12 px-4 md:px-6 pt-[110px] pb-16 md:pt-[140px] md:pb-24 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:px-10 lg:pt-[160px] lg:pb-32">
+            <div className={`${styles.heroContent} relative mx-auto grid max-w-[1600px] gap-8 md:gap-12 px-4 md:px-6 pt-[110px] pb-16 md:pt-[140px] md:pb-24 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:px-10 lg:pt-[160px] lg:pb-32`}>
               <div className="w-full max-w-[900px] rounded-[2rem] md:rounded-[2.5rem] border border-white/20 bg-black/60 p-6 md:p-8 lg:p-10 shadow-2xl backdrop-blur-md">
                 <div className="mb-4 md:mb-6 inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-3 md:px-5 py-1.5 md:py-2 text-[10px] md:text-sm font-black uppercase tracking-[0.2em] md:tracking-[0.25em] text-white">
                   ООО «МИКО» · Подбор · Документы
@@ -797,7 +810,7 @@ function HomeContent() {
                   { title: "Доставка", text: "Москва, область и отправка ТК по РФ.", image: "/images/photo-site11.png", page: "delivery" as const },
                 ].map((item) => (
                   <button key={item.title} type="button" onClick={() => openPage(item.page)} className="group overflow-hidden rounded-[2rem] md:rounded-[3rem] bg-[#0B1B33] text-left text-white shadow-xl transition hover:-translate-y-1">
-                    <div className="relative h-52 md:h-72 overflow-hidden">
+                    <div className="relative aspect-[16/9] md:aspect-auto md:h-72 overflow-hidden">
                       <div className="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-105" style={{ backgroundImage: `url('${item.image}')` }} />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#0B1B33] via-[#0B1B33]/55 to-transparent" />
                     </div>
@@ -827,14 +840,14 @@ function HomeContent() {
                       <div
                         key={i}
                         onClick={() => openPage("catalog")}
-                        className={`relative min-h-[380px] md:min-h-[500px] w-full flex-shrink-0 cursor-pointer overflow-hidden bg-[#0B1B33] text-white transition-opacity duration-700 ${i === directionIndex ? "opacity-100" : "opacity-60"}`}
+                        className={`${styles.direction} relative min-h-[380px] md:min-h-[500px] w-full flex-shrink-0 cursor-pointer overflow-hidden bg-[#0B1B33] text-white transition-opacity duration-700 ${i === directionIndex ? "opacity-100" : "opacity-60"}`}
                       >
                         <div
-                          className={`absolute inset-0 bg-cover bg-center transition-transform duration-[2000ms] ease-out ${i === directionIndex ? "scale-100" : "scale-110"}`}
+                          className={`${styles.directionImage} absolute inset-0 bg-cover bg-center transition-transform duration-[2000ms] ease-out ${i === directionIndex ? "scale-100" : "scale-110"}`}
                           style={{ backgroundImage: `url('${d.image}')` }}
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-[#0B1B33] via-[#0B1B33]/70 to-[#0B1B33]/10" />
-                        <div className={`absolute inset-x-0 bottom-0 p-5 md:p-8 lg:p-14 transition-all duration-700 ${i === directionIndex ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"}`}>
+                        <div className={`${styles.directionShade} absolute inset-0 bg-gradient-to-t from-[#0B1B33] via-[#0B1B33]/70 to-[#0B1B33]/10`} />
+                        <div className={`${styles.directionContent} absolute inset-x-0 bottom-0 p-5 md:p-8 lg:p-14 transition-all duration-700 ${i === directionIndex ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"}`}>
                           <div className="mb-3 md:mb-4 inline-flex rounded-full bg-white/15 px-3 md:px-4 py-1 md:py-1.5 text-[10px] md:text-xs font-black uppercase tracking-widest text-white backdrop-blur-sm">
                             {d.subtitle}
                           </div>
@@ -858,7 +871,7 @@ function HomeContent() {
                   type="button"
                   aria-label="Предыдущее направление"
                   onClick={(e) => { e.stopPropagation(); setDirectionIndex((p) => (p - 1 + directions.length) % directions.length); }}
-                  className="absolute left-2 md:left-3 top-1/2 z-10 flex h-10 w-10 md:h-14 md:w-14 -translate-y-1/2 items-center justify-center rounded-full border border-white/30 bg-[#0B1B33]/70 text-2xl md:text-3xl font-black text-white backdrop-blur-md transition-all duration-300 hover:scale-110 hover:bg-[#0B1B33]"
+                  className="absolute left-2 md:left-3 top-[100px] md:top-1/2 z-10 flex h-11 w-11 md:h-14 md:w-14 -translate-y-1/2 items-center justify-center rounded-full border border-white/30 bg-[#0B1B33]/70 text-2xl md:text-3xl font-black text-white backdrop-blur-md transition-all duration-300 hover:scale-110 hover:bg-[#0B1B33]"
                 >
                   ‹
                 </button>
@@ -866,7 +879,7 @@ function HomeContent() {
                   type="button"
                   aria-label="Следующее направление"
                   onClick={(e) => { e.stopPropagation(); setDirectionIndex((p) => (p + 1) % directions.length); }}
-                  className="absolute right-2 md:right-3 top-1/2 z-10 flex h-10 w-10 md:h-14 md:w-14 -translate-y-1/2 items-center justify-center rounded-full border border-white/30 bg-[#0B1B33]/70 text-2xl md:text-3xl font-black text-white backdrop-blur-md transition-all duration-300 hover:scale-110 hover:bg-[#0B1B33]"
+                  className="absolute right-2 md:right-3 top-[100px] md:top-1/2 z-10 flex h-11 w-11 md:h-14 md:w-14 -translate-y-1/2 items-center justify-center rounded-full border border-white/30 bg-[#0B1B33]/70 text-2xl md:text-3xl font-black text-white backdrop-blur-md transition-all duration-300 hover:scale-110 hover:bg-[#0B1B33]"
                 >
                   ›
                 </button>
@@ -971,7 +984,7 @@ function HomeContent() {
             <div className="mt-10 md:mt-14 grid gap-5 md:gap-7 sm:grid-cols-2 xl:grid-cols-3">
               {filteredProducts.map((product, idx) => (
                 <div key={idx} className="group/card flex flex-col overflow-hidden rounded-[2rem] md:rounded-[2.5rem] bg-gradient-to-b from-[#0B1B33] to-[#102744] text-white shadow-[0_10px_40px_-15px_rgba(11,27,51,0.5)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_25px_60px_-20px_rgba(11,27,51,0.6)]">
-                  <div className="relative h-52 md:h-64 overflow-hidden">
+                  <div className="relative aspect-[3/2] md:aspect-auto md:h-64 overflow-hidden">
                     <ProductVisual product={product} />
                     {product.type && (
                       <div className="absolute left-4 md:left-5 top-4 md:top-5 z-10 rounded-full bg-[#0B1B33] px-3 md:px-3.5 py-1 md:py-1.5 text-[10px] font-black uppercase tracking-[0.16em] text-white shadow-lg">
@@ -1187,7 +1200,7 @@ function HomeContent() {
           <div className="relative h-full md:h-auto max-h-full md:max-h-[92vh] w-full max-w-6xl overflow-y-auto md:rounded-[2.5rem] rounded-none bg-white shadow-2xl">
             <button type="button" onClick={() => setSelectedProduct(null)} className="absolute right-3 md:right-5 top-3 md:top-5 z-20 flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full bg-[#0B1B33] text-xl md:text-2xl font-black text-white transition hover:bg-[#102744]">×</button>
             <div className="grid lg:grid-cols-[0.95fr_1.05fr]">
-              <div className="relative h-64 md:h-96 lg:h-auto lg:min-h-[520px]">
+              <div className="relative h-[min(60vh,360px)] md:h-96 lg:h-auto lg:min-h-[520px]">
                 <ProductVisual product={selectedProduct} />
                 {selectedProduct.type && (
                   <div className="absolute left-3 md:left-6 top-3 md:top-6 rounded-full bg-[#0B1B33] px-3 md:px-4 py-1.5 md:py-2 text-[10px] md:text-xs font-black uppercase tracking-[0.16em] text-white shadow-lg">{selectedProduct.type}</div>
@@ -1283,7 +1296,7 @@ function HomeContent() {
                   </div>
                   <div className="mt-5 md:mt-6 flex flex-col sm:flex-row gap-3 md:gap-4">
                     <button type="button" onClick={handleCheckout} className="flex-1 rounded-full bg-[#0B1B33] px-6 py-3 md:py-4 text-center font-black text-white transition hover:bg-[#102744]">Оформить заказ</button>
-                    <button type="button" onClick={() => setIsCartOpen(false)} className="flex-1 rounded-full border-2 border-[#0B1B33] px-6 py-3 md:py-4 font-black text-[#0B1B33] transition hover:bg-[#0B1B33] hover:text-white">Продолжить</button>
+                    <button type="button" onClick={() => setIsCartOpen(false)} className="min-w-0 flex-1 rounded-full border-2 border-[#0B1B33] px-6 py-3 md:py-4 font-black text-[#0B1B33] transition hover:bg-[#0B1B33] hover:text-white">Продолжить</button>
                   </div>
                 </>
               )}
@@ -1301,7 +1314,7 @@ function HomeContent() {
               <div className="mt-5 md:mt-6 grid gap-4 md:gap-5">
                 <label className="block">
                   <span className="font-black text-[#0B1B33] text-sm md:text-base">Группа товаров</span>
-                  <select value={filterGroup} onChange={(e) => { setFilterGroup(e.target.value as any); setFilterKind("all"); setFilterType(""); }} className="mt-2 w-full rounded-2xl border border-[#0B1B33]/20 bg-white px-4 md:px-5 py-3 md:py-4 text-[#0B1B33] outline-none">
+                  <select value={filterGroup} onChange={(e) => { setFilterGroup(e.target.value as typeof filterGroup); setFilterKind("all"); setFilterType(""); }} className="mt-2 w-full rounded-2xl border border-[#0B1B33]/20 bg-white px-4 md:px-5 py-3 md:py-4 text-[#0B1B33] outline-none">
                     <option value="all">Все</option><option value="slings">Стропы</option><option value="ropes">Буксировочные тросы</option><option value="other">Другое</option>
                   </select>
                 </label>
@@ -1361,7 +1374,7 @@ function HomeContent() {
       </div>
 
       {isAssistantOpen && (
-        <div className="fixed bottom-36 md:bottom-44 left-3 right-3 md:left-auto md:right-6 z-50 flex md:w-[460px] max-w-[calc(100vw-1.5rem)] md:max-w-[calc(100vw-3rem)] flex-col rounded-3xl bg-white shadow-2xl border border-[#0B1B33]/10 max-h-[70vh] md:max-h-none">
+        <div className={`${styles.assistant} fixed bottom-36 md:bottom-44 left-3 right-3 md:left-auto md:right-6 z-50 flex md:w-[460px] max-w-[calc(100vw-1.5rem)] md:max-w-[calc(100vw-3rem)] flex-col rounded-3xl bg-white shadow-2xl border border-[#0B1B33]/10 max-h-[70vh] md:max-h-none`}>
           <div className="flex items-center justify-between border-b border-[#0B1B33]/10 p-4 md:p-5">
             <div className="flex items-center gap-3">
               <span className="text-xl md:text-2xl">🤖</span>
@@ -1407,7 +1420,7 @@ function HomeContent() {
 
           <div className="border-t border-[#0B1B33]/10 p-3 md:p-4">
             <div className="flex gap-2">
-              <input type="text" value={assistantQuestion} onChange={(e) => setAssistantQuestion(e.target.value)} placeholder="Задайте вопрос..." className="flex-1 rounded-full border border-[#0B1B33]/20 px-4 md:px-5 py-2.5 md:py-3 text-sm outline-none focus:border-[#0B1B33]" onKeyDown={(e) => e.key === "Enter" && handleAskAssistant()} />
+              <input type="text" value={assistantQuestion} onChange={(e) => setAssistantQuestion(e.target.value)} placeholder="Задайте вопрос..." className="min-w-0 flex-1 rounded-full border border-[#0B1B33]/20 px-4 md:px-5 py-2.5 md:py-3 text-sm outline-none focus:border-[#0B1B33]" onKeyDown={(e) => e.key === "Enter" && handleAskAssistant()} />
               <button type="button" onClick={handleAskAssistant} className="rounded-full bg-[#0B1B33] px-4 md:px-5 py-2.5 md:py-3 text-sm font-black text-white transition hover:bg-[#102744]">➤</button>
             </div>
             <div className="mt-2 md:mt-3 flex flex-wrap gap-1.5 md:gap-2">
