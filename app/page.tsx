@@ -21,73 +21,73 @@ type Product = {
 };
 
 const products: Product[] = [
-  { name: "Строп цепной четырёхветвевой 4СЦ 2,5 т", price: 2800, group: "slings", kind: "Цепные", type: "4СЦ", load: "2,5 т", length: "1–8 м", image: "/products/chain-4sc.png", description: "Четырёхветвевой цепной строп 4СЦ 2,5 т для подъёма и перемещения тяжёлых грузов.", specs: ["4 ветви", "цепь 6×18", "звено 2,5 т", "крюк 1,12 т"], services: [{ name: "Доп. комплект регулировки длины", price: 600 }, { name: "Комплектация крюками самозапирающимися", price: 1600 }, { name: "Дополнительный метр", price: 1130 }] },
-  { name: "Строп цепной четырёхветвевой 4СЦ 3,15 т", price: 2900, group: "slings", kind: "Цепные", type: "4СЦ", load: "3,15 т", length: "1–8 м", image: "/products/chain-4sc.png", description: "Четырёхветвевой цепной строп 4СЦ 3,15 т.", specs: ["4 ветви", "цепь 6×18"], services: [{ name: "Дополнительный метр", price: 1130 }] },
-  { name: "Строп цепной четырёхветвевой 4СЦ 4,3 т", price: 3800, group: "slings", kind: "Цепные", type: "4СЦ", load: "4,3 т", length: "1–8 м", image: "/products/chain-4sc.png", description: "Четырёхветвевой цепной строп 4СЦ 4,3 т.", specs: ["4 ветви", "цепь 8×24"], services: [{ name: "Дополнительный метр", price: 1670 }] },
-  { name: "Строп цепной четырёхветвевой 4СЦ 6,7 т", price: 6050, group: "slings", kind: "Цепные", type: "4СЦ", load: "6,7 т", length: "1–8 м", image: "/products/chain-4sc.png", description: "Усиленный четырёхветвевой цепной строп 4СЦ 6,7 т.", specs: ["4 ветви", "цепь 10×30"], services: [{ name: "Дополнительный метр", price: 2125 }] },
-  { name: "Строп цепной четырёхветвевой 4СЦ 11,2 т", price: 7870, group: "slings", kind: "Цепные", type: "4СЦ", load: "11,2 т", length: "1–8 м", image: "/products/chain-4sc.png", description: "Профессиональный строп 4СЦ 11,2 т.", specs: ["4 ветви", "цепь 13×39"], services: [{ name: "Дополнительный метр", price: 3400 }] },
-  { name: "Строп цепной четырёхветвевой 4СЦ 17,0 т", price: 13600, group: "slings", kind: "Цепные", type: "4СЦ", load: "17,0 т", length: "1–8 м", image: "/products/chain-4sc.png", description: "Тяжёлый четырёхветвевой цепной строп 4СЦ 17,0 т.", specs: ["4 ветви", "цепь 16×48"], services: [{ name: "Дополнительный метр", price: 5500 }] },
-  { name: "Строп цепной четырёхветвевой 4СЦ 26,5 т", price: 32000, group: "slings", kind: "Цепные", type: "4СЦ", load: "26,5 т", length: "1–8 м", image: "/products/chain-4sc.png", description: "Мощный цепной строп 4СЦ 26,5 т.", specs: ["4 ветви", "цепь 20×60"], services: [{ name: "Дополнительный метр", price: 10900 }] },
-  { name: "Строп цепной двухветвевой 2СЦ 1,6 т", price: 1350, group: "slings", kind: "Цепные", type: "2СЦ", load: "1,6 т", length: "1–8 м", image: "/products/chain-2sc.png", description: "Двухветвевой цепной строп 2СЦ 1,6 т.", specs: ["2 ветви", "цепь 6×18"], services: [{ name: "Дополнительный метр", price: 470 }] },
-  { name: "Строп цепной двухветвевой 2СЦ 3,15 т", price: 1900, group: "slings", kind: "Цепные", type: "2СЦ", load: "3,15 т", length: "1–8 м", image: "/products/chain-2sc.png", description: "Двухветвевой цепной строп 2СЦ 3,15 т.", specs: ["2 ветви", "цепь 8×24"], services: [{ name: "Дополнительный метр", price: 700 }] },
-  { name: "Строп цепной двухветвевой 2СЦ 5,3 т", price: 2700, group: "slings", kind: "Цепные", type: "2СЦ", load: "5,3 т", length: "1–8 м", image: "/products/chain-2sc.png", description: "Двухветвевой цепной строп 2СЦ 5,3 т.", specs: ["2 ветви", "цепь 10×30"], services: [{ name: "Дополнительный метр", price: 1300 }] },
-  { name: "Строп цепной двухветвевой 2СЦ 8,0 т", price: 4700, group: "slings", kind: "Цепные", type: "2СЦ", load: "8,0 т", length: "1–8 м", image: "/products/chain-2sc.png", description: "Двухветвевой цепной строп 2СЦ 8,0 т.", specs: ["2 ветви", "цепь 13×30"], services: [{ name: "Дополнительный метр", price: 1800 }] },
-  { name: "Строп цепной двухветвевой 2СЦ 11,2 т", price: 9400, group: "slings", kind: "Цепные", type: "2СЦ", load: "11,2 т", length: "1–8 м", image: "/products/chain-2sc.png", description: "Усиленный двухветвевой строп 2СЦ 11,2 т.", specs: ["2 ветви", "цепь 16×48"], services: [{ name: "Дополнительный метр", price: 2600 }] },
-  { name: "Строп цепной двухветвевой 2СЦ 17,0 т", price: 19000, group: "slings", kind: "Цепные", type: "2СЦ", load: "17,0 т", length: "2–8 м", image: "/products/chain-2sc.png", description: "Профессиональный цепной строп 2СЦ 17,0 т.", specs: ["2 ветви", "цепь 20×60"], services: [{ name: "Дополнительный метр", price: 4900 }] },
-  { name: "Строп цепной одноветвевой 1СЦ 1,12 т", price: 780, group: "slings", kind: "Цепные", type: "1СЦ", load: "1,12 т", length: "1–8 м", image: "/products/chain-1sc.png", description: "Одноветвевой цепной строп 1СЦ 1,12 т.", specs: ["1 ветвь", "цепь 6×18"], services: [{ name: "Дополнительный метр", price: 260 }] },
-  { name: "Строп цепной одноветвевой 1СЦ 2,0 т", price: 1070, group: "slings", kind: "Цепные", type: "1СЦ", load: "2,0 т", length: "1–8 м", image: "/products/chain-1sc.png", description: "Одноветвевой цепной строп 1СЦ 2,0 т.", specs: ["1 ветвь", "цепь 8×24"], services: [{ name: "Дополнительный метр", price: 370 }] },
-  { name: "Строп цепной одноветвевой 1СЦ 3,15 т", price: 1700, group: "slings", kind: "Цепные", type: "1СЦ", load: "3,15 т", length: "1–8 м", image: "/products/chain-1sc.png", description: "Одноветвевой цепной строп 1СЦ 3,15 т.", specs: ["1 ветвь", "цепь 10×30"], services: [{ name: "Дополнительный метр", price: 510 }] },
-  { name: "Строп цепной одноветвевой 1СЦ 5,3 т", price: 2900, group: "slings", kind: "Цепные", type: "1СЦ", load: "5,3 т", length: "1–8 м", image: "/products/chain-1sc.png", description: "Одноветвевой цепной строп 1СЦ 5,3 т.", specs: ["1 ветвь", "цепь 13×39"], services: [{ name: "Дополнительный метр", price: 750 }] },
-  { name: "Строп цепной одноветвевой 1СЦ 8,0 т", price: 4800, group: "slings", kind: "Цепные", type: "1СЦ", load: "8,0 т", length: "1–8 м", image: "/products/chain-1sc.png", description: "Одноветвевой цепной строп 1СЦ 8,0 т.", specs: ["1 ветвь", "цепь 16×48"], services: [{ name: "Дополнительный метр", price: 1350 }] },
-  { name: "Строп цепной одноветвевой 1СЦ 12,5 т", price: 7400, group: "slings", kind: "Цепные", type: "1СЦ", load: "12,5 т", length: "1–8 м", image: "/products/chain-1sc.png", description: "Тяжёлый одноветвевой строп 1СЦ 12,5 т.", specs: ["1 ветвь", "цепь 20×60"], services: [{ name: "Дополнительный метр", price: 2150 }] },
-  { name: "Ветвь цепная ВЦ 1,12 т", price: 974, group: "slings", kind: "Цепные", type: "ВЦ", load: "1,12 т", length: "1–8 м", image: "/products/chain-vc.png", description: "Цепная ветвь ВЦ 1,12 т.", specs: ["ветвь цепная", "цепь 6×18"], services: [{ name: "Дополнительный метр", price: 260 }] },
-  { name: "Ветвь цепная ВЦ 2,0 т", price: 1391, group: "slings", kind: "Цепные", type: "ВЦ", load: "2,0 т", length: "1–8 м", image: "/products/chain-vc.png", description: "Цепная ветвь ВЦ 2,0 т.", specs: ["ветвь цепная", "цепь 8×24"], services: [{ name: "Дополнительный метр", price: 370 }] },
-  { name: "Ветвь цепная ВЦ 3,15 т", price: 2048, group: "slings", kind: "Цепные", type: "ВЦ", load: "3,15 т", length: "1–8 м", image: "/products/chain-vc.png", description: "Цепная ветвь ВЦ 3,15 т.", specs: ["ветвь цепная", "цепь 10×30"], services: [{ name: "Дополнительный метр", price: 510 }] },
-  { name: "Ветвь цепная ВЦ 5,3 т", price: 3044, group: "slings", kind: "Цепные", type: "ВЦ", load: "5,3 т", length: "1–8 м", image: "/products/chain-vc.png", description: "Цепная ветвь ВЦ 5,3 т.", specs: ["ветвь цепная", "цепь 13×39"], services: [{ name: "Дополнительный метр", price: 750 }] },
-  { name: "Ветвь цепная ВЦ 8,0 т", price: 4898, group: "slings", kind: "Цепные", type: "ВЦ", load: "8,0 т", length: "1–8 м", image: "/products/chain-vc.png", description: "Цепная ветвь ВЦ 8,0 т.", specs: ["ветвь цепная", "цепь 16×48"], services: [{ name: "Дополнительный метр", price: 1350 }] },
-  { name: "Ветвь цепная ВЦ 12,5 т", price: 4131, group: "slings", kind: "Цепные", type: "ВЦ", load: "12,5 т", length: "1–8 м", image: "/products/chain-vc.png", description: "Цепная ветвь ВЦ 12,5 т.", specs: ["ветвь цепная", "цепь 20×60"], services: [{ name: "Дополнительный метр", price: 2150 }] },
-  { name: "Цепь крепления с крюками 6 мм (3,1/5,4 т)", price: 1250, group: "slings", kind: "Цепные", type: "Цепь крепления", load: "3,1 / 5,4 т", length: "2–6 м", image: "/products/chain-lashing.jpg", description: "Цепь крепления с крюками 6 мм.", specs: ["цепь 6 мм", "с крюками"], services: [{ name: "Дополнительный метр", price: 350 }] },
-  { name: "Цепь крепления с крюками 8 мм (5,7/8,0 т)", price: 1620, group: "slings", kind: "Цепные", type: "Цепь крепления", load: "5,7 / 8,0 т", length: "2–6 м", image: "/products/chain-lashing.jpg", description: "Цепь крепления с крюками 8 мм.", specs: ["цепь 8 мм", "с крюками"], services: [{ name: "Дополнительный метр", price: 370 }] },
-  { name: "Цепь крепления с крюками 10 мм (9,0/12,6 т)", price: 2200, group: "slings", kind: "Цепные", type: "Цепь крепления", load: "9,0 / 12,6 т", length: "2–6 м", image: "/products/chain-lashing.jpg", description: "Усиленная цепь крепления 10 мм.", specs: ["цепь 10 мм", "с крюками"], services: [{ name: "Дополнительный метр", price: 550 }] },
-  { name: "Цепь крепления с крюками 13 мм (15,0/21,0 т)", price: 3400, group: "slings", kind: "Цепные", type: "Цепь крепления", load: "15,0 / 21,0 т", length: "2–6 м", image: "/products/chain-lashing.jpg", description: "Мощная цепь крепления 13 мм.", specs: ["цепь 13 мм", "с крюками"], services: [{ name: "Дополнительный метр", price: 900 }] },
-  { name: "Цепь крепления с крюками 16 мм (22,0/29,6 т)", price: 6000, group: "slings", kind: "Цепные", type: "Цепь крепления", load: "22,0 / 29,6 т", length: "2–6 м", image: "/products/chain-lashing.jpg", description: "Особо прочная цепь крепления 16 мм.", specs: ["цепь 16 мм", "с крюками"], services: [{ name: "Дополнительный метр", price: 1200 }] },
-  { name: "Строп ленточный петлевой СТП 1,0 т", price: 0, group: "slings", kind: "Текстильные", type: "СТП", load: "1,0 т", length: "1–8 м", image: "/products/textile-stp.jpg", description: "Ленточный петлевой строп СТП 1,0 т.", specs: ["ширина 30 мм", "петлевой"], services: [{ name: "Дополнительный метр", price: 0 }] },
-  { name: "Строп ленточный петлевой СТП 2,0 т", price: 0, group: "slings", kind: "Текстильные", type: "СТП", load: "2,0 т", length: "1–8 м", image: "/products/textile-stp.jpg", description: "Ленточный петлевой строп СТП 2,0 т.", specs: ["ширина 60 мм"], services: [{ name: "Дополнительный метр", price: 0 }] },
-  { name: "Строп ленточный петлевой СТП 3,0 т", price: 0, group: "slings", kind: "Текстильные", type: "СТП", load: "3,0 т", length: "1–8 м", image: "/products/textile-stp.jpg", description: "Ленточный петлевой строп СТП 3,0 т.", specs: ["ширина 90 мм"], services: [{ name: "Дополнительный метр", price: 0 }] },
-  { name: "Строп ленточный петлевой СТП 5,0 т", price: 0, group: "slings", kind: "Текстильные", type: "СТП", load: "5,0 т", length: "1–8 м", image: "/products/textile-stp.jpg", description: "Ленточный петлевой строп СТП 5,0 т.", specs: ["ширина 150 мм"], services: [{ name: "Дополнительный метр", price: 0 }] },
+  { name: "Строп цепной четырёхветвевой 4СЦ 2,5 т", price: 2800, group: "slings", kind: "Цепные", type: "4СЦ", load: "2,5 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/chain-4sc.png", description: "Четырёхветвевой цепной строп 4СЦ 2,5 т для подъёма и перемещения тяжёлых грузов.", specs: ["4 ветви", "цепь 6×18", "звено 2,5 т", "крюк 1,12 т"], services: [{ name: "Доп. комплект регулировки длины", price: 600 }, { name: "Комплектация крюками самозапирающимися", price: 1600 }, { name: "Дополнительный метр", price: 1130 }] },
+  { name: "Строп цепной четырёхветвевой 4СЦ 3,15 т", price: 2900, group: "slings", kind: "Цепные", type: "4СЦ", load: "3,15 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/chain-4sc.png", description: "Четырёхветвевой цепной строп 4СЦ 3,15 т.", specs: ["4 ветви", "цепь 6×18"], services: [{ name: "Дополнительный метр", price: 1130 }] },
+  { name: "Строп цепной четырёхветвевой 4СЦ 4,3 т", price: 3800, group: "slings", kind: "Цепные", type: "4СЦ", load: "4,3 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/chain-4sc.png", description: "Четырёхветвевой цепной строп 4СЦ 4,3 т.", specs: ["4 ветви", "цепь 8×24"], services: [{ name: "Дополнительный метр", price: 1670 }] },
+  { name: "Строп цепной четырёхветвевой 4СЦ 6,7 т", price: 6050, group: "slings", kind: "Цепные", type: "4СЦ", load: "6,7 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/chain-4sc.png", description: "Усиленный четырёхветвевой цепной строп 4СЦ 6,7 т.", specs: ["4 ветви", "цепь 10×30"], services: [{ name: "Дополнительный метр", price: 2125 }] },
+  { name: "Строп цепной четырёхветвевой 4СЦ 11,2 т", price: 7870, group: "slings", kind: "Цепные", type: "4СЦ", load: "11,2 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/chain-4sc.png", description: "Профессиональный строп 4СЦ 11,2 т.", specs: ["4 ветви", "цепь 13×39"], services: [{ name: "Дополнительный метр", price: 3400 }] },
+  { name: "Строп цепной четырёхветвевой 4СЦ 17,0 т", price: 13600, group: "slings", kind: "Цепные", type: "4СЦ", load: "17,0 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/chain-4sc.png", description: "Тяжёлый четырёхветвевой цепной строп 4СЦ 17,0 т.", specs: ["4 ветви", "цепь 16×48"], services: [{ name: "Дополнительный метр", price: 5500 }] },
+  { name: "Строп цепной четырёхветвевой 4СЦ 26,5 т", price: 32000, group: "slings", kind: "Цепные", type: "4СЦ", load: "26,5 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/chain-4sc.png", description: "Мощный цепной строп 4СЦ 26,5 т.", specs: ["4 ветви", "цепь 20×60"], services: [{ name: "Дополнительный метр", price: 10900 }] },
+  { name: "Строп цепной двухветвевой 2СЦ 1,6 т", price: 1350, group: "slings", kind: "Цепные", type: "2СЦ", load: "1,6 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/chain-2sc.png", description: "Двухветвевой цепной строп 2СЦ 1,6 т.", specs: ["2 ветви", "цепь 6×18"], services: [{ name: "Дополнительный метр", price: 470 }] },
+  { name: "Строп цепной двухветвевой 2СЦ 3,15 т", price: 1900, group: "slings", kind: "Цепные", type: "2СЦ", load: "3,15 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/chain-2sc.png", description: "Двухветвевой цепной строп 2СЦ 3,15 т.", specs: ["2 ветви", "цепь 8×24"], services: [{ name: "Дополнительный метр", price: 700 }] },
+  { name: "Строп цепной двухветвевой 2СЦ 5,3 т", price: 2700, group: "slings", kind: "Цепные", type: "2СЦ", load: "5,3 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/chain-2sc.png", description: "Двухветвевой цепной строп 2СЦ 5,3 т.", specs: ["2 ветви", "цепь 10×30"], services: [{ name: "Дополнительный метр", price: 1300 }] },
+  { name: "Строп цепной двухветвевой 2СЦ 8,0 т", price: 4700, group: "slings", kind: "Цепные", type: "2СЦ", load: "8,0 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/chain-2sc.png", description: "Двухветвевой цепной строп 2СЦ 8,0 т.", specs: ["2 ветви", "цепь 13×30"], services: [{ name: "Дополнительный метр", price: 1800 }] },
+  { name: "Строп цепной двухветвевой 2СЦ 11,2 т", price: 9400, group: "slings", kind: "Цепные", type: "2СЦ", load: "11,2 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/chain-2sc.png", description: "Усиленный двухветвевой строп 2СЦ 11,2 т.", specs: ["2 ветви", "цепь 16×48"], services: [{ name: "Дополнительный метр", price: 2600 }] },
+  { name: "Строп цепной двухветвевой 2СЦ 17,0 т", price: 19000, group: "slings", kind: "Цепные", type: "2СЦ", load: "17,0 т", length: "2–8 м", image: "https://soft-liger-948183.netlify.app/products/chain-2sc.png", description: "Профессиональный цепной строп 2СЦ 17,0 т.", specs: ["2 ветви", "цепь 20×60"], services: [{ name: "Дополнительный метр", price: 4900 }] },
+  { name: "Строп цепной одноветвевой 1СЦ 1,12 т", price: 780, group: "slings", kind: "Цепные", type: "1СЦ", load: "1,12 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/chain-1sc.png", description: "Одноветвевой цепной строп 1СЦ 1,12 т.", specs: ["1 ветвь", "цепь 6×18"], services: [{ name: "Дополнительный метр", price: 260 }] },
+  { name: "Строп цепной одноветвевой 1СЦ 2,0 т", price: 1070, group: "slings", kind: "Цепные", type: "1СЦ", load: "2,0 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/chain-1sc.png", description: "Одноветвевой цепной строп 1СЦ 2,0 т.", specs: ["1 ветвь", "цепь 8×24"], services: [{ name: "Дополнительный метр", price: 370 }] },
+  { name: "Строп цепной одноветвевой 1СЦ 3,15 т", price: 1700, group: "slings", kind: "Цепные", type: "1СЦ", load: "3,15 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/chain-1sc.png", description: "Одноветвевой цепной строп 1СЦ 3,15 т.", specs: ["1 ветвь", "цепь 10×30"], services: [{ name: "Дополнительный метр", price: 510 }] },
+  { name: "Строп цепной одноветвевой 1СЦ 5,3 т", price: 2900, group: "slings", kind: "Цепные", type: "1СЦ", load: "5,3 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/chain-1sc.png", description: "Одноветвевой цепной строп 1СЦ 5,3 т.", specs: ["1 ветвь", "цепь 13×39"], services: [{ name: "Дополнительный метр", price: 750 }] },
+  { name: "Строп цепной одноветвевой 1СЦ 8,0 т", price: 4800, group: "slings", kind: "Цепные", type: "1СЦ", load: "8,0 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/chain-1sc.png", description: "Одноветвевой цепной строп 1СЦ 8,0 т.", specs: ["1 ветвь", "цепь 16×48"], services: [{ name: "Дополнительный метр", price: 1350 }] },
+  { name: "Строп цепной одноветвевой 1СЦ 12,5 т", price: 7400, group: "slings", kind: "Цепные", type: "1СЦ", load: "12,5 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/chain-1sc.png", description: "Тяжёлый одноветвевой строп 1СЦ 12,5 т.", specs: ["1 ветвь", "цепь 20×60"], services: [{ name: "Дополнительный метр", price: 2150 }] },
+  { name: "Ветвь цепная ВЦ 1,12 т", price: 974, group: "slings", kind: "Цепные", type: "ВЦ", load: "1,12 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/chain-vc.png", description: "Цепная ветвь ВЦ 1,12 т.", specs: ["ветвь цепная", "цепь 6×18"], services: [{ name: "Дополнительный метр", price: 260 }] },
+  { name: "Ветвь цепная ВЦ 2,0 т", price: 1391, group: "slings", kind: "Цепные", type: "ВЦ", load: "2,0 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/chain-vc.png", description: "Цепная ветвь ВЦ 2,0 т.", specs: ["ветвь цепная", "цепь 8×24"], services: [{ name: "Дополнительный метр", price: 370 }] },
+  { name: "Ветвь цепная ВЦ 3,15 т", price: 2048, group: "slings", kind: "Цепные", type: "ВЦ", load: "3,15 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/chain-vc.png", description: "Цепная ветвь ВЦ 3,15 т.", specs: ["ветвь цепная", "цепь 10×30"], services: [{ name: "Дополнительный метр", price: 510 }] },
+  { name: "Ветвь цепная ВЦ 5,3 т", price: 3044, group: "slings", kind: "Цепные", type: "ВЦ", load: "5,3 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/chain-vc.png", description: "Цепная ветвь ВЦ 5,3 т.", specs: ["ветвь цепная", "цепь 13×39"], services: [{ name: "Дополнительный метр", price: 750 }] },
+  { name: "Ветвь цепная ВЦ 8,0 т", price: 4898, group: "slings", kind: "Цепные", type: "ВЦ", load: "8,0 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/chain-vc.png", description: "Цепная ветвь ВЦ 8,0 т.", specs: ["ветвь цепная", "цепь 16×48"], services: [{ name: "Дополнительный метр", price: 1350 }] },
+  { name: "Ветвь цепная ВЦ 12,5 т", price: 4131, group: "slings", kind: "Цепные", type: "ВЦ", load: "12,5 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/chain-vc.png", description: "Цепная ветвь ВЦ 12,5 т.", specs: ["ветвь цепная", "цепь 20×60"], services: [{ name: "Дополнительный метр", price: 2150 }] },
+  { name: "Цепь крепления с крюками 6 мм (3,1/5,4 т)", price: 1250, group: "slings", kind: "Цепные", type: "Цепь крепления", load: "3,1 / 5,4 т", length: "2–6 м", image: "https://soft-liger-948183.netlify.app/products/chain-lashing.jpg", description: "Цепь крепления с крюками 6 мм.", specs: ["цепь 6 мм", "с крюками"], services: [{ name: "Дополнительный метр", price: 350 }] },
+  { name: "Цепь крепления с крюками 8 мм (5,7/8,0 т)", price: 1620, group: "slings", kind: "Цепные", type: "Цепь крепления", load: "5,7 / 8,0 т", length: "2–6 м", image: "https://soft-liger-948183.netlify.app/products/chain-lashing.jpg", description: "Цепь крепления с крюками 8 мм.", specs: ["цепь 8 мм", "с крюками"], services: [{ name: "Дополнительный метр", price: 370 }] },
+  { name: "Цепь крепления с крюками 10 мм (9,0/12,6 т)", price: 2200, group: "slings", kind: "Цепные", type: "Цепь крепления", load: "9,0 / 12,6 т", length: "2–6 м", image: "https://soft-liger-948183.netlify.app/products/chain-lashing.jpg", description: "Усиленная цепь крепления 10 мм.", specs: ["цепь 10 мм", "с крюками"], services: [{ name: "Дополнительный метр", price: 550 }] },
+  { name: "Цепь крепления с крюками 13 мм (15,0/21,0 т)", price: 3400, group: "slings", kind: "Цепные", type: "Цепь крепления", load: "15,0 / 21,0 т", length: "2–6 м", image: "https://soft-liger-948183.netlify.app/products/chain-lashing.jpg", description: "Мощная цепь крепления 13 мм.", specs: ["цепь 13 мм", "с крюками"], services: [{ name: "Дополнительный метр", price: 900 }] },
+  { name: "Цепь крепления с крюками 16 мм (22,0/29,6 т)", price: 6000, group: "slings", kind: "Цепные", type: "Цепь крепления", load: "22,0 / 29,6 т", length: "2–6 м", image: "https://soft-liger-948183.netlify.app/products/chain-lashing.jpg", description: "Особо прочная цепь крепления 16 мм.", specs: ["цепь 16 мм", "с крюками"], services: [{ name: "Дополнительный метр", price: 1200 }] },
+  { name: "Строп ленточный петлевой СТП 1,0 т", price: 0, group: "slings", kind: "Текстильные", type: "СТП", load: "1,0 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/textile-stp.jpg", description: "Ленточный петлевой строп СТП 1,0 т.", specs: ["ширина 30 мм", "петлевой"], services: [{ name: "Дополнительный метр", price: 0 }] },
+  { name: "Строп ленточный петлевой СТП 2,0 т", price: 0, group: "slings", kind: "Текстильные", type: "СТП", load: "2,0 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/textile-stp.jpg", description: "Ленточный петлевой строп СТП 2,0 т.", specs: ["ширина 60 мм"], services: [{ name: "Дополнительный метр", price: 0 }] },
+  { name: "Строп ленточный петлевой СТП 3,0 т", price: 0, group: "slings", kind: "Текстильные", type: "СТП", load: "3,0 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/textile-stp.jpg", description: "Ленточный петлевой строп СТП 3,0 т.", specs: ["ширина 90 мм"], services: [{ name: "Дополнительный метр", price: 0 }] },
+  { name: "Строп ленточный петлевой СТП 5,0 т", price: 0, group: "slings", kind: "Текстильные", type: "СТП", load: "5,0 т", length: "1–8 м", image: "https://soft-liger-948183.netlify.app/products/textile-stp.jpg", description: "Ленточный петлевой строп СТП 5,0 т.", specs: ["ширина 150 мм"], services: [{ name: "Дополнительный метр", price: 0 }] },
   { name: "Строп круглопрядный СТКК/СТПК 1,0 т", price: 160, group: "slings", kind: "Текстильные", type: "СТКК/СТПК", load: "1,0 т", length: "1–6 м", image: "", description: "Круглопрядный текстильный строп 1,0 т.", specs: ["круглопрядный"], services: [{ name: "Дополнительный метр", price: 140 }] },
   { name: "Строп круглопрядный СТКК/СТПК 2,0 т", price: 250, group: "slings", kind: "Текстильные", type: "СТКК/СТПК", load: "2,0 т", length: "1–6 м", image: "", description: "Круглопрядный текстильный строп 2,0 т.", specs: ["круглопрядный"], services: [{ name: "Дополнительный метр", price: 230 }] },
   { name: "Строп круглопрядный СТКК/СТПК 3,0 т", price: 305, group: "slings", kind: "Текстильные", type: "СТКК/СТПК", load: "3,0 т", length: "1–6 м", image: "", description: "Круглопрядный текстильный строп 3,0 т.", specs: ["круглопрядный"], services: [{ name: "Дополнительный метр", price: 290 }] },
   { name: "Строп круглопрядный СТКК/СТПК 5,0 т", price: 460, group: "slings", kind: "Текстильные", type: "СТКК/СТПК", load: "5,0 т", length: "1–6 м", image: "", description: "Круглопрядный текстильный строп 5,0 т.", specs: ["круглопрядный"], services: [{ name: "Дополнительный метр", price: 430 }] },
   { name: "Строп круглопрядный СТКК/СТПК 10,0 т", price: 700, group: "slings", kind: "Текстильные", type: "СТКК/СТПК", load: "10,0 т", length: "1–6 м", image: "", description: "Круглопрядный текстильный строп 10,0 т.", specs: ["круглопрядный"], services: [{ name: "Дополнительный метр", price: 670 }] },
-  { name: "Трос буксировочный ленточный с петлями 5 т 4 м", price: 0, group: "ropes", kind: "Автомобильные ленточные", type: "Буксировочный трос", load: "5 т", length: "4 м", image: "/products/tow-rope-textile.jpg", description: "Ленточный буксировочный трос 5 т, 4 м.", specs: ["ленточный", "петли"], services: [{ name: "Шакл 2 шт", price: 0 }] },
-  { name: "Трос буксировочный ленточный с петлями 7 т 4 м", price: 0, group: "ropes", kind: "Автомобильные ленточные", type: "Буксировочный трос", load: "7 т", length: "4 м", image: "/products/tow-rope-textile.jpg", description: "Ленточный буксировочный трос 7 т, 4 м.", specs: ["ленточный", "петли"], services: [] },
-  { name: "Трос буксировочный ленточный с петлями 14 т 4 м", price: 0, group: "ropes", kind: "Автомобильные ленточные", type: "Буксировочный трос", load: "14 т", length: "4 м", image: "/products/tow-rope-textile.jpg", description: "Ленточный буксировочный трос 14 т, 4 м.", specs: ["ленточный"], services: [] },
-  { name: "Трос буксировочный ленточный с петлями 21 т 4 м", price: 0, group: "ropes", kind: "Автомобильные ленточные", type: "Буксировочный трос", load: "21 т", length: "4 м", image: "/products/tow-rope-textile.jpg", description: "Ленточный буксировочный трос 21 т, 4 м.", specs: ["ленточный"], services: [] },
-  { name: "Трос буксировочный стальной Ø16 мм 15 т 4 м", price: 0, group: "ropes", kind: "Стальные", type: "Буксировочный трос", load: "15 т", length: "4 м", image: "/products/tow-rope-steel.jpg", description: "Стальной буксировочный трос Ø16 мм, 15 т.", specs: ["стальной канат", "Ø16 мм"], services: [] },
-  { name: "Трос буксировочный стальной Ø20 мм 20 т 4 м", price: 0, group: "ropes", kind: "Стальные", type: "Буксировочный трос", load: "20 т", length: "4 м", image: "/products/tow-rope-steel.jpg", description: "Стальной буксировочный трос Ø20 мм, 20 т.", specs: ["стальной канат", "Ø20 мм"], services: [] },
-  { name: "Трос буксировочный синтетический динамический 15 т 8 м", price: 0, group: "ropes", kind: "Динамические", type: "Буксировочный трос", load: "15 т", length: "8 м", image: "/products/tow-rope-dynamic.jpg", description: "Динамический трос 15 т, 8 м.", specs: ["синтетический", "динамический"], services: [] },
-  { name: "Трос буксировочный синтетический динамический 25 т 8 м", price: 0, group: "ropes", kind: "Динамические", type: "Буксировочный трос", load: "25 т", length: "8 м", image: "/products/tow-rope-dynamic.jpg", description: "Динамический трос 25 т, 8 м.", specs: ["синтетический"], services: [] },
-  { name: "Скоба такелажная 2130 СИ гайка 1 т", price: 55, group: "other", kind: "Такелаж", type: "Скоба", load: "1 т", length: "—", image: "/products/rigging.jpg", description: "Скоба такелажная 2130 СИ, 1 т.", specs: ["скоба", "гайка"], services: [] },
-  { name: "Скоба такелажная 2130 СИ гайка 2 т", price: 85, group: "other", kind: "Такелаж", type: "Скоба", load: "2 т", length: "—", image: "/products/rigging.jpg", description: "Скоба такелажная 2130 СИ, 2 т.", specs: ["скоба", "гайка"], services: [] },
-  { name: "Скоба такелажная 2130 СИ гайка 5 т", price: 240, group: "other", kind: "Такелаж", type: "Скоба", load: "5 т", length: "—", image: "/products/rigging.jpg", description: "Скоба такелажная 2130 СИ, 5 т.", specs: ["скоба"], services: [] },
-  { name: "Талреп такелажный М6 (1/4×4) 0,23 т", price: 146, group: "other", kind: "Такелаж", type: "Талреп", load: "0,23 т", length: "200/320 мм", image: "/products/rigging.jpg", description: "Талреп М6, 0,23 т.", specs: ["талреп", "М6"], services: [] },
-  { name: "Талреп такелажный М12 (1/2×6) 0,98 т", price: 382, group: "other", kind: "Такелаж", type: "Талреп", load: "0,98 т", length: "330/508 мм", image: "/products/rigging.jpg", description: "Талреп М12, 0,98 т.", specs: ["талреп", "М12"], services: [] },
-  { name: "Талреп такелажный М16 (5/8×9) 1,6 т", price: 726, group: "other", kind: "Такелаж", type: "Талреп", load: "1,6 т", length: "454/714 мм", image: "/products/rigging.jpg", description: "Талреп М16, 1,6 т.", specs: ["талреп", "М16"], services: [] },
-  { name: "Зажим усиленный 1142 5 мм", price: 9, group: "other", kind: "Такелаж", type: "Зажим", load: "—", length: "5 мм", image: "/products/rigging.jpg", description: "Усиленный зажим 1142, 5 мм.", specs: ["зажим"], services: [] },
-  { name: "Зажим хозяйственный 741 5 мм", price: 4, group: "other", kind: "Такелаж", type: "Зажим", load: "—", length: "5 мм", image: "/products/rigging.jpg", description: "Хозяйственный зажим 741, 5 мм.", specs: ["зажим"], services: [] },
-  { name: "Стальные канаты", price: 3200, group: "other", kind: "Стальные", type: "Канат", load: "под задачу", length: "под заказ", image: "/images/photo-site14.png", description: "Стальные канаты для грузоподъёмных механизмов, лебёдок, кранов.", specs: ["разные диаметры", "для лебёдок и кранов", "поставка под длину"], services: [{ name: "Нарезка под длину", price: 0 }, { name: "Заплетка петли", price: 0 }, { name: "Комплектация коушами", price: 0 }] },
-  { name: "Траверсы", price: 12000, group: "other", kind: "Траверсы", type: "Под заказ", load: "по ТЗ", length: "по ТЗ", image: "/products/traverse.jpg", description: "Траверсы под конкретные схемы подъёма и габариты.", specs: ["под заказ", "по схеме подъёма"], services: [{ name: "Расчёт под задачу", price: 0 }, { name: "Изготовление по ТЗ", price: 0 }] },
-  { name: "Такелаж", price: 500, group: "other", kind: "Такелаж", type: "Комплектующие", load: "разные нагрузки", length: "—", image: "/products/rigging.jpg", description: "Скобы, крюки, талрепы, коуши и другие комплектующие.", specs: ["скобы", "крюки", "талрепы"], services: [{ name: "Подбор комплекта", price: 0 }] },
+  { name: "Трос буксировочный ленточный с петлями 5 т 4 м", price: 0, group: "ropes", kind: "Автомобильные ленточные", type: "Буксировочный трос", load: "5 т", length: "4 м", image: "https://soft-liger-948183.netlify.app/products/tow-rope-textile.jpg", description: "Ленточный буксировочный трос 5 т, 4 м.", specs: ["ленточный", "петли"], services: [{ name: "Шакл 2 шт", price: 0 }] },
+  { name: "Трос буксировочный ленточный с петлями 7 т 4 м", price: 0, group: "ropes", kind: "Автомобильные ленточные", type: "Буксировочный трос", load: "7 т", length: "4 м", image: "https://soft-liger-948183.netlify.app/products/tow-rope-textile.jpg", description: "Ленточный буксировочный трос 7 т, 4 м.", specs: ["ленточный", "петли"], services: [] },
+  { name: "Трос буксировочный ленточный с петлями 14 т 4 м", price: 0, group: "ropes", kind: "Автомобильные ленточные", type: "Буксировочный трос", load: "14 т", length: "4 м", image: "https://soft-liger-948183.netlify.app/products/tow-rope-textile.jpg", description: "Ленточный буксировочный трос 14 т, 4 м.", specs: ["ленточный"], services: [] },
+  { name: "Трос буксировочный ленточный с петлями 21 т 4 м", price: 0, group: "ropes", kind: "Автомобильные ленточные", type: "Буксировочный трос", load: "21 т", length: "4 м", image: "https://soft-liger-948183.netlify.app/products/tow-rope-textile.jpg", description: "Ленточный буксировочный трос 21 т, 4 м.", specs: ["ленточный"], services: [] },
+  { name: "Трос буксировочный стальной Ø16 мм 15 т 4 м", price: 0, group: "ropes", kind: "Стальные", type: "Буксировочный трос", load: "15 т", length: "4 м", image: "https://soft-liger-948183.netlify.app/products/tow-rope-steel.jpg", description: "Стальной буксировочный трос Ø16 мм, 15 т.", specs: ["стальной канат", "Ø16 мм"], services: [] },
+  { name: "Трос буксировочный стальной Ø20 мм 20 т 4 м", price: 0, group: "ropes", kind: "Стальные", type: "Буксировочный трос", load: "20 т", length: "4 м", image: "https://soft-liger-948183.netlify.app/products/tow-rope-steel.jpg", description: "Стальной буксировочный трос Ø20 мм, 20 т.", specs: ["стальной канат", "Ø20 мм"], services: [] },
+  { name: "Трос буксировочный синтетический динамический 15 т 8 м", price: 0, group: "ropes", kind: "Динамические", type: "Буксировочный трос", load: "15 т", length: "8 м", image: "https://soft-liger-948183.netlify.app/products/tow-rope-dynamic.jpg", description: "Динамический трос 15 т, 8 м.", specs: ["синтетический", "динамический"], services: [] },
+  { name: "Трос буксировочный синтетический динамический 25 т 8 м", price: 0, group: "ropes", kind: "Динамические", type: "Буксировочный трос", load: "25 т", length: "8 м", image: "https://soft-liger-948183.netlify.app/products/tow-rope-dynamic.jpg", description: "Динамический трос 25 т, 8 м.", specs: ["синтетический"], services: [] },
+  { name: "Скоба такелажная 2130 СИ гайка 1 т", price: 55, group: "other", kind: "Такелаж", type: "Скоба", load: "1 т", length: "—", image: "https://soft-liger-948183.netlify.app/products/rigging.jpg", description: "Скоба такелажная 2130 СИ, 1 т.", specs: ["скоба", "гайка"], services: [] },
+  { name: "Скоба такелажная 2130 СИ гайка 2 т", price: 85, group: "other", kind: "Такелаж", type: "Скоба", load: "2 т", length: "—", image: "https://soft-liger-948183.netlify.app/products/rigging.jpg", description: "Скоба такелажная 2130 СИ, 2 т.", specs: ["скоба", "гайка"], services: [] },
+  { name: "Скоба такелажная 2130 СИ гайка 5 т", price: 240, group: "other", kind: "Такелаж", type: "Скоба", load: "5 т", length: "—", image: "https://soft-liger-948183.netlify.app/products/rigging.jpg", description: "Скоба такелажная 2130 СИ, 5 т.", specs: ["скоба"], services: [] },
+  { name: "Талреп такелажный М6 (1/4×4) 0,23 т", price: 146, group: "other", kind: "Такелаж", type: "Талреп", load: "0,23 т", length: "200/320 мм", image: "https://soft-liger-948183.netlify.app/products/rigging.jpg", description: "Талреп М6, 0,23 т.", specs: ["талреп", "М6"], services: [] },
+  { name: "Талреп такелажный М12 (1/2×6) 0,98 т", price: 382, group: "other", kind: "Такелаж", type: "Талреп", load: "0,98 т", length: "330/508 мм", image: "https://soft-liger-948183.netlify.app/products/rigging.jpg", description: "Талреп М12, 0,98 т.", specs: ["талреп", "М12"], services: [] },
+  { name: "Талреп такелажный М16 (5/8×9) 1,6 т", price: 726, group: "other", kind: "Такелаж", type: "Талреп", load: "1,6 т", length: "454/714 мм", image: "https://soft-liger-948183.netlify.app/products/rigging.jpg", description: "Талреп М16, 1,6 т.", specs: ["талреп", "М16"], services: [] },
+  { name: "Зажим усиленный 1142 5 мм", price: 9, group: "other", kind: "Такелаж", type: "Зажим", load: "—", length: "5 мм", image: "https://soft-liger-948183.netlify.app/products/rigging.jpg", description: "Усиленный зажим 1142, 5 мм.", specs: ["зажим"], services: [] },
+  { name: "Зажим хозяйственный 741 5 мм", price: 4, group: "other", kind: "Такелаж", type: "Зажим", load: "—", length: "5 мм", image: "https://soft-liger-948183.netlify.app/products/rigging.jpg", description: "Хозяйственный зажим 741, 5 мм.", specs: ["зажим"], services: [] },
+  { name: "Стальные канаты", price: 3200, group: "other", kind: "Стальные", type: "Канат", load: "под задачу", length: "под заказ", image: "https://soft-liger-948183.netlify.app/images/photo-site14.png", description: "Стальные канаты для грузоподъёмных механизмов, лебёдок, кранов.", specs: ["разные диаметры", "для лебёдок и кранов", "поставка под длину"], services: [{ name: "Нарезка под длину", price: 0 }, { name: "Заплетка петли", price: 0 }, { name: "Комплектация коушами", price: 0 }] },
+  { name: "Траверсы", price: 12000, group: "other", kind: "Траверсы", type: "Под заказ", load: "по ТЗ", length: "по ТЗ", image: "https://soft-liger-948183.netlify.app/products/traverse.jpg", description: "Траверсы под конкретные схемы подъёма и габариты.", specs: ["под заказ", "по схеме подъёма"], services: [{ name: "Расчёт под задачу", price: 0 }, { name: "Изготовление по ТЗ", price: 0 }] },
+  { name: "Такелаж", price: 500, group: "other", kind: "Такелаж", type: "Комплектующие", load: "разные нагрузки", length: "—", image: "https://soft-liger-948183.netlify.app/products/rigging.jpg", description: "Скобы, крюки, талрепы, коуши и другие комплектующие.", specs: ["скобы", "крюки", "талрепы"], services: [{ name: "Подбор комплекта", price: 0 }] },
 ];
 
 const docs = [
-  { title: "Сертификат на канатные стропы", text: "Соответствие требованиям ТР ТС 010/2011.", img: "/certificates/certificate-kanatnye.jpg" },
-  { title: "Сертификат на круглопрядные стропы", text: "Документ на текстильные круглопрядные стропы.", img: "/certificates/certificate-kruglopryadnye.jpg" },
-  { title: "Приложение к декларации", text: "Перечень типов продукции и технических условий.", img: "/certificates/declaration-application.jpg" },
-  { title: "Сертификат на цепные стропы", text: "Документ на грузовые цепные стропы.", img: "/certificates/certificate-cepnye.jpg" },
-  { title: "Декларация соответствия ЕАЭС", text: "Декларация соответствия требованиям безопасности.", img: "/certificates/declaration-eac.jpg" },
-  { title: "Сертификат на текстильные стропы", text: "Документ на текстильные ленточные стропы.", img: "/certificates/certificate-tekstilnye.jpg" },
+  { title: "Сертификат на канатные стропы", text: "Соответствие требованиям ТР ТС 010/2011.", img: "https://soft-liger-948183.netlify.app/certificates/certificate-kanatnye.jpg" },
+  { title: "Сертификат на круглопрядные стропы", text: "Документ на текстильные круглопрядные стропы.", img: "https://soft-liger-948183.netlify.app/certificates/certificate-kruglopryadnye.jpg" },
+  { title: "Приложение к декларации", text: "Перечень типов продукции и технических условий.", img: "https://soft-liger-948183.netlify.app/certificates/declaration-application.jpg" },
+  { title: "Сертификат на цепные стропы", text: "Документ на грузовые цепные стропы.", img: "https://soft-liger-948183.netlify.app/certificates/certificate-cepnye.jpg" },
+  { title: "Декларация соответствия ЕАЭС", text: "Декларация соответствия требованиям безопасности.", img: "https://soft-liger-948183.netlify.app/certificates/declaration-eac.jpg" },
+  { title: "Сертификат на текстильные стропы", text: "Документ на текстильные ленточные стропы.", img: "https://soft-liger-948183.netlify.app/certificates/certificate-tekstilnye.jpg" },
 ];
 
 const faq = [
@@ -110,35 +110,35 @@ const directions = [
     title: "Стропы",
     subtitle: "Хит продаж",
     text: "Цепные, текстильные, канатные и круглопрядные решения для подъёма грузов.",
-    image: "/images/photo-site5.png",
+    image: "https://soft-liger-948183.netlify.app/images/photo-site5.png",
     tags: ["1СЦ", "2СЦ", "4СЦ", "ВЦ", "СТП", "СТКК"],
   },
   {
     title: "Буксировочные тросы",
     subtitle: "Для авто и спецтехники",
     text: "Ленточные, стальные и динамические для авто и спецтехники.",
-    image: "/images/photo-site6.png",
+    image: "https://soft-liger-948183.netlify.app/images/photo-site6.png",
     tags: ["Ленточные", "Стальные", "Динамические", "5–25 т"],
   },
   {
     title: "Стальные канаты",
     subtitle: "Для лебёдок и кранов",
     text: "Для лебёдок, кранов и тельферов. Разные диаметры, под заказ.",
-    image: "/images/photo-site14.png",
+    image: "https://soft-liger-948183.netlify.app/images/photo-site14.png",
     tags: ["Ø 6–40 мм", "Под заказ", "Коуши"],
   },
   {
     title: "Такелаж",
     subtitle: "Комплектующие",
     text: "Скобы, крюки, талрепы, зажимы, коуши и другие комплектующие.",
-    image: "/images/photo-site7.png",
+    image: "https://soft-liger-948183.netlify.app/images/photo-site7.png",
     tags: ["Скобы", "Талрепы", "Зажимы", "Крюки"],
   },
   {
     title: "Траверсы",
     subtitle: "Изготовление по ТЗ",
     text: "Траверсы под конкретные схемы подъёма и габариты груза.",
-    image: "/images/photo-site9.png",
+    image: "https://soft-liger-948183.netlify.app/images/photo-site9.png",
     tags: ["По ТЗ", "Расчёт", "Изготовление"],
   },
 ];
@@ -171,11 +171,11 @@ function ProductVisual({ product }: { product: Product }) {
   const [imageFailed, setImageFailed] = useState(false);
 
   const imageByType: Record<string, string> = {
-    "4СЦ": "/products/chain-4sc.png",
-    "2СЦ": "/products/chain-2sc.png",
-    "1СЦ": "/products/chain-1sc.png",
-    "ВЦ": "/products/chain-vc.png",
-    "Цепь крепления": "/products/chain-lashing.jpg",
+    "4СЦ": "https://soft-liger-948183.netlify.app/products/chain-4sc.png",
+    "2СЦ": "https://soft-liger-948183.netlify.app/products/chain-2sc.png",
+    "1СЦ": "https://soft-liger-948183.netlify.app/products/chain-1sc.png",
+    "ВЦ": "https://soft-liger-948183.netlify.app/products/chain-vc.png",
+    "Цепь крепления": "https://soft-liger-948183.netlify.app/products/chain-lashing.jpg",
   };
 
   const imageSrc = product.image || (product.type && imageByType[product.type]) || "";
@@ -324,10 +324,15 @@ function ProductVisual({ product }: { product: Product }) {
   );
 }
 
-function HomeContent() {
+function SearchParamsSync({ onChange }: { onChange: (value: string) => void }) {
   const searchParams = useSearchParams();
-  const searchFromUrl = searchParams.get("search") || "";
-  const [search] = useState(searchFromUrl);
+  const search = searchParams.get("search") || "";
+  useEffect(() => { onChange(search); }, [search, onChange]);
+  return null;
+}
+
+function HomeContent() {
+  const [search, setSearch] = useState("");
 
   const [cartItems, setCartItems] = useState<Product[]>([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -671,6 +676,7 @@ function HomeContent() {
 
   return (
     <main className={`${styles.site} min-h-screen bg-white text-[#0B1B33]`}>
+      <Suspense fallback={null}><SearchParamsSync onChange={setSearch} /></Suspense>
       <header
         className={`${styles.header} ${isHomePage ? "fixed" : "sticky"} top-0 left-0 right-0 z-50 transition-all duration-300`}
         style={
@@ -681,7 +687,7 @@ function HomeContent() {
       >
         <div className="flex min-h-[68px] md:min-h-[92px] items-center justify-between px-4 md:px-10">
           <button type="button" onClick={() => openPage("home")} className="flex items-center gap-3 md:gap-5 text-left">
-            <img src="/logo.png" alt="ООО «МИКО»" className="h-10 w-auto object-contain md:h-14 lg:h-16" />
+            <img src="https://soft-liger-948183.netlify.app/logo.png" alt="ООО «МИКО»" className="h-10 w-auto object-contain md:h-14 lg:h-16" />
             <div>
               <div className={`text-lg sm:text-xl md:text-2xl lg:text-3xl font-black leading-tight ${isHomePage ? "text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.7)]" : "text-[#0B1B33]"}`}>ООО «МИКО»</div>
               <div className={`text-[8px] md:text-[10px] lg:text-xs font-black uppercase tracking-[0.28em] md:tracking-[0.32em] ${isHomePage ? "text-white/80 drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)]" : "text-[#0B1B33]/65"}`}>STROPS</div>
@@ -753,7 +759,7 @@ function HomeContent() {
       {pageView === "home" && (
         <>
           <section className={`${styles.hero} relative overflow-hidden min-h-[640px] md:min-h-screen`}>
-            <div className={`${styles.heroImage} absolute inset-0 bg-cover bg-center`} style={{ backgroundImage: "url('/images/photo-site4.png')" }} />
+            <div className={`${styles.heroImage} absolute inset-0 bg-cover bg-center`} style={{ backgroundImage: "url('https://soft-liger-948183.netlify.app/images/photo-site4.png')" }} />
             <div className={`${styles.heroShade} absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/30`} />
 
             <div className={`${styles.heroContent} relative mx-auto grid max-w-[1600px] gap-8 md:gap-12 px-4 md:px-6 pt-[110px] pb-16 md:pt-[140px] md:pb-24 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:px-10 lg:pt-[160px] lg:pb-32`}>
@@ -805,9 +811,9 @@ function HomeContent() {
 
               <div className="mt-10 md:mt-14 grid gap-5 md:gap-7 lg:grid-cols-3">
                 {[
-                  { title: "Производство", text: "Изготовление под длину, нагрузку и тип крепления.", image: "/images/photo-site9.png", page: "production" as const },
-                  { title: "Документы", text: "Сертификаты, декларации, паспорта изделий.", image: "/images/photo-site10.png", page: "documents" as const },
-                  { title: "Доставка", text: "Москва, область и отправка ТК по РФ.", image: "/images/photo-site11.png", page: "delivery" as const },
+                  { title: "Производство", text: "Изготовление под длину, нагрузку и тип крепления.", image: "https://soft-liger-948183.netlify.app/images/photo-site9.png", page: "production" as const },
+                  { title: "Документы", text: "Сертификаты, декларации, паспорта изделий.", image: "https://soft-liger-948183.netlify.app/images/photo-site10.png", page: "documents" as const },
+                  { title: "Доставка", text: "Москва, область и отправка ТК по РФ.", image: "https://soft-liger-948183.netlify.app/images/photo-site11.png", page: "delivery" as const },
                 ].map((item) => (
                   <button key={item.title} type="button" onClick={() => openPage(item.page)} className="group overflow-hidden rounded-[2rem] md:rounded-[3rem] bg-[#0B1B33] text-left text-white shadow-xl transition hover:-translate-y-1">
                     <div className="relative aspect-[16/9] md:aspect-auto md:h-72 overflow-hidden">
@@ -904,7 +910,7 @@ function HomeContent() {
             </div>
           </section>
 
-          <section id="request" className="relative overflow-hidden px-4 md:px-6 py-16 md:py-24" style={{ backgroundImage: "url('/images/photo-site13.png')", backgroundSize: "cover", backgroundPosition: "center" }}>
+          <section id="request" className="relative overflow-hidden px-4 md:px-6 py-16 md:py-24" style={{ backgroundImage: "url('https://soft-liger-948183.netlify.app/images/photo-site13.png')", backgroundSize: "cover", backgroundPosition: "center" }}>
             <div className="absolute inset-0 bg-[#0B1B33]/94" />
             <div className="relative mx-auto grid max-w-[1600px] gap-8 md:gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
               <div>
@@ -945,7 +951,7 @@ function HomeContent() {
               <h2 className={titleLight}>Контакты</h2>
 
               <div className="relative mt-6 md:mt-10 h-[320px] md:h-[520px] overflow-hidden rounded-[2rem] md:rounded-[3rem] border border-[#0B1B33]/10 shadow-xl">
-                <iframe src="https://yandex.ru/map-widget/v1/?ll=37.399399%2C55.726320&z=17&pt=37.399399%2C55.726320%2Cpm2rdm" width="100%" height="100%" style={{ border: 0, position: "absolute", top: 0, left: 0 }} allowFullScreen />
+                <iframe loading="lazy" title="Адрес компании на карте" src="https://yandex.ru/map-widget/v1/?ll=37.399399%2C55.726320&z=17&pt=37.399399%2C55.726320%2Cpm2rdm" width="100%" height="100%" style={{ border: 0, position: "absolute", top: 0, left: 0 }} allowFullScreen />
                 <a href="https://yandex.ru/maps/?rtext=~55.726320,37.399399&rtt=auto" target="_blank" rel="noopener noreferrer" className="absolute bottom-4 md:bottom-6 right-4 md:right-6 z-10 inline-flex items-center gap-2 rounded-full bg-[#0B1B33] px-4 md:px-6 py-3 md:py-4 text-sm md:text-base font-black text-white shadow-2xl transition hover:bg-[#102744]">Построить маршрут</a>
               </div>
             </div>
@@ -1494,8 +1500,6 @@ function HomeContent() {
 
 export default function Home() {
   return (
-    <Suspense fallback={<div className="min-h-screen bg-white" />}>
-      <HomeContent />
-    </Suspense>
+    <HomeContent />
   );
 }
