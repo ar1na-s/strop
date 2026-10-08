@@ -1,0 +1,3707 @@
+[
+  {
+    "name": "Строп цепной четырёхветвевой 4СЦ 2,5 т",
+    "price": 2800,
+    "group": "slings",
+    "kind": "Цепные",
+    "type": "4СЦ",
+    "load": "2,5 т",
+    "length": "1–8 м",
+    "image": "/products/chain-4sc.png",
+    "description": "Четырёхветвевой цепной строп 4СЦ 2,5 т для подъёма и перемещения тяжёлых грузов.",
+    "specs": [
+      "6×18 мм · цепь",
+      "Звено 2,5 т",
+      "Крюк 1,12т",
+      "4 ветви"
+    ],
+    "services": [
+      {
+        "name": "Комплект регулировки длины",
+        "price": 600
+      },
+      {
+        "name": "Самозапирающиеся крюки",
+        "price": 1600
+      },
+      {
+        "name": "Дополнительный метр",
+        "price": 1130
+      },
+      {
+        "name": "Увеличенное звено 210*300",
+        "price": 1200
+      }
+    ],
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 2800
+      },
+      {
+        "length": "2 м",
+        "price": 3930
+      },
+      {
+        "length": "3 м",
+        "price": 5060
+      },
+      {
+        "length": "4 м",
+        "price": 6190
+      },
+      {
+        "length": "5 м",
+        "price": 7320
+      },
+      {
+        "length": "6 м",
+        "price": 8450
+      },
+      {
+        "length": "7 м",
+        "price": 9580
+      },
+      {
+        "length": "8 м",
+        "price": 10710
+      }
+    ],
+    "dimensions": {
+      "diameter": "6×18 мм",
+      "hookP": "18 мм",
+      "hookH": "20 мм",
+      "linkLength": "133 мм",
+      "width": "75 мм"
+    },
+    "source": {
+      "sheet": "4сц ",
+      "range": "A1:F14"
+    },
+    "slug": "strop-tsepnoy-chetyrekhvetvevoy-4sts-2-5-t"
+  },
+  {
+    "name": "Строп цепной четырёхветвевой 4СЦ 4,3 т",
+    "price": 3800,
+    "group": "slings",
+    "kind": "Цепные",
+    "type": "4СЦ",
+    "load": "4,3 т",
+    "length": "1–8 м",
+    "image": "/products/chain-4sc.png",
+    "description": "Четырёхветвевой цепной строп 4СЦ 4,3 т.",
+    "specs": [
+      "8×24 мм · цепь",
+      "Звено 4,3 т",
+      "Крюк 2 т",
+      "4 ветви"
+    ],
+    "services": [
+      {
+        "name": "Комплект регулировки длины",
+        "price": 800
+      },
+      {
+        "name": "Самозапирающиеся крюки",
+        "price": 2300
+      },
+      {
+        "name": "Дополнительный метр",
+        "price": 1670
+      },
+      {
+        "name": "Увеличенное звено 210*300",
+        "price": 1400
+      }
+    ],
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 3800
+      },
+      {
+        "length": "2 м",
+        "price": 5470
+      },
+      {
+        "length": "3 м",
+        "price": 7140
+      },
+      {
+        "length": "4 м",
+        "price": 8810
+      },
+      {
+        "length": "5 м",
+        "price": 10480
+      },
+      {
+        "length": "6 м",
+        "price": 12150
+      },
+      {
+        "length": "7 м",
+        "price": 13820
+      },
+      {
+        "length": "8 м",
+        "price": 15490
+      }
+    ],
+    "dimensions": {
+      "diameter": "8×24 мм",
+      "hookP": "22 мм",
+      "hookH": "26 мм",
+      "linkLength": "155 мм",
+      "width": "88 мм"
+    },
+    "source": {
+      "sheet": "4сц ",
+      "range": "H1:M14"
+    },
+    "slug": "strop-tsepnoy-chetyrekhvetvevoy-4sts-4-3-t"
+  },
+  {
+    "name": "Строп цепной четырёхветвевой 4СЦ 6,7 т",
+    "price": 6050,
+    "group": "slings",
+    "kind": "Цепные",
+    "type": "4СЦ",
+    "load": "6,7 т",
+    "length": "1–8 м",
+    "image": "/products/chain-4sc.png",
+    "description": "Усиленный четырёхветвевой цепной строп 4СЦ 6,7 т.",
+    "specs": [
+      "10×30 мм · цепь",
+      "Звено 6,7 т",
+      "Крюк 3,15 т",
+      "4 ветви"
+    ],
+    "services": [
+      {
+        "name": "Комплект регулировки длины",
+        "price": 1200
+      },
+      {
+        "name": "Самозапирающиеся крюки",
+        "price": 3700
+      },
+      {
+        "name": "Дополнительный метр",
+        "price": 2125
+      },
+      {
+        "name": "Увеличенное звено 210*300",
+        "price": 1600
+      }
+    ],
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 6050
+      },
+      {
+        "length": "2 м",
+        "price": 8175
+      },
+      {
+        "length": "3 м",
+        "price": 10300
+      },
+      {
+        "length": "4 м",
+        "price": 12425
+      },
+      {
+        "length": "5 м",
+        "price": 14550
+      },
+      {
+        "length": "6 м",
+        "price": 16675
+      },
+      {
+        "length": "7 м",
+        "price": 18800
+      },
+      {
+        "length": "8 м",
+        "price": 20925
+      }
+    ],
+    "dimensions": {
+      "diameter": "10×30 мм",
+      "hookP": "30 мм",
+      "hookH": "37 мм",
+      "linkLength": "177 мм",
+      "width": "97 мм"
+    },
+    "source": {
+      "sheet": "4сц ",
+      "range": "O1:T14"
+    },
+    "slug": "strop-tsepnoy-chetyrekhvetvevoy-4sts-6-7-t"
+  },
+  {
+    "name": "Строп цепной четырёхветвевой 4СЦ 11,2 т",
+    "price": 7870,
+    "group": "slings",
+    "kind": "Цепные",
+    "type": "4СЦ",
+    "load": "11,2 т",
+    "length": "1–8 м",
+    "image": "/products/chain-4sc.png",
+    "description": "Профессиональный строп 4СЦ 11,2 т.",
+    "specs": [
+      "13×39 мм · цепь",
+      "Звено 11,2 т",
+      "Крюк 5,3 т",
+      "4 ветви"
+    ],
+    "services": [
+      {
+        "name": "Комплект регулировки длины",
+        "price": 2600
+      },
+      {
+        "name": "Самозапирающиеся крюки",
+        "price": 7600
+      },
+      {
+        "name": "Дополнительный метр",
+        "price": 3400
+      },
+      {
+        "name": "Увеличенное звено 210*300",
+        "price": 2400
+      }
+    ],
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 7870
+      },
+      {
+        "length": "2 м",
+        "price": 11270
+      },
+      {
+        "length": "3 м",
+        "price": 14670
+      },
+      {
+        "length": "4 м",
+        "price": 18070
+      },
+      {
+        "length": "5 м",
+        "price": 21470
+      },
+      {
+        "length": "6 м",
+        "price": 24870
+      },
+      {
+        "length": "7 м",
+        "price": 28270
+      },
+      {
+        "length": "8 м",
+        "price": 31670
+      }
+    ],
+    "dimensions": {
+      "diameter": "13×39 мм",
+      "hookP": "40 мм",
+      "hookH": "48 мм",
+      "linkLength": "197 мм",
+      "width": "110 мм"
+    },
+    "source": {
+      "sheet": "4сц ",
+      "range": "A16:F29"
+    },
+    "slug": "strop-tsepnoy-chetyrekhvetvevoy-4sts-11-2-t"
+  },
+  {
+    "name": "Строп цепной четырёхветвевой 4СЦ 17,0 т",
+    "price": 13600,
+    "group": "slings",
+    "kind": "Цепные",
+    "type": "4СЦ",
+    "load": "17,0 т",
+    "length": "1–8 м",
+    "image": "/products/chain-4sc.png",
+    "description": "Тяжёлый четырёхветвевой цепной строп 4СЦ 17,0 т.",
+    "specs": [
+      "16×48 мм · цепь",
+      "Звено 17,0 т",
+      "Крюк 8 т",
+      "4 ветви"
+    ],
+    "services": [
+      {
+        "name": "Комплект регулировки длины",
+        "price": 4600
+      },
+      {
+        "name": "Самозапирающиеся крюки",
+        "price": 11200
+      },
+      {
+        "name": "Дополнительный метр",
+        "price": 5500
+      }
+    ],
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 13600
+      },
+      {
+        "length": "2 м",
+        "price": 19100
+      },
+      {
+        "length": "3 м",
+        "price": 24600
+      },
+      {
+        "length": "4 м",
+        "price": 30100
+      },
+      {
+        "length": "5 м",
+        "price": 35600
+      },
+      {
+        "length": "6 м",
+        "price": 41100
+      },
+      {
+        "length": "7 м",
+        "price": 46600
+      },
+      {
+        "length": "8 м",
+        "price": 52100
+      }
+    ],
+    "dimensions": {
+      "diameter": "16×48 мм",
+      "hookP": "48 мм",
+      "hookH": "55 мм",
+      "linkLength": "258 мм",
+      "width": "110 мм"
+    },
+    "source": {
+      "sheet": "4сц ",
+      "range": "H16:M29"
+    },
+    "slug": "strop-tsepnoy-chetyrekhvetvevoy-4sts-17-0-t"
+  },
+  {
+    "name": "Строп цепной четырёхветвевой 4СЦ 26,5 т",
+    "price": 32000,
+    "group": "slings",
+    "kind": "Цепные",
+    "type": "4СЦ",
+    "load": "26,5 т",
+    "length": "1–8 м",
+    "image": "/products/chain-4sc.png",
+    "description": "Мощный цепной строп 4СЦ 26,5 т.",
+    "specs": [
+      "20×60 мм · цепь",
+      "Звено 26,5 т",
+      "Крюк 12,5 т",
+      "4 ветви"
+    ],
+    "services": [
+      {
+        "name": "Комплект регулировки длины",
+        "price": 6600
+      },
+      {
+        "name": "Самозапирающиеся крюки",
+        "price": 18000
+      },
+      {
+        "name": "Дополнительный метр",
+        "price": 10900
+      }
+    ],
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 32000
+      },
+      {
+        "length": "2 м",
+        "price": 42900
+      },
+      {
+        "length": "3 м",
+        "price": 53800
+      },
+      {
+        "length": "4 м",
+        "price": 64700
+      },
+      {
+        "length": "5 м",
+        "price": 75600
+      },
+      {
+        "length": "6 м",
+        "price": 86500
+      },
+      {
+        "length": "7 м",
+        "price": 97400
+      },
+      {
+        "length": "8 м",
+        "price": 108300
+      }
+    ],
+    "dimensions": {
+      "diameter": "20×60 мм",
+      "hookP": "54 мм",
+      "hookH": "60 мм",
+      "linkLength": "190 мм",
+      "width": "350 мм"
+    },
+    "source": {
+      "sheet": "4сц ",
+      "range": "O16:T29"
+    },
+    "slug": "strop-tsepnoy-chetyrekhvetvevoy-4sts-26-5-t"
+  },
+  {
+    "name": "Строп цепной двухветвевой 2СЦ 1,6 т",
+    "price": 1350,
+    "group": "slings",
+    "kind": "Цепные",
+    "type": "2СЦ",
+    "load": "1,6 т",
+    "length": "1–8 м",
+    "image": "/products/chain-2sc.png",
+    "description": "Двухветвевой цепной строп 2СЦ 1,6 т.",
+    "specs": [
+      "6×18 мм · цепь",
+      "Звено 1,6",
+      "Крюк 1,12т",
+      "2 ветви"
+    ],
+    "services": [
+      {
+        "name": "Комплект регулировки длины",
+        "price": 350
+      },
+      {
+        "name": "Самозапирающиеся крюки",
+        "price": 800
+      },
+      {
+        "name": "Дополнительный метр",
+        "price": 470
+      }
+    ],
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 1350
+      },
+      {
+        "length": "2 м",
+        "price": 1820
+      },
+      {
+        "length": "3 м",
+        "price": 2290
+      },
+      {
+        "length": "4 м",
+        "price": 2760
+      },
+      {
+        "length": "5 м",
+        "price": 3230
+      },
+      {
+        "length": "6 м",
+        "price": 3700
+      },
+      {
+        "length": "7 м",
+        "price": 4170
+      },
+      {
+        "length": "8 м",
+        "price": 4640
+      }
+    ],
+    "dimensions": {
+      "diameter": "6×18 мм",
+      "hookP": "18 мм",
+      "hookH": "20 мм"
+    },
+    "source": {
+      "sheet": "2сц",
+      "range": "A1:F14"
+    },
+    "slug": "strop-tsepnoy-dvukhvetvevoy-2sts-1-6-t"
+  },
+  {
+    "name": "Строп цепной двухветвевой 2СЦ 3,15 т",
+    "price": 1900,
+    "group": "slings",
+    "kind": "Цепные",
+    "type": "2СЦ",
+    "load": "3,15 т",
+    "length": "1–8 м",
+    "image": "/products/chain-2sc.png",
+    "description": "Двухветвевой цепной строп 2СЦ 3,15 т.",
+    "specs": [
+      "8×24 мм · цепь",
+      "Звено 3,15",
+      "Крюк 2,0 т",
+      "2 ветви"
+    ],
+    "services": [
+      {
+        "name": "Комплект регулировки длины",
+        "price": 450
+      },
+      {
+        "name": "Самозапирающиеся крюки",
+        "price": 1200
+      },
+      {
+        "name": "Дополнительный метр",
+        "price": 700
+      }
+    ],
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 1900
+      },
+      {
+        "length": "2 м",
+        "price": 2600
+      },
+      {
+        "length": "3 м",
+        "price": 3300
+      },
+      {
+        "length": "4 м",
+        "price": 4000
+      },
+      {
+        "length": "5 м",
+        "price": 4700
+      },
+      {
+        "length": "6 м",
+        "price": 5400
+      },
+      {
+        "length": "7 м",
+        "price": 6100
+      },
+      {
+        "length": "8 м",
+        "price": 6800
+      }
+    ],
+    "dimensions": {
+      "diameter": "8×24 мм",
+      "hookP": "22 мм",
+      "hookH": "26 мм"
+    },
+    "source": {
+      "sheet": "2сц",
+      "range": "H1:M14"
+    },
+    "slug": "strop-tsepnoy-dvukhvetvevoy-2sts-3-15-t"
+  },
+  {
+    "name": "Строп цепной двухветвевой 2СЦ 5,3 т",
+    "price": 2700,
+    "group": "slings",
+    "kind": "Цепные",
+    "type": "2СЦ",
+    "load": "5,3 т",
+    "length": "1–8 м",
+    "image": "/products/chain-2sc.png",
+    "description": "Двухветвевой цепной строп 2СЦ 5,3 т.",
+    "specs": [
+      "10×30 мм · цепь",
+      "Звено 5,3 т",
+      "Крюк 3,15 т",
+      "2 ветви"
+    ],
+    "services": [
+      {
+        "name": "Комплект регулировки длины",
+        "price": 700
+      },
+      {
+        "name": "Самозапирающиеся крюки",
+        "price": 1900
+      },
+      {
+        "name": "Дополнительный метр",
+        "price": 1300
+      }
+    ],
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 2700
+      },
+      {
+        "length": "2 м",
+        "price": 4000
+      },
+      {
+        "length": "3 м",
+        "price": 5300
+      },
+      {
+        "length": "4 м",
+        "price": 6600
+      },
+      {
+        "length": "5 м",
+        "price": 7900
+      },
+      {
+        "length": "6 м",
+        "price": 9200
+      },
+      {
+        "length": "7 м",
+        "price": 10500
+      },
+      {
+        "length": "8 м",
+        "price": 11800
+      }
+    ],
+    "dimensions": {
+      "diameter": "10×30 мм",
+      "hookP": "30 мм",
+      "hookH": "37 мм"
+    },
+    "source": {
+      "sheet": "2сц",
+      "range": "O1:T14"
+    },
+    "slug": "strop-tsepnoy-dvukhvetvevoy-2sts-5-3-t"
+  },
+  {
+    "name": "Строп цепной двухветвевой 2СЦ 8,0 т",
+    "price": 4700,
+    "group": "slings",
+    "kind": "Цепные",
+    "type": "2СЦ",
+    "load": "8,0 т",
+    "length": "1–8 м",
+    "image": "/products/chain-2sc.png",
+    "description": "Двухветвевой цепной строп 2СЦ 8,0 т.",
+    "specs": [
+      "13×30 мм · цепь",
+      "Звено 8,0 т",
+      "Крюк 5,3 т",
+      "2 ветви"
+    ],
+    "services": [
+      {
+        "name": "Комплект регулировки длины",
+        "price": 1400
+      },
+      {
+        "name": "Самозапирающиеся крюки",
+        "price": 3800
+      },
+      {
+        "name": "Дополнительный метр",
+        "price": 1800
+      }
+    ],
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 4700
+      },
+      {
+        "length": "2 м",
+        "price": 6500
+      },
+      {
+        "length": "3 м",
+        "price": 8300
+      },
+      {
+        "length": "4 м",
+        "price": 10100
+      },
+      {
+        "length": "5 м",
+        "price": 11900
+      },
+      {
+        "length": "6 м",
+        "price": 13700
+      },
+      {
+        "length": "7 м",
+        "price": 15500
+      },
+      {
+        "length": "8 м",
+        "price": 17300
+      }
+    ],
+    "dimensions": {
+      "diameter": "13×30 мм",
+      "hookP": "40 мм",
+      "hookH": "48 мм"
+    },
+    "source": {
+      "sheet": "2сц",
+      "range": "A15:F28"
+    },
+    "slug": "strop-tsepnoy-dvukhvetvevoy-2sts-8-0-t"
+  },
+  {
+    "name": "Строп цепной двухветвевой 2СЦ 11,2 т",
+    "price": 9400,
+    "group": "slings",
+    "kind": "Цепные",
+    "type": "2СЦ",
+    "load": "11,2 т",
+    "length": "1–8 м",
+    "image": "/products/chain-2sc.png",
+    "description": "Усиленный двухветвевой строп 2СЦ 11,2 т.",
+    "specs": [
+      "16×48 мм · цепь",
+      "Звено 11,0 т",
+      "Крюк 8 т",
+      "2 ветви"
+    ],
+    "services": [
+      {
+        "name": "Комплект регулировки длины",
+        "price": 2400
+      },
+      {
+        "name": "Самозапирающиеся крюки",
+        "price": 5700
+      },
+      {
+        "name": "Дополнительный метр",
+        "price": 2600
+      }
+    ],
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 9400
+      },
+      {
+        "length": "2 м",
+        "price": 12000
+      },
+      {
+        "length": "3 м",
+        "price": 14600
+      },
+      {
+        "length": "4 м",
+        "price": 17200
+      },
+      {
+        "length": "5 м",
+        "price": 19800
+      },
+      {
+        "length": "6 м",
+        "price": 22400
+      },
+      {
+        "length": "7 м",
+        "price": 25000
+      },
+      {
+        "length": "8 м",
+        "price": 27600
+      }
+    ],
+    "dimensions": {
+      "diameter": "16×48 мм",
+      "hookP": "48 мм",
+      "hookH": "55 мм",
+      "linkLength": "197 мм",
+      "width": "110 мм"
+    },
+    "source": {
+      "sheet": "2сц",
+      "range": "H15:M28"
+    },
+    "clarification": "Грузоподъёмность требует подтверждения: в заголовке прайса указано 11,2 т, в строке модели — 17,0 т, для звена — 11,0 т.",
+    "slug": "strop-tsepnoy-dvukhvetvevoy-2sts-11-2-t"
+  },
+  {
+    "name": "Строп цепной двухветвевой 2СЦ 17,0 т",
+    "price": 19000,
+    "group": "slings",
+    "kind": "Цепные",
+    "type": "2СЦ",
+    "load": "17,0 т",
+    "length": "2–8 м",
+    "image": "/products/chain-2sc.png",
+    "description": "Профессиональный цепной строп 2СЦ 17,0 т.",
+    "specs": [
+      "20×60 мм · цепь",
+      "Звено 17,0 т",
+      "Крюк 12,5 т",
+      "2 ветви"
+    ],
+    "services": [
+      {
+        "name": "Комплект регулировки длины",
+        "price": 3700
+      },
+      {
+        "name": "Дополнительный метр",
+        "price": 4900
+      }
+    ],
+    "variants": [
+      {
+        "length": "2 м",
+        "price": 19000
+      },
+      {
+        "length": "3 м",
+        "price": 23900
+      },
+      {
+        "length": "4 м",
+        "price": 28800
+      },
+      {
+        "length": "5 м",
+        "price": 33700
+      },
+      {
+        "length": "6 м",
+        "price": 38600
+      },
+      {
+        "length": "7 м",
+        "price": 43500
+      },
+      {
+        "length": "8 м",
+        "price": 48400
+      }
+    ],
+    "dimensions": {
+      "diameter": "20×60 мм",
+      "hookP": "54 мм",
+      "hookH": "60 мм",
+      "linkLength": "258 мм",
+      "width": "110 мм"
+    },
+    "source": {
+      "sheet": "2сц",
+      "range": "O15:T28"
+    },
+    "slug": "strop-tsepnoy-dvukhvetvevoy-2sts-17-0-t"
+  },
+  {
+    "name": "Строп цепной одноветвевой 1СЦ 1,12 т",
+    "price": 780,
+    "group": "slings",
+    "kind": "Цепные",
+    "type": "1СЦ",
+    "load": "1,12 т",
+    "length": "1–8 м",
+    "image": "/products/chain-1sc.png",
+    "description": "Одноветвевой цепной строп 1СЦ 1,12 т.",
+    "specs": [
+      "6×18 мм · цепь",
+      "Звено 1,6 т",
+      "Крюк 1,12т",
+      "1 ветвь"
+    ],
+    "services": [
+      {
+        "name": "Комплект регулировки длины",
+        "price": 180
+      },
+      {
+        "name": "Самозапирающиеся крюки",
+        "price": 450
+      },
+      {
+        "name": "Дополнительный метр",
+        "price": 260
+      }
+    ],
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 780
+      },
+      {
+        "length": "2 м",
+        "price": 1040
+      },
+      {
+        "length": "3 м",
+        "price": 1300
+      },
+      {
+        "length": "4 м",
+        "price": 1560
+      },
+      {
+        "length": "5 м",
+        "price": 1820
+      },
+      {
+        "length": "6 м",
+        "price": 2080
+      },
+      {
+        "length": "7 м",
+        "price": 2340
+      },
+      {
+        "length": "8 м",
+        "price": 2600
+      }
+    ],
+    "dimensions": {
+      "diameter": "6×18 мм",
+      "hookP": "18 мм",
+      "hookH": "20 мм"
+    },
+    "source": {
+      "sheet": "1сц",
+      "range": "A1:F14"
+    },
+    "clarification": "Грузоподъёмность требует подтверждения: в заголовке прайса и для крюка указано 1,12 т, в строке модели — 1,6 т.",
+    "slug": "strop-tsepnoy-odnovetvevoy-1sts-1-12-t"
+  },
+  {
+    "name": "Строп цепной одноветвевой 1СЦ 2,0 т",
+    "price": 1070,
+    "group": "slings",
+    "kind": "Цепные",
+    "type": "1СЦ",
+    "load": "2,0 т",
+    "length": "1–8 м",
+    "image": "/products/chain-1sc.png",
+    "description": "Одноветвевой цепной строп 1СЦ 2,0 т.",
+    "specs": [
+      "8×24 мм · цепь",
+      "Звено 2,0 т",
+      "Крюк 2,0 т",
+      "1 ветвь"
+    ],
+    "services": [
+      {
+        "name": "Комплект регулировки длины",
+        "price": 240
+      },
+      {
+        "name": "Самозапирающиеся крюки",
+        "price": 650
+      },
+      {
+        "name": "Дополнительный метр",
+        "price": 370
+      }
+    ],
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 1070
+      },
+      {
+        "length": "2 м",
+        "price": 1440
+      },
+      {
+        "length": "3 м",
+        "price": 1810
+      },
+      {
+        "length": "4 м",
+        "price": 2180
+      },
+      {
+        "length": "5 м",
+        "price": 2550
+      },
+      {
+        "length": "6 м",
+        "price": 2920
+      },
+      {
+        "length": "7 м",
+        "price": 3200
+      },
+      {
+        "length": "8 м",
+        "price": 3660
+      }
+    ],
+    "dimensions": {
+      "diameter": "8×24 мм",
+      "hookP": "22 мм",
+      "hookH": "26 мм"
+    },
+    "source": {
+      "sheet": "1сц",
+      "range": "H1:M14"
+    },
+    "slug": "strop-tsepnoy-odnovetvevoy-1sts-2-0-t"
+  },
+  {
+    "name": "Строп цепной одноветвевой 1СЦ 3,15 т",
+    "price": 1700,
+    "group": "slings",
+    "kind": "Цепные",
+    "type": "1СЦ",
+    "load": "3,15 т",
+    "length": "1–8 м",
+    "image": "/products/chain-1sc.png",
+    "description": "Одноветвевой цепной строп 1СЦ 3,15 т.",
+    "specs": [
+      "10×30 мм · цепь",
+      "Звено 3,15 т",
+      "Крюк 3,15 т",
+      "1 ветвь"
+    ],
+    "services": [
+      {
+        "name": "Комплект регулировки длины",
+        "price": 400
+      },
+      {
+        "name": "Самозапирающиеся крюки",
+        "price": 950
+      },
+      {
+        "name": "Дополнительный метр",
+        "price": 510
+      }
+    ],
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 1700
+      },
+      {
+        "length": "2 м",
+        "price": 2210
+      },
+      {
+        "length": "3 м",
+        "price": 2720
+      },
+      {
+        "length": "4 м",
+        "price": 3230
+      },
+      {
+        "length": "5 м",
+        "price": 3740
+      },
+      {
+        "length": "6 м",
+        "price": 4250
+      },
+      {
+        "length": "7 м",
+        "price": 4760
+      },
+      {
+        "length": "8 м",
+        "price": 5270
+      }
+    ],
+    "dimensions": {
+      "diameter": "10×30 мм",
+      "hookP": "30 мм",
+      "hookH": "37 мм"
+    },
+    "source": {
+      "sheet": "1сц",
+      "range": "O1:T14"
+    },
+    "slug": "strop-tsepnoy-odnovetvevoy-1sts-3-15-t"
+  },
+  {
+    "name": "Строп цепной одноветвевой 1СЦ 5,3 т",
+    "price": 2900,
+    "group": "slings",
+    "kind": "Цепные",
+    "type": "1СЦ",
+    "load": "5,3 т",
+    "length": "1–8 м",
+    "image": "/products/chain-1sc.png",
+    "description": "Одноветвевой цепной строп 1СЦ 5,3 т.",
+    "specs": [
+      "13×39 мм · цепь",
+      "Звено 5,3 т",
+      "Крюк 5,3 т",
+      "1 ветвь"
+    ],
+    "services": [
+      {
+        "name": "Комплект регулировки длины",
+        "price": 750
+      },
+      {
+        "name": "Самозапирающиеся крюки",
+        "price": 1900
+      },
+      {
+        "name": "Дополнительный метр",
+        "price": 750
+      }
+    ],
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 2900
+      },
+      {
+        "length": "2 м",
+        "price": 3650
+      },
+      {
+        "length": "3 м",
+        "price": 4400
+      },
+      {
+        "length": "4 м",
+        "price": 5150
+      },
+      {
+        "length": "5 м",
+        "price": 5900
+      },
+      {
+        "length": "6 м",
+        "price": 6650
+      },
+      {
+        "length": "7 м",
+        "price": 7400
+      },
+      {
+        "length": "8 м",
+        "price": 8150
+      }
+    ],
+    "dimensions": {
+      "diameter": "13×39 мм",
+      "hookP": "40 мм",
+      "hookH": "48 мм"
+    },
+    "source": {
+      "sheet": "1сц",
+      "range": "A15:F28"
+    },
+    "slug": "strop-tsepnoy-odnovetvevoy-1sts-5-3-t"
+  },
+  {
+    "name": "Строп цепной одноветвевой 1СЦ 8,0 т",
+    "price": 4800,
+    "group": "slings",
+    "kind": "Цепные",
+    "type": "1СЦ",
+    "load": "8,0 т",
+    "length": "1–8 м",
+    "image": "/products/chain-1sc.png",
+    "description": "Одноветвевой цепной строп 1СЦ 8,0 т.",
+    "specs": [
+      "16×48 мм · цепь",
+      "Звено 8,0 т",
+      "Крюк 8,0 т",
+      "1 ветвь"
+    ],
+    "services": [
+      {
+        "name": "Комплект регулировки длины",
+        "price": 1300
+      },
+      {
+        "name": "Самозапирающиеся крюки",
+        "price": 2900
+      },
+      {
+        "name": "Дополнительный метр",
+        "price": 1350
+      }
+    ],
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 4800
+      },
+      {
+        "length": "2 м",
+        "price": 6150
+      },
+      {
+        "length": "3 м",
+        "price": 7500
+      },
+      {
+        "length": "4 м",
+        "price": 8850
+      },
+      {
+        "length": "5 м",
+        "price": 10200
+      },
+      {
+        "length": "6 м",
+        "price": 11550
+      },
+      {
+        "length": "7 м",
+        "price": 12900
+      },
+      {
+        "length": "8 м",
+        "price": 14250
+      }
+    ],
+    "dimensions": {
+      "diameter": "16×48 мм",
+      "hookP": "48 мм",
+      "hookH": "55 мм"
+    },
+    "source": {
+      "sheet": "1сц",
+      "range": "H15:M28"
+    },
+    "slug": "strop-tsepnoy-odnovetvevoy-1sts-8-0-t"
+  },
+  {
+    "name": "Строп цепной одноветвевой 1СЦ 12,5 т",
+    "price": 7400,
+    "group": "slings",
+    "kind": "Цепные",
+    "type": "1СЦ",
+    "load": "12,5 т",
+    "length": "1–8 м",
+    "image": "/products/chain-1sc.png",
+    "description": "Тяжёлый одноветвевой строп 1СЦ 12,5 т.",
+    "specs": [
+      "20×60 мм · цепь",
+      "Звено 15,0 т",
+      "Крюк 12,5т",
+      "1 ветвь"
+    ],
+    "services": [
+      {
+        "name": "Комплект регулировки длины",
+        "price": 1900
+      },
+      {
+        "name": "Дополнительный метр",
+        "price": 2150
+      }
+    ],
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 7400
+      },
+      {
+        "length": "2 м",
+        "price": 9550
+      },
+      {
+        "length": "3 м",
+        "price": 11700
+      },
+      {
+        "length": "4 м",
+        "price": 13850
+      },
+      {
+        "length": "5 м",
+        "price": 16000
+      },
+      {
+        "length": "6 м",
+        "price": 18150
+      },
+      {
+        "length": "7 м",
+        "price": 20300
+      },
+      {
+        "length": "8 м",
+        "price": 22450
+      }
+    ],
+    "dimensions": {
+      "diameter": "20×60 мм",
+      "hookP": "54 мм",
+      "hookH": "60 мм"
+    },
+    "source": {
+      "sheet": "1сц",
+      "range": "O15:T28"
+    },
+    "slug": "strop-tsepnoy-odnovetvevoy-1sts-12-5-t"
+  },
+  {
+    "name": "Ветвь цепная ВЦ 1,12 т",
+    "price": 974,
+    "group": "slings",
+    "kind": "Цепные",
+    "type": "ВЦ",
+    "load": "1,12 т",
+    "length": "1–8 м",
+    "image": "/products/chain-vc.png",
+    "description": "Цепная ветвь ВЦ 1,12 т.",
+    "specs": [
+      "6×18 мм · цепь",
+      "Звено 1,1 т",
+      "Цепная ветвь"
+    ],
+    "services": [
+      {
+        "name": "Комплект регулировки длины",
+        "price": 180
+      },
+      {
+        "name": "Дополнительный метр",
+        "price": 260
+      }
+    ],
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 974
+      },
+      {
+        "length": "2 м",
+        "price": 1259
+      },
+      {
+        "length": "3 м",
+        "price": 1544
+      },
+      {
+        "length": "4 м",
+        "price": 1829
+      },
+      {
+        "length": "5 м",
+        "price": 2114
+      },
+      {
+        "length": "6 м",
+        "price": 2399
+      },
+      {
+        "length": "7 м",
+        "price": 2684
+      },
+      {
+        "length": "8 м",
+        "price": 2969
+      }
+    ],
+    "dimensions": {
+      "diameter": "6×18 мм"
+    },
+    "source": {
+      "sheet": "вц",
+      "range": "A1:E14"
+    },
+    "slug": "vetv-tsepnaya-vts-1-12-t"
+  },
+  {
+    "name": "Ветвь цепная ВЦ 2,0 т",
+    "price": 1391,
+    "group": "slings",
+    "kind": "Цепные",
+    "type": "ВЦ",
+    "load": "2,0 т",
+    "length": "1–8 м",
+    "image": "/products/chain-vc.png",
+    "description": "Цепная ветвь ВЦ 2,0 т.",
+    "specs": [
+      "8×24 мм · цепь",
+      "Звено 2,0 т",
+      "Цепная ветвь"
+    ],
+    "services": [
+      {
+        "name": "Комплект регулировки длины",
+        "price": 240
+      },
+      {
+        "name": "Дополнительный метр",
+        "price": 370
+      }
+    ],
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 1391
+      },
+      {
+        "length": "2 м",
+        "price": 1811
+      },
+      {
+        "length": "3 м",
+        "price": 2231
+      },
+      {
+        "length": "4 м",
+        "price": 2651
+      },
+      {
+        "length": "5 м",
+        "price": 3071
+      },
+      {
+        "length": "6 м",
+        "price": 3491
+      },
+      {
+        "length": "7 м",
+        "price": 3911
+      },
+      {
+        "length": "8 м",
+        "price": 4331
+      }
+    ],
+    "dimensions": {
+      "diameter": "8×24 мм"
+    },
+    "source": {
+      "sheet": "вц",
+      "range": "H1:L14"
+    },
+    "slug": "vetv-tsepnaya-vts-2-0-t"
+  },
+  {
+    "name": "Ветвь цепная ВЦ 3,15 т",
+    "price": 2048,
+    "group": "slings",
+    "kind": "Цепные",
+    "type": "ВЦ",
+    "load": "3,15 т",
+    "length": "1–8 м",
+    "image": "/products/chain-vc.png",
+    "description": "Цепная ветвь ВЦ 3,15 т.",
+    "specs": [
+      "10×30 мм · цепь",
+      "Звено 3,15 т",
+      "Цепная ветвь"
+    ],
+    "services": [
+      {
+        "name": "Комплект регулировки длины",
+        "price": 400
+      },
+      {
+        "name": "Дополнительный метр",
+        "price": 510
+      }
+    ],
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 2048
+      },
+      {
+        "length": "2 м",
+        "price": 2573
+      },
+      {
+        "length": "3 м",
+        "price": 3098
+      },
+      {
+        "length": "4 м",
+        "price": 3623
+      },
+      {
+        "length": "5 м",
+        "price": 4148
+      },
+      {
+        "length": "6 м",
+        "price": 4673
+      },
+      {
+        "length": "7 м",
+        "price": 5198
+      },
+      {
+        "length": "8 м",
+        "price": 5723
+      }
+    ],
+    "dimensions": {
+      "diameter": "10×30 мм"
+    },
+    "source": {
+      "sheet": "вц",
+      "range": "O1:S14"
+    },
+    "slug": "vetv-tsepnaya-vts-3-15-t"
+  },
+  {
+    "name": "Ветвь цепная ВЦ 5,3 т",
+    "price": 3044,
+    "group": "slings",
+    "kind": "Цепные",
+    "type": "ВЦ",
+    "load": "5,3 т",
+    "length": "1–8 м",
+    "image": "/products/chain-vc.png",
+    "description": "Цепная ветвь ВЦ 5,3 т.",
+    "specs": [
+      "13×39 мм · цепь",
+      "Звено 5,3 т",
+      "Цепная ветвь"
+    ],
+    "services": [
+      {
+        "name": "Комплект регулировки длины",
+        "price": 750
+      },
+      {
+        "name": "Дополнительный метр",
+        "price": 750
+      }
+    ],
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 3044
+      },
+      {
+        "length": "2 м",
+        "price": 3869
+      },
+      {
+        "length": "3 м",
+        "price": 4694
+      },
+      {
+        "length": "4 м",
+        "price": 5519
+      },
+      {
+        "length": "5 м",
+        "price": 6344
+      },
+      {
+        "length": "6 м",
+        "price": 7169
+      },
+      {
+        "length": "7 м",
+        "price": 7994
+      },
+      {
+        "length": "8 м",
+        "price": 8819
+      }
+    ],
+    "dimensions": {
+      "diameter": "13×39 мм"
+    },
+    "source": {
+      "sheet": "вц",
+      "range": "A14:E27"
+    },
+    "slug": "vetv-tsepnaya-vts-5-3-t"
+  },
+  {
+    "name": "Ветвь цепная ВЦ 8,0 т",
+    "price": 4898,
+    "group": "slings",
+    "kind": "Цепные",
+    "type": "ВЦ",
+    "load": "8,0 т",
+    "length": "1–8 м",
+    "image": "/products/chain-vc.png",
+    "description": "Цепная ветвь ВЦ 8,0 т.",
+    "specs": [
+      "16×48 мм · цепь",
+      "Звено 8,0 т",
+      "Цепная ветвь"
+    ],
+    "services": [
+      {
+        "name": "Комплект регулировки длины",
+        "price": 1300
+      },
+      {
+        "name": "Дополнительный метр",
+        "price": 1350
+      }
+    ],
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 4898
+      },
+      {
+        "length": "2 м",
+        "price": 6188
+      },
+      {
+        "length": "3 м",
+        "price": 7478
+      },
+      {
+        "length": "4 м",
+        "price": 8768
+      },
+      {
+        "length": "5 м",
+        "price": 10058
+      },
+      {
+        "length": "6 м",
+        "price": 11348
+      },
+      {
+        "length": "7 м",
+        "price": 12638
+      },
+      {
+        "length": "8 м",
+        "price": 13928
+      }
+    ],
+    "dimensions": {
+      "diameter": "16×48 мм"
+    },
+    "source": {
+      "sheet": "вц",
+      "range": "H14:L27"
+    },
+    "slug": "vetv-tsepnaya-vts-8-0-t"
+  },
+  {
+    "name": "Ветвь цепная ВЦ 12,5 т",
+    "price": 4131,
+    "group": "slings",
+    "kind": "Цепные",
+    "type": "ВЦ",
+    "load": "12,5 т",
+    "length": "1–8 м",
+    "image": "/products/chain-vc.png",
+    "description": "Цепная ветвь ВЦ 12,5 т.",
+    "specs": [
+      "20×60 мм · цепь",
+      "Звено 12,5 т",
+      "Цепная ветвь"
+    ],
+    "services": [
+      {
+        "name": "Комплект регулировки длины",
+        "price": 1900
+      },
+      {
+        "name": "Дополнительный метр",
+        "price": 2150
+      }
+    ],
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 4131
+      },
+      {
+        "length": "2 м",
+        "price": 5421
+      },
+      {
+        "length": "3 м",
+        "price": 6711
+      },
+      {
+        "length": "4 м",
+        "price": 8001
+      },
+      {
+        "length": "5 м",
+        "price": 9291
+      },
+      {
+        "length": "6 м",
+        "price": 10581
+      },
+      {
+        "length": "7 м",
+        "price": 11871
+      },
+      {
+        "length": "8 м",
+        "price": 13161
+      }
+    ],
+    "dimensions": {
+      "diameter": "20×60 мм"
+    },
+    "source": {
+      "sheet": "вц",
+      "range": "O14:S27"
+    },
+    "slug": "vetv-tsepnaya-vts-12-5-t"
+  },
+  {
+    "name": "Цепь крепления с крюками 6 мм (3,1/5,4 т)",
+    "price": 1250,
+    "group": "other",
+    "kind": "Крепление груза",
+    "type": "Цепь крепления",
+    "load": "3,1 / 5,4 т",
+    "length": "2–6 м",
+    "description": "Крепёжная цепь с крюками для фиксации груза.",
+    "specs": [
+      "Цепь 6 мм",
+      "Рабочая / максимальная нагрузка"
+    ],
+    "dimensions": {
+      "diameter": "6 мм"
+    },
+    "variants": [
+      {
+        "length": "2 м",
+        "price": 1250
+      },
+      {
+        "length": "3 м",
+        "price": 1500
+      },
+      {
+        "length": "4 м",
+        "price": 1750
+      },
+      {
+        "length": "5 м",
+        "price": 2000
+      },
+      {
+        "length": "6 м",
+        "price": 2250
+      }
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 350
+      }
+    ],
+    "source": {
+      "sheet": "креп.ц",
+      "range": "A3:H3"
+    },
+    "slug": "tsep-krepleniya-s-kryukami-6-mm-3-1-5-4-t"
+  },
+  {
+    "name": "Цепь крепления с крюками 8 мм (5,7/8,0 т)",
+    "price": 1620,
+    "group": "other",
+    "kind": "Крепление груза",
+    "type": "Цепь крепления",
+    "load": "5,7 / 8,0 т",
+    "length": "2–6 м",
+    "description": "Крепёжная цепь с крюками для фиксации груза.",
+    "specs": [
+      "Цепь 8 мм",
+      "Рабочая / максимальная нагрузка"
+    ],
+    "dimensions": {
+      "diameter": "8 мм"
+    },
+    "variants": [
+      {
+        "length": "2 м",
+        "price": 1620
+      },
+      {
+        "length": "3 м",
+        "price": 1990
+      },
+      {
+        "length": "4 м",
+        "price": 2360
+      },
+      {
+        "length": "5 м",
+        "price": 2730
+      },
+      {
+        "length": "6 м",
+        "price": 3100
+      }
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 370
+      }
+    ],
+    "source": {
+      "sheet": "креп.ц",
+      "range": "A4:H4"
+    },
+    "slug": "tsep-krepleniya-s-kryukami-8-mm-5-7-8-0-t"
+  },
+  {
+    "name": "Цепь крепления с крюками 10 мм (9,0/12,6 т)",
+    "price": 2200,
+    "group": "other",
+    "kind": "Крепление груза",
+    "type": "Цепь крепления",
+    "load": "9,0 / 12,6 т",
+    "length": "2–6 м",
+    "description": "Крепёжная цепь с крюками для фиксации груза.",
+    "specs": [
+      "Цепь 10 мм",
+      "Рабочая / максимальная нагрузка"
+    ],
+    "dimensions": {
+      "diameter": "10 мм"
+    },
+    "variants": [
+      {
+        "length": "2 м",
+        "price": 2200
+      },
+      {
+        "length": "3 м",
+        "price": 2750
+      },
+      {
+        "length": "4 м",
+        "price": 3300
+      },
+      {
+        "length": "5 м",
+        "price": 3850
+      },
+      {
+        "length": "6 м",
+        "price": 4400
+      }
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 550
+      }
+    ],
+    "source": {
+      "sheet": "креп.ц",
+      "range": "A5:H5"
+    },
+    "slug": "tsep-krepleniya-s-kryukami-10-mm-9-0-12-6-t"
+  },
+  {
+    "name": "Цепь крепления с крюками 13 мм (15,0/21,0 т)",
+    "price": 3400,
+    "group": "other",
+    "kind": "Крепление груза",
+    "type": "Цепь крепления",
+    "load": "15,0 / 21,0 т",
+    "length": "2–6 м",
+    "description": "Крепёжная цепь с крюками для фиксации груза.",
+    "specs": [
+      "Цепь 13 мм",
+      "Рабочая / максимальная нагрузка"
+    ],
+    "dimensions": {
+      "diameter": "13 мм"
+    },
+    "variants": [
+      {
+        "length": "2 м",
+        "price": 3400
+      },
+      {
+        "length": "3 м",
+        "price": 4800
+      },
+      {
+        "length": "4 м",
+        "price": 5700
+      },
+      {
+        "length": "5 м",
+        "price": 6600
+      },
+      {
+        "length": "6 м",
+        "price": 7500
+      }
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 900
+      }
+    ],
+    "source": {
+      "sheet": "креп.ц",
+      "range": "A6:H6"
+    },
+    "slug": "tsep-krepleniya-s-kryukami-13-mm-15-0-21-0-t"
+  },
+  {
+    "name": "Цепь крепления с крюками 16 мм (22,0/29,6 т)",
+    "price": 6000,
+    "group": "other",
+    "kind": "Крепление груза",
+    "type": "Цепь крепления",
+    "load": "22,0 / 29,6 т",
+    "length": "2–6 м",
+    "description": "Крепёжная цепь с крюками для фиксации груза.",
+    "specs": [
+      "Цепь 16 мм",
+      "Рабочая / максимальная нагрузка"
+    ],
+    "dimensions": {
+      "diameter": "16 мм"
+    },
+    "variants": [
+      {
+        "length": "2 м",
+        "price": 6000
+      },
+      {
+        "length": "3 м",
+        "price": 7200
+      },
+      {
+        "length": "4 м",
+        "price": 8400
+      },
+      {
+        "length": "5 м",
+        "price": 9600
+      },
+      {
+        "length": "6 м",
+        "price": 10800
+      }
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 1200
+      }
+    ],
+    "source": {
+      "sheet": "креп.ц",
+      "range": "A7:H7"
+    },
+    "slug": "tsep-krepleniya-s-kryukami-16-mm-22-0-29-6-t"
+  },
+  {
+    "name": "Комплект цепь + талреп натяжения 6 мм (3,1/5,4 т)",
+    "price": 2500,
+    "group": "other",
+    "kind": "Крепление груза",
+    "type": "Цепь + талреп",
+    "load": "3,1 / 5,4 т",
+    "length": "2–6 м",
+    "description": "Крепёжная цепь с талрепом для натяжения и фиксации груза.",
+    "specs": [
+      "Цепь 6 мм",
+      "Рабочая / максимальная нагрузка"
+    ],
+    "dimensions": {
+      "diameter": "6 мм"
+    },
+    "variants": [
+      {
+        "length": "2 м",
+        "price": 2500
+      },
+      {
+        "length": "3 м",
+        "price": 2750
+      },
+      {
+        "length": "4 м",
+        "price": 3000
+      },
+      {
+        "length": "5 м",
+        "price": 3250
+      },
+      {
+        "length": "6 м",
+        "price": 3500
+      }
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 350
+      }
+    ],
+    "source": {
+      "sheet": "креп.ц",
+      "range": "A11:H11"
+    },
+    "slug": "komplekt-tsep-talrep-natyazheniya-6-mm-3-1-5-4-t",
+    "image": "/products/chain-tensioner.jpg"
+  },
+  {
+    "name": "Комплект цепь + талреп натяжения 8 мм (5,7/8,0 т)",
+    "price": 3370,
+    "group": "other",
+    "kind": "Крепление груза",
+    "type": "Цепь + талреп",
+    "load": "5,7 / 8,0 т",
+    "length": "2–6 м",
+    "description": "Крепёжная цепь с талрепом для натяжения и фиксации груза.",
+    "specs": [
+      "Цепь 8 мм",
+      "Рабочая / максимальная нагрузка"
+    ],
+    "dimensions": {
+      "diameter": "8 мм"
+    },
+    "variants": [
+      {
+        "length": "2 м",
+        "price": 3370
+      },
+      {
+        "length": "3 м",
+        "price": 3740
+      },
+      {
+        "length": "4 м",
+        "price": 4110
+      },
+      {
+        "length": "5 м",
+        "price": 4480
+      },
+      {
+        "length": "6 м",
+        "price": 4850
+      }
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 370
+      }
+    ],
+    "source": {
+      "sheet": "креп.ц",
+      "range": "A12:H12"
+    },
+    "slug": "komplekt-tsep-talrep-natyazheniya-8-mm-5-7-8-0-t",
+    "image": "/products/chain-tensioner.jpg"
+  },
+  {
+    "name": "Комплект цепь + талреп натяжения 10 мм (9,0/12,6 т)",
+    "price": 4030,
+    "group": "other",
+    "kind": "Крепление груза",
+    "type": "Цепь + талреп",
+    "load": "9,0 / 12,6 т",
+    "length": "2–6 м",
+    "description": "Крепёжная цепь с талрепом для натяжения и фиксации груза.",
+    "specs": [
+      "Цепь 10 мм",
+      "Рабочая / максимальная нагрузка"
+    ],
+    "dimensions": {
+      "diameter": "10 мм"
+    },
+    "variants": [
+      {
+        "length": "2 м",
+        "price": 4030
+      },
+      {
+        "length": "3 м",
+        "price": 4580
+      },
+      {
+        "length": "4 м",
+        "price": 5130
+      },
+      {
+        "length": "5 м",
+        "price": 5680
+      },
+      {
+        "length": "6 м",
+        "price": 6230
+      }
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 550
+      }
+    ],
+    "source": {
+      "sheet": "креп.ц",
+      "range": "A13:H13"
+    },
+    "slug": "komplekt-tsep-talrep-natyazheniya-10-mm-9-0-12-6-t",
+    "image": "/products/chain-tensioner.jpg"
+  },
+  {
+    "name": "Комплект цепь + талреп натяжения 13 мм (15,0/21,0 т)",
+    "price": 5230,
+    "group": "other",
+    "kind": "Крепление груза",
+    "type": "Цепь + талреп",
+    "load": "15,0 / 21,0 т",
+    "length": "2–6 м",
+    "description": "Крепёжная цепь с талрепом для натяжения и фиксации груза.",
+    "specs": [
+      "Цепь 13 мм",
+      "Рабочая / максимальная нагрузка"
+    ],
+    "dimensions": {
+      "diameter": "13 мм"
+    },
+    "variants": [
+      {
+        "length": "2 м",
+        "price": 5230
+      },
+      {
+        "length": "3 м",
+        "price": 6130
+      },
+      {
+        "length": "4 м",
+        "price": 7030
+      },
+      {
+        "length": "5 м",
+        "price": 7930
+      },
+      {
+        "length": "6 м",
+        "price": 8830
+      }
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 900
+      }
+    ],
+    "source": {
+      "sheet": "креп.ц",
+      "range": "A14:H14"
+    },
+    "slug": "komplekt-tsep-talrep-natyazheniya-13-mm-15-0-21-0-t",
+    "image": "/products/chain-tensioner.jpg"
+  },
+  {
+    "name": "Комплект цепь + талреп натяжения 16 мм (22,0/29,6 т)",
+    "price": 8100,
+    "group": "other",
+    "kind": "Крепление груза",
+    "type": "Цепь + талреп",
+    "load": "22,0 / 29,6 т",
+    "length": "2–6 м",
+    "description": "Крепёжная цепь с талрепом для натяжения и фиксации груза.",
+    "specs": [
+      "Цепь 16 мм",
+      "Рабочая / максимальная нагрузка"
+    ],
+    "dimensions": {
+      "diameter": "16 мм"
+    },
+    "variants": [
+      {
+        "length": "2 м",
+        "price": 8100
+      },
+      {
+        "length": "3 м",
+        "price": 9300
+      },
+      {
+        "length": "4 м",
+        "price": 10500
+      },
+      {
+        "length": "5 м",
+        "price": 11700
+      },
+      {
+        "length": "6 м",
+        "price": 12900
+      }
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 1200
+      }
+    ],
+    "source": {
+      "sheet": "креп.ц",
+      "range": "A15:H15"
+    },
+    "slug": "komplekt-tsep-talrep-natyazheniya-16-mm-22-0-29-6-t",
+    "image": "/products/chain-tensioner.jpg"
+  },
+  {
+    "name": "Талреп натяжения цепи 6-8 мм",
+    "price": 1500,
+    "group": "other",
+    "kind": "Такелаж",
+    "type": "Талреп цепной",
+    "load": "1,1 / 4,0 т",
+    "description": "Натяжитель для крепёжной цепи 6-8 мм.",
+    "specs": [
+      "Калибр цепи 6-8 мм",
+      "Рабочая / максимальная нагрузка"
+    ],
+    "source": {
+      "sheet": "креп.ц",
+      "range": "A18:C18"
+    },
+    "slug": "talrep-natyazheniya-tsepi-6-8-mm",
+    "image": "/products/tensioner.gif"
+  },
+  {
+    "name": "Талреп натяжения цепи 8-10 мм",
+    "price": 1900,
+    "group": "other",
+    "kind": "Такелаж",
+    "type": "Талреп цепной",
+    "load": "3,2 / 8,6 т",
+    "description": "Натяжитель для крепёжной цепи 8-10 мм.",
+    "specs": [
+      "Калибр цепи 8-10 мм",
+      "Рабочая / максимальная нагрузка"
+    ],
+    "source": {
+      "sheet": "креп.ц",
+      "range": "A19:C19"
+    },
+    "slug": "talrep-natyazheniya-tsepi-8-10-mm",
+    "image": "/products/tensioner.gif"
+  },
+  {
+    "name": "Талреп натяжения цепи 10-13 мм",
+    "price": 2100,
+    "group": "other",
+    "kind": "Такелаж",
+    "type": "Талреп цепной",
+    "load": "5,3 / 15,0 т",
+    "description": "Натяжитель для крепёжной цепи 10-13 мм.",
+    "specs": [
+      "Калибр цепи 10-13 мм",
+      "Рабочая / максимальная нагрузка"
+    ],
+    "source": {
+      "sheet": "креп.ц",
+      "range": "A20:C20"
+    },
+    "slug": "talrep-natyazheniya-tsepi-10-13-mm",
+    "image": "/products/tensioner.gif"
+  },
+  {
+    "name": "Талреп натяжения цепи 13-16 мм",
+    "price": 2500,
+    "group": "other",
+    "kind": "Такелаж",
+    "type": "Талреп цепной",
+    "load": "8,0 / 21,0 т",
+    "description": "Натяжитель для крепёжной цепи 13-16 мм.",
+    "specs": [
+      "Калибр цепи 13-16 мм",
+      "Рабочая / максимальная нагрузка"
+    ],
+    "source": {
+      "sheet": "креп.ц",
+      "range": "A21:C21"
+    },
+    "slug": "talrep-natyazheniya-tsepi-13-16-mm",
+    "image": "/products/tensioner.gif"
+  },
+  {
+    "name": "Строп ленточный петлевой СТП 1,0 т",
+    "price": 0,
+    "group": "slings",
+    "kind": "Текстильные",
+    "type": "СТП",
+    "load": "1,0 т",
+    "length": "1–8 м",
+    "description": "Петлевой ленточный строп. Ширина ленты 30 мм, длина выбирается под задачу.",
+    "specs": [
+      "Ширина 30 мм",
+      "Петлевой"
+    ],
+    "dimensions": {
+      "width": "30 мм"
+    },
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 0
+      },
+      {
+        "length": "2 м",
+        "price": 0
+      },
+      {
+        "length": "3 м",
+        "price": 0
+      },
+      {
+        "length": "4 м",
+        "price": 0
+      },
+      {
+        "length": "5 м",
+        "price": 0
+      },
+      {
+        "length": "6 м",
+        "price": 0
+      },
+      {
+        "length": "7 м",
+        "price": 0
+      },
+      {
+        "length": "8 м",
+        "price": 0
+      }
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 0
+      }
+    ],
+    "source": {
+      "sheet": "стп",
+      "range": "A3:D10"
+    },
+    "slug": "strop-lentochnyy-petlevoy-stp-1-0-t"
+  },
+  {
+    "name": "Строп ленточный петлевой СТП 2,0 т",
+    "price": 0,
+    "group": "slings",
+    "kind": "Текстильные",
+    "type": "СТП",
+    "load": "2,0 т",
+    "length": "1–8 м",
+    "description": "Петлевой ленточный строп. Ширина ленты 60 мм, длина выбирается под задачу.",
+    "specs": [
+      "Ширина 60 мм",
+      "Петлевой"
+    ],
+    "dimensions": {
+      "width": "60 мм"
+    },
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 0
+      },
+      {
+        "length": "2 м",
+        "price": 0
+      },
+      {
+        "length": "3 м",
+        "price": 0
+      },
+      {
+        "length": "4 м",
+        "price": 0
+      },
+      {
+        "length": "5 м",
+        "price": 0
+      },
+      {
+        "length": "6 м",
+        "price": 0
+      },
+      {
+        "length": "7 м",
+        "price": 0
+      },
+      {
+        "length": "8 м",
+        "price": 0
+      }
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 0
+      }
+    ],
+    "source": {
+      "sheet": "стп",
+      "range": "F3:I10"
+    },
+    "slug": "strop-lentochnyy-petlevoy-stp-2-0-t"
+  },
+  {
+    "name": "Строп ленточный петлевой СТП 3,0 т",
+    "price": 0,
+    "group": "slings",
+    "kind": "Текстильные",
+    "type": "СТП",
+    "load": "3,0 т",
+    "length": "1–8 м",
+    "description": "Петлевой ленточный строп. Ширина ленты 90 мм, длина выбирается под задачу.",
+    "specs": [
+      "Ширина 90 мм",
+      "Петлевой"
+    ],
+    "dimensions": {
+      "width": "90 мм"
+    },
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 0
+      },
+      {
+        "length": "2 м",
+        "price": 0
+      },
+      {
+        "length": "3 м",
+        "price": 0
+      },
+      {
+        "length": "4 м",
+        "price": 0
+      },
+      {
+        "length": "5 м",
+        "price": 0
+      },
+      {
+        "length": "6 м",
+        "price": 0
+      },
+      {
+        "length": "7 м",
+        "price": 0
+      },
+      {
+        "length": "8 м",
+        "price": 0
+      }
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 0
+      }
+    ],
+    "source": {
+      "sheet": "стп",
+      "range": "K3:N10"
+    },
+    "slug": "strop-lentochnyy-petlevoy-stp-3-0-t"
+  },
+  {
+    "name": "Строп ленточный петлевой СТП 4,0 т",
+    "price": 0,
+    "group": "slings",
+    "kind": "Текстильные",
+    "type": "СТП",
+    "load": "4,0 т",
+    "length": "1–8 м",
+    "description": "Петлевой ленточный строп. Ширина ленты 120 мм, длина выбирается под задачу.",
+    "specs": [
+      "Ширина 120 мм",
+      "Петлевой"
+    ],
+    "dimensions": {
+      "width": "120 мм"
+    },
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 0
+      },
+      {
+        "length": "2 м",
+        "price": 0
+      },
+      {
+        "length": "3 м",
+        "price": 0
+      },
+      {
+        "length": "4 м",
+        "price": 0
+      },
+      {
+        "length": "5 м",
+        "price": 0
+      },
+      {
+        "length": "6 м",
+        "price": 0
+      },
+      {
+        "length": "7 м",
+        "price": 0
+      },
+      {
+        "length": "8 м",
+        "price": 0
+      }
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 0
+      }
+    ],
+    "source": {
+      "sheet": "стп",
+      "range": "P3:S10"
+    },
+    "slug": "strop-lentochnyy-petlevoy-stp-4-0-t"
+  },
+  {
+    "name": "Строп ленточный петлевой СТП 5,0 т",
+    "price": 0,
+    "group": "slings",
+    "kind": "Текстильные",
+    "type": "СТП",
+    "load": "5,0 т",
+    "length": "1–8 м",
+    "description": "Петлевой ленточный строп. Ширина ленты 150 мм, длина выбирается под задачу.",
+    "specs": [
+      "Ширина 150 мм",
+      "Петлевой"
+    ],
+    "dimensions": {
+      "width": "150 мм"
+    },
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 0
+      },
+      {
+        "length": "2 м",
+        "price": 0
+      },
+      {
+        "length": "3 м",
+        "price": 0
+      },
+      {
+        "length": "4 м",
+        "price": 0
+      },
+      {
+        "length": "5 м",
+        "price": 0
+      },
+      {
+        "length": "6 м",
+        "price": 0
+      },
+      {
+        "length": "7 м",
+        "price": 0
+      },
+      {
+        "length": "8 м",
+        "price": 0
+      }
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 0
+      }
+    ],
+    "source": {
+      "sheet": "стп",
+      "range": "A15:D22"
+    },
+    "slug": "strop-lentochnyy-petlevoy-stp-5-0-t"
+  },
+  {
+    "name": "Строп ленточный петлевой СТП 6,0 т",
+    "price": 0,
+    "group": "slings",
+    "kind": "Текстильные",
+    "type": "СТП",
+    "load": "6,0 т",
+    "length": "1–8 м",
+    "description": "Петлевой ленточный строп. Ширина ленты 180 мм, длина выбирается под задачу.",
+    "specs": [
+      "Ширина 180 мм",
+      "Петлевой"
+    ],
+    "dimensions": {
+      "width": "180 мм"
+    },
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 0
+      },
+      {
+        "length": "2 м",
+        "price": 0
+      },
+      {
+        "length": "3 м",
+        "price": 0
+      },
+      {
+        "length": "4 м",
+        "price": 0
+      },
+      {
+        "length": "5 м",
+        "price": 0
+      },
+      {
+        "length": "6 м",
+        "price": 0
+      },
+      {
+        "length": "7 м",
+        "price": 0
+      },
+      {
+        "length": "8 м",
+        "price": 0
+      }
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 0
+      }
+    ],
+    "source": {
+      "sheet": "стп",
+      "range": "F15:I22"
+    },
+    "slug": "strop-lentochnyy-petlevoy-stp-6-0-t"
+  },
+  {
+    "name": "Строп ленточный петлевой СТП 8,0 т",
+    "price": 0,
+    "group": "slings",
+    "kind": "Текстильные",
+    "type": "СТП",
+    "load": "8,0 т",
+    "length": "1–8 м",
+    "description": "Петлевой ленточный строп. Ширина ленты 240 мм, длина выбирается под задачу.",
+    "specs": [
+      "Ширина 240 мм",
+      "Петлевой"
+    ],
+    "dimensions": {
+      "width": "240 мм"
+    },
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 0
+      },
+      {
+        "length": "2 м",
+        "price": 0
+      },
+      {
+        "length": "3 м",
+        "price": 0
+      },
+      {
+        "length": "4 м",
+        "price": 0
+      },
+      {
+        "length": "5 м",
+        "price": 0
+      },
+      {
+        "length": "6 м",
+        "price": 0
+      },
+      {
+        "length": "7 м",
+        "price": 0
+      },
+      {
+        "length": "8 м",
+        "price": 0
+      }
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 0
+      }
+    ],
+    "source": {
+      "sheet": "стп",
+      "range": "K15:N22"
+    },
+    "slug": "strop-lentochnyy-petlevoy-stp-8-0-t"
+  },
+  {
+    "name": "Строп ленточный петлевой СТП 10,0 т",
+    "price": 0,
+    "group": "slings",
+    "kind": "Текстильные",
+    "type": "СТП",
+    "load": "10,0 т",
+    "length": "1–8 м",
+    "description": "Петлевой ленточный строп. Ширина ленты 240 мм, длина выбирается под задачу.",
+    "specs": [
+      "Ширина 240 мм",
+      "Петлевой"
+    ],
+    "dimensions": {
+      "width": "240 мм"
+    },
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 0
+      },
+      {
+        "length": "2 м",
+        "price": 0
+      },
+      {
+        "length": "3 м",
+        "price": 0
+      },
+      {
+        "length": "4 м",
+        "price": 0
+      },
+      {
+        "length": "5 м",
+        "price": 0
+      },
+      {
+        "length": "6 м",
+        "price": 0
+      },
+      {
+        "length": "7 м",
+        "price": 0
+      },
+      {
+        "length": "8 м",
+        "price": 0
+      }
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 0
+      }
+    ],
+    "source": {
+      "sheet": "стп",
+      "range": "P15:S22"
+    },
+    "slug": "strop-lentochnyy-petlevoy-stp-10-0-t"
+  },
+  {
+    "name": "Строп ленточный петлевой СТП 12,5 т",
+    "price": 0,
+    "group": "slings",
+    "kind": "Текстильные",
+    "type": "СТП",
+    "load": "12,5 т",
+    "length": "1–8 м",
+    "description": "Петлевой ленточный строп. Ширина ленты 300 мм, длина выбирается под задачу.",
+    "specs": [
+      "Ширина 300 мм",
+      "Петлевой"
+    ],
+    "dimensions": {
+      "width": "300 мм"
+    },
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 0
+      },
+      {
+        "length": "2 м",
+        "price": 0
+      },
+      {
+        "length": "3 м",
+        "price": 0
+      },
+      {
+        "length": "4 м",
+        "price": 0
+      },
+      {
+        "length": "5 м",
+        "price": 0
+      },
+      {
+        "length": "6 м",
+        "price": 0
+      },
+      {
+        "length": "7 м",
+        "price": 0
+      },
+      {
+        "length": "8 м",
+        "price": 0
+      }
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 0
+      }
+    ],
+    "source": {
+      "sheet": "стп",
+      "range": "A27:D34"
+    },
+    "slug": "strop-lentochnyy-petlevoy-stp-12-5-t"
+  },
+  {
+    "name": "Строп ленточный петлевой СТП 15,0 т",
+    "price": 0,
+    "group": "slings",
+    "kind": "Текстильные",
+    "type": "СТП",
+    "load": "15,0 т",
+    "length": "1–8 м",
+    "description": "Петлевой ленточный строп. Ширина ленты 300 мм, длина выбирается под задачу.",
+    "specs": [
+      "Ширина 300 мм",
+      "Петлевой"
+    ],
+    "dimensions": {
+      "width": "300 мм"
+    },
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 0
+      },
+      {
+        "length": "2 м",
+        "price": 0
+      },
+      {
+        "length": "3 м",
+        "price": 0
+      },
+      {
+        "length": "4 м",
+        "price": 0
+      },
+      {
+        "length": "5 м",
+        "price": 0
+      },
+      {
+        "length": "6 м",
+        "price": 0
+      },
+      {
+        "length": "7 м",
+        "price": 0
+      },
+      {
+        "length": "8 м",
+        "price": 0
+      }
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 0
+      }
+    ],
+    "source": {
+      "sheet": "стп",
+      "range": "F27:I34"
+    },
+    "slug": "strop-lentochnyy-petlevoy-stp-15-0-t"
+  },
+  {
+    "name": "Строп ленточный петлевой СТП 20,0 т",
+    "price": 0,
+    "group": "slings",
+    "kind": "Текстильные",
+    "type": "СТП",
+    "load": "20,0 т",
+    "length": "1–8 м",
+    "description": "Петлевой ленточный строп. Ширина ленты 300 мм, длина выбирается под задачу.",
+    "specs": [
+      "Ширина 300 мм",
+      "Петлевой"
+    ],
+    "dimensions": {
+      "width": "300 мм"
+    },
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 0
+      },
+      {
+        "length": "2 м",
+        "price": 0
+      },
+      {
+        "length": "3 м",
+        "price": 0
+      },
+      {
+        "length": "4 м",
+        "price": 0
+      },
+      {
+        "length": "5 м",
+        "price": 0
+      },
+      {
+        "length": "6 м",
+        "price": 0
+      },
+      {
+        "length": "7 м",
+        "price": 0
+      },
+      {
+        "length": "8 м",
+        "price": 0
+      }
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 0
+      }
+    ],
+    "source": {
+      "sheet": "стп",
+      "range": "K27:N34"
+    },
+    "slug": "strop-lentochnyy-petlevoy-stp-20-0-t"
+  },
+  {
+    "name": "Строп ленточный петлевой СТП 0,5 т",
+    "price": 0,
+    "group": "slings",
+    "kind": "Текстильные",
+    "type": "СТП",
+    "load": "0,5 т",
+    "length": "1–8 м",
+    "description": "Петлевой ленточный строп. Ширина ленты 30 мм, длина выбирается под задачу.",
+    "specs": [
+      "Ширина 30 мм",
+      "Петлевой"
+    ],
+    "dimensions": {
+      "width": "30 мм"
+    },
+    "variants": [
+      {
+        "length": "1 м",
+        "price": 0
+      },
+      {
+        "length": "2 м",
+        "price": 0
+      },
+      {
+        "length": "3 м",
+        "price": 0
+      },
+      {
+        "length": "4 м",
+        "price": 0
+      },
+      {
+        "length": "5 м",
+        "price": 0
+      },
+      {
+        "length": "6 м",
+        "price": 0
+      },
+      {
+        "length": "7 м",
+        "price": 0
+      },
+      {
+        "length": "8 м",
+        "price": 0
+      }
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 0
+      }
+    ],
+    "source": {
+      "sheet": "стп",
+      "range": "P27:S34"
+    },
+    "slug": "strop-lentochnyy-petlevoy-stp-0-5-t"
+  },
+  {
+    "name": "Ремень стяжной 1,5/2,5 т, 35 мм",
+    "price": 550,
+    "group": "other",
+    "kind": "Крепление груза",
+    "type": "Стяжной ремень",
+    "load": "1,5 / 2,5 т",
+    "length": "6 м",
+    "description": "Стяжной ремень с натяжным механизмом для фиксации груза.",
+    "specs": [
+      "Ширина ленты 35 мм",
+      "Рабочая / максимальная нагрузка"
+    ],
+    "dimensions": {
+      "width": "35 мм"
+    },
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 20
+      }
+    ],
+    "source": {
+      "sheet": "ремень",
+      "range": "A3:E3"
+    },
+    "slug": "remen-styazhnoy-1-5-2-5-t-35-mm"
+  },
+  {
+    "name": "Ремень стяжной 2,0/4,5 т, 50 мм",
+    "price": 990,
+    "group": "other",
+    "kind": "Крепление груза",
+    "type": "Стяжной ремень",
+    "load": "2,0 / 4,5 т",
+    "length": "10 м",
+    "description": "Стяжной ремень с натяжным механизмом для фиксации груза.",
+    "specs": [
+      "Ширина ленты 50 мм",
+      "Рабочая / максимальная нагрузка"
+    ],
+    "dimensions": {
+      "width": "50 мм"
+    },
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 45
+      }
+    ],
+    "source": {
+      "sheet": "ремень",
+      "range": "A4:E4"
+    },
+    "slug": "remen-styazhnoy-2-0-4-5-t-50-mm"
+  },
+  {
+    "name": "Ремень стяжной 5,0/10,0 т, 50 мм",
+    "price": 1060,
+    "group": "other",
+    "kind": "Крепление груза",
+    "type": "Стяжной ремень",
+    "load": "5,0 / 10,0 т",
+    "length": "10 м",
+    "description": "Стяжной ремень с натяжным механизмом для фиксации груза.",
+    "specs": [
+      "Ширина ленты 50 мм",
+      "Рабочая / максимальная нагрузка"
+    ],
+    "dimensions": {
+      "width": "50 мм"
+    },
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 50
+      }
+    ],
+    "source": {
+      "sheet": "ремень",
+      "range": "A5:E5"
+    },
+    "slug": "remen-styazhnoy-5-0-10-0-t-50-mm"
+  },
+  {
+    "name": "Ремень стяжной 7,0/10,0 т, 75 мм",
+    "price": 2940,
+    "group": "other",
+    "kind": "Крепление груза",
+    "type": "Стяжной ремень",
+    "load": "7,0 / 10,0 т",
+    "length": "10 м",
+    "description": "Стяжной ремень с натяжным механизмом для фиксации груза.",
+    "specs": [
+      "Ширина ленты 75 мм",
+      "Рабочая / максимальная нагрузка"
+    ],
+    "dimensions": {
+      "width": "75 мм"
+    },
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 60
+      }
+    ],
+    "source": {
+      "sheet": "ремень",
+      "range": "A6:E6"
+    },
+    "slug": "remen-styazhnoy-7-0-10-0-t-75-mm"
+  },
+  {
+    "name": "Ремень стяжной 10,0/20,0 т, 100 мм",
+    "price": 4200,
+    "group": "other",
+    "kind": "Крепление груза",
+    "type": "Стяжной ремень",
+    "load": "10,0 / 20,0 т",
+    "length": "10 м",
+    "description": "Стяжной ремень с натяжным механизмом для фиксации груза.",
+    "specs": [
+      "Ширина ленты 100 мм",
+      "Рабочая / максимальная нагрузка"
+    ],
+    "dimensions": {
+      "width": "100 мм"
+    },
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 70
+      }
+    ],
+    "source": {
+      "sheet": "ремень",
+      "range": "A7:E7"
+    },
+    "slug": "remen-styazhnoy-10-0-20-0-t-100-mm"
+  },
+  {
+    "name": "Строп цепной четырёхветвевой 4СЦ 3,15 т",
+    "price": 2900,
+    "group": "slings",
+    "kind": "Цепные",
+    "type": "4СЦ",
+    "load": "3,15 т",
+    "length": "1–8 м",
+    "image": "/products/chain-4sc.png",
+    "description": "Четырёхветвевой цепной строп 4СЦ 3,15 т.",
+    "specs": [
+      "4 ветви",
+      "цепь 6×18"
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 1130
+      }
+    ],
+    "slug": "strop-tsepnoy-chetyrekhvetvevoy-4sts-3-15-t"
+  },
+  {
+    "name": "Строп круглопрядный СТКК/СТПК 1,0 т",
+    "price": 160,
+    "group": "slings",
+    "kind": "Текстильные",
+    "type": "СТКК/СТПК",
+    "load": "1,0 т",
+    "length": "1–6 м",
+    "image": "",
+    "description": "Круглопрядный текстильный строп 1,0 т.",
+    "specs": [
+      "круглопрядный"
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 140
+      }
+    ],
+    "slug": "strop-kruglopryadnyy-stkk-stpk-1-0-t"
+  },
+  {
+    "name": "Строп круглопрядный СТКК/СТПК 2,0 т",
+    "price": 250,
+    "group": "slings",
+    "kind": "Текстильные",
+    "type": "СТКК/СТПК",
+    "load": "2,0 т",
+    "length": "1–6 м",
+    "image": "",
+    "description": "Круглопрядный текстильный строп 2,0 т.",
+    "specs": [
+      "круглопрядный"
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 230
+      }
+    ],
+    "slug": "strop-kruglopryadnyy-stkk-stpk-2-0-t"
+  },
+  {
+    "name": "Строп круглопрядный СТКК/СТПК 3,0 т",
+    "price": 305,
+    "group": "slings",
+    "kind": "Текстильные",
+    "type": "СТКК/СТПК",
+    "load": "3,0 т",
+    "length": "1–6 м",
+    "image": "",
+    "description": "Круглопрядный текстильный строп 3,0 т.",
+    "specs": [
+      "круглопрядный"
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 290
+      }
+    ],
+    "slug": "strop-kruglopryadnyy-stkk-stpk-3-0-t"
+  },
+  {
+    "name": "Строп круглопрядный СТКК/СТПК 5,0 т",
+    "price": 460,
+    "group": "slings",
+    "kind": "Текстильные",
+    "type": "СТКК/СТПК",
+    "load": "5,0 т",
+    "length": "1–6 м",
+    "image": "",
+    "description": "Круглопрядный текстильный строп 5,0 т.",
+    "specs": [
+      "круглопрядный"
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 430
+      }
+    ],
+    "slug": "strop-kruglopryadnyy-stkk-stpk-5-0-t"
+  },
+  {
+    "name": "Строп круглопрядный СТКК/СТПК 10,0 т",
+    "price": 700,
+    "group": "slings",
+    "kind": "Текстильные",
+    "type": "СТКК/СТПК",
+    "load": "10,0 т",
+    "length": "1–6 м",
+    "image": "",
+    "description": "Круглопрядный текстильный строп 10,0 т.",
+    "specs": [
+      "круглопрядный"
+    ],
+    "services": [
+      {
+        "name": "Дополнительный метр",
+        "price": 670
+      }
+    ],
+    "slug": "strop-kruglopryadnyy-stkk-stpk-10-0-t"
+  },
+  {
+    "name": "Трос буксировочный ленточный с петлями 5 т 4 м",
+    "price": 0,
+    "group": "ropes",
+    "kind": "Автомобильные ленточные",
+    "type": "Буксировочный трос",
+    "load": "5 т",
+    "length": "4 м",
+    "description": "Ленточный буксировочный трос 5 т, 4 м.",
+    "specs": [
+      "ленточный",
+      "петли"
+    ],
+    "services": [
+      {
+        "name": "Шакл 2 шт",
+        "price": 0
+      }
+    ],
+    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-5-t-4-m"
+  },
+  {
+    "name": "Трос буксировочный ленточный с петлями 7 т 4 м",
+    "price": 0,
+    "group": "ropes",
+    "kind": "Автомобильные ленточные",
+    "type": "Буксировочный трос",
+    "load": "7 т",
+    "length": "4 м",
+    "description": "Ленточный буксировочный трос 7 т, 4 м.",
+    "specs": [
+      "ленточный",
+      "петли"
+    ],
+    "services": [],
+    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-7-t-4-m"
+  },
+  {
+    "name": "Трос буксировочный ленточный с петлями 14 т 4 м",
+    "price": 0,
+    "group": "ropes",
+    "kind": "Автомобильные ленточные",
+    "type": "Буксировочный трос",
+    "load": "14 т",
+    "length": "4 м",
+    "description": "Ленточный буксировочный трос 14 т, 4 м.",
+    "specs": [
+      "ленточный"
+    ],
+    "services": [],
+    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-14-t-4-m"
+  },
+  {
+    "name": "Трос буксировочный ленточный с петлями 21 т 4 м",
+    "price": 0,
+    "group": "ropes",
+    "kind": "Автомобильные ленточные",
+    "type": "Буксировочный трос",
+    "load": "21 т",
+    "length": "4 м",
+    "description": "Ленточный буксировочный трос 21 т, 4 м.",
+    "specs": [
+      "ленточный"
+    ],
+    "services": [],
+    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-21-t-4-m"
+  },
+  {
+    "name": "Трос буксировочный стальной Ø16 мм 15 т 4 м",
+    "price": 0,
+    "group": "ropes",
+    "kind": "Стальные",
+    "type": "Буксировочный трос",
+    "load": "15 т",
+    "length": "4 м",
+    "description": "Стальной буксировочный трос Ø16 мм, 15 т.",
+    "specs": [
+      "стальной канат",
+      "Ø16 мм"
+    ],
+    "services": [],
+    "slug": "tros-buksirovochnyy-stalnoy-16-mm-15-t-4-m"
+  },
+  {
+    "name": "Трос буксировочный стальной Ø20 мм 20 т 4 м",
+    "price": 0,
+    "group": "ropes",
+    "kind": "Стальные",
+    "type": "Буксировочный трос",
+    "load": "20 т",
+    "length": "4 м",
+    "description": "Стальной буксировочный трос Ø20 мм, 20 т.",
+    "specs": [
+      "стальной канат",
+      "Ø20 мм"
+    ],
+    "services": [],
+    "slug": "tros-buksirovochnyy-stalnoy-20-mm-20-t-4-m"
+  },
+  {
+    "name": "Трос буксировочный синтетический динамический 15 т 8 м",
+    "price": 0,
+    "group": "ropes",
+    "kind": "Динамические",
+    "type": "Буксировочный трос",
+    "load": "15 т",
+    "length": "8 м",
+    "description": "Динамический трос 15 т, 8 м.",
+    "specs": [
+      "синтетический",
+      "динамический"
+    ],
+    "services": [],
+    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-15-t-8-m"
+  },
+  {
+    "name": "Трос буксировочный синтетический динамический 25 т 8 м",
+    "price": 0,
+    "group": "ropes",
+    "kind": "Динамические",
+    "type": "Буксировочный трос",
+    "load": "25 т",
+    "length": "8 м",
+    "description": "Динамический трос 25 т, 8 м.",
+    "specs": [
+      "синтетический"
+    ],
+    "services": [],
+    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-25-t-8-m"
+  },
+  {
+    "name": "Скоба такелажная 2130 СИ гайка 1 т",
+    "price": 55,
+    "group": "other",
+    "kind": "Такелаж",
+    "type": "Скоба",
+    "load": "1 т",
+    "length": "—",
+    "description": "Скоба такелажная 2130 СИ, 1 т.",
+    "specs": [
+      "скоба",
+      "гайка"
+    ],
+    "services": [],
+    "slug": "skoba-takelazhnaya-2130-si-gayka-1-t"
+  },
+  {
+    "name": "Скоба такелажная 2130 СИ гайка 2 т",
+    "price": 85,
+    "group": "other",
+    "kind": "Такелаж",
+    "type": "Скоба",
+    "load": "2 т",
+    "length": "—",
+    "description": "Скоба такелажная 2130 СИ, 2 т.",
+    "specs": [
+      "скоба",
+      "гайка"
+    ],
+    "services": [],
+    "slug": "skoba-takelazhnaya-2130-si-gayka-2-t"
+  },
+  {
+    "name": "Скоба такелажная 2130 СИ гайка 5 т",
+    "price": 240,
+    "group": "other",
+    "kind": "Такелаж",
+    "type": "Скоба",
+    "load": "5 т",
+    "length": "—",
+    "description": "Скоба такелажная 2130 СИ, 5 т.",
+    "specs": [
+      "скоба"
+    ],
+    "services": [],
+    "slug": "skoba-takelazhnaya-2130-si-gayka-5-t"
+  },
+  {
+    "name": "Талреп такелажный М6 (1/4×4) 0,23 т",
+    "price": 146,
+    "group": "other",
+    "kind": "Такелаж",
+    "type": "Талреп",
+    "load": "0,23 т",
+    "length": "200/320 мм",
+    "description": "Талреп М6, 0,23 т.",
+    "specs": [
+      "талреп",
+      "М6"
+    ],
+    "services": [],
+    "slug": "talrep-takelazhnyy-m6-1-4-4-0-23-t"
+  },
+  {
+    "name": "Талреп такелажный М12 (1/2×6) 0,98 т",
+    "price": 382,
+    "group": "other",
+    "kind": "Такелаж",
+    "type": "Талреп",
+    "load": "0,98 т",
+    "length": "330/508 мм",
+    "description": "Талреп М12, 0,98 т.",
+    "specs": [
+      "талреп",
+      "М12"
+    ],
+    "services": [],
+    "slug": "talrep-takelazhnyy-m12-1-2-6-0-98-t"
+  },
+  {
+    "name": "Талреп такелажный М16 (5/8×9) 1,6 т",
+    "price": 726,
+    "group": "other",
+    "kind": "Такелаж",
+    "type": "Талреп",
+    "load": "1,6 т",
+    "length": "454/714 мм",
+    "description": "Талреп М16, 1,6 т.",
+    "specs": [
+      "талреп",
+      "М16"
+    ],
+    "services": [],
+    "slug": "talrep-takelazhnyy-m16-5-8-9-1-6-t"
+  },
+  {
+    "name": "Зажим усиленный 1142 5 мм",
+    "price": 9,
+    "group": "other",
+    "kind": "Такелаж",
+    "type": "Зажим",
+    "load": "—",
+    "length": "5 мм",
+    "description": "Усиленный зажим 1142, 5 мм.",
+    "specs": [
+      "зажим"
+    ],
+    "services": [],
+    "slug": "zazhim-usilennyy-1142-5-mm"
+  },
+  {
+    "name": "Зажим хозяйственный 741 5 мм",
+    "price": 4,
+    "group": "other",
+    "kind": "Такелаж",
+    "type": "Зажим",
+    "load": "—",
+    "length": "5 мм",
+    "description": "Хозяйственный зажим 741, 5 мм.",
+    "specs": [
+      "зажим"
+    ],
+    "services": [],
+    "slug": "zazhim-khozyaystvennyy-741-5-mm"
+  },
+  {
+    "name": "Стальные канаты",
+    "price": 3200,
+    "group": "other",
+    "kind": "Стальные",
+    "type": "Канат",
+    "load": "под задачу",
+    "length": "под заказ",
+    "image": "/images/photo-site14.png",
+    "description": "Стальные канаты для грузоподъёмных механизмов, лебёдок, кранов.",
+    "specs": [
+      "разные диаметры",
+      "для лебёдок и кранов",
+      "поставка под длину"
+    ],
+    "services": [
+      {
+        "name": "Нарезка под длину",
+        "price": 0
+      },
+      {
+        "name": "Заплетка петли",
+        "price": 0
+      },
+      {
+        "name": "Комплектация коушами",
+        "price": 0
+      }
+    ],
+    "slug": "stalnye-kanaty"
+  },
+  {
+    "name": "Траверсы",
+    "price": 12000,
+    "group": "other",
+    "kind": "Траверсы",
+    "type": "Под заказ",
+    "load": "по ТЗ",
+    "length": "по ТЗ",
+    "description": "Траверсы под конкретные схемы подъёма и габариты.",
+    "specs": [
+      "под заказ",
+      "по схеме подъёма"
+    ],
+    "services": [
+      {
+        "name": "Расчёт под задачу",
+        "price": 0
+      },
+      {
+        "name": "Изготовление по ТЗ",
+        "price": 0
+      }
+    ],
+    "slug": "traversy"
+  },
+  {
+    "name": "Такелаж",
+    "price": 500,
+    "group": "other",
+    "kind": "Такелаж",
+    "type": "Комплектующие",
+    "load": "разные нагрузки",
+    "length": "—",
+    "description": "Скобы, крюки, талрепы, коуши и другие комплектующие.",
+    "specs": [
+      "скобы",
+      "крюки",
+      "талрепы"
+    ],
+    "services": [
+      {
+        "name": "Подбор комплекта",
+        "price": 0
+      }
+    ],
+    "slug": "takelazh"
+  }
+]

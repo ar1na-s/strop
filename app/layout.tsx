@@ -1,19 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { COMPANY } from "./data/company";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { SITE_URL, jsonLd } from "./data/seo";
+import Analytics from "./components/Analytics";
 
 export const metadata: Metadata = {
-  title: "ООО «МИКО» — стропы, канаты, тросы, такелаж",
+  metadataBase: new URL(SITE_URL),
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION || undefined,
+    yandex: process.env.YANDEX_SITE_VERIFICATION || undefined,
+  },
+  title: `${COMPANY.full} — стропы, канаты, тросы, такелаж`,
   description:
     "Производство и поставка грузоподъёмного оборудования: стропы, канаты, тросы, такелаж. Сертификаты, доставка по РФ.",
 
@@ -27,11 +24,11 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "МИКО — грузоподъемные стропы",
+    title: `${COMPANY.full} — грузоподъемные стропы`,
     description: "Производство и оптовая поставка строп по России",
     type: "website",
     locale: "ru_RU",
-    siteName: "МИКО",
+    siteName: COMPANY.full,
   },
 };
 
@@ -47,19 +44,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-
-        {/* FLOAT CONTACT BUTTONS */}
-        <div className="fixed bottom-5 right-5 flex flex-col gap-3 z-50">
-
-
-
-
-        </div>
-
-        {children}
-
-      </body>
+      <body><script type="application/ld+json" dangerouslySetInnerHTML={{__html:jsonLd({"@context":"https://schema.org","@type":"Organization",name:COMPANY.full,url:SITE_URL,logo:`${SITE_URL}/logo.png`,telephone:COMPANY.phone,email:COMPANY.email,address:{"@type":"PostalAddress",streetAddress:COMPANY.physicalAddress,addressLocality:"Москва",addressCountry:"RU"}})}}/>{children}<Analytics/></body>
     </html>
   );
 }

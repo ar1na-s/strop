@@ -1,40 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Сайт МПК
 
-## Getting Started
+Next.js 16.2.6. Основной адрес: https://strop.su. Локальные изменения требуют отдельной публикации на действующем хостинге.
 
-The public domain is `https://strop.su`. `netlify.toml` redirects both HTTP and
-HTTPS requests from `www.strop.su` to the HTTPS domain without `www`, preserving
-the requested path. The sitemap and robots configuration use the same domain.
+## Запуск
 
-First, run the development server:
+`start-site.cmd` или `npm run dev` запускает локальную разработку. Production: `npm run build`, затем `npm start`. Проверка кода: `npm run lint`.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Каталог
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+`app/data/catalog.json` содержит перенесённые данные. `app/data/catalog.ts` выбирает подтверждённые таблицей модели. Страницы: `/catalog`, `/catalog/[category]`, `/product/[slug]`. Интерфейс находится в `app/SiteClient.tsx`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Сверка с Excel и ограничения исходника: `CATALOG-RECONCILIATION.md`. Цены длины сохраняются как в таблице, а не рассчитываются по цене дополнительного метра.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## SEO и эксплуатация
 
-## Learn More
+Отчёт и подключение поисковых кабинетов: `SEO-AND-AVAILABILITY.md`. Переменные подтверждения сайта и Метрики: `seo.env.example`. После изменения переменных нужна новая сборка.
 
-To learn more about Next.js, take a look at the following resources:
+`netlify.toml` направляет www на основной HTTPS-адрес без www. Изображения и шрифты основного интерфейса локальные. Форма заявок требует серверных `EMAIL_USER` и `EMAIL_PASS`; без них показывает контакт для обращения.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Перед изменениями Next.js читать локальные руководства `node_modules/next/dist/docs/` согласно AGENTS.md.
