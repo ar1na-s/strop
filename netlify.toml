@@ -1,3 +1,36 @@
+# Deliver public assets through this project's working Netlify hostname.
+# Domain-qualified rules prevent loops on the destination hostname.
+# Temporary redirects allow the workaround to be removed after network recovery.
+[[redirects]]
+from = "https://strop.su/_next/static/*"
+to = "https://soft-liger-948183.netlify.app/_next/static/:splat"
+status = 302
+force = true
+
+[[redirects]]
+from = "https://strop.su/images/*"
+to = "https://soft-liger-948183.netlify.app/images/:splat"
+status = 302
+force = true
+
+[[redirects]]
+from = "https://strop.su/products/*"
+to = "https://soft-liger-948183.netlify.app/products/:splat"
+status = 302
+force = true
+
+[[redirects]]
+from = "https://strop.su/certificates/*"
+to = "https://soft-liger-948183.netlify.app/certificates/:splat"
+status = 302
+force = true
+
+[[redirects]]
+from = "https://strop.su/logo.png"
+to = "https://soft-liger-948183.netlify.app/logo.png"
+status = 302
+force = true
+
 [[redirects]]
 from = "https://www.strop.su/*"
 to = "https://strop.su/:splat"
@@ -9,3 +42,9 @@ from = "http://www.strop.su/*"
 to = "https://strop.su/:splat"
 status = 301
 force = true
+
+# Only public build assets need cross-origin loading; APIs are unaffected.
+[[headers]]
+for = "/_next/static/*"
+[headers.values]
+Access-Control-Allow-Origin = "*"
