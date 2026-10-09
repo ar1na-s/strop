@@ -39,35 +39,35 @@ const directions = [
     title: "Стропы",
     subtitle: "Хит продаж",
     text: "Цепные, текстильные, канатные и круглопрядные решения для подъёма грузов.",
-    image: "/images/photo-site5.webp",
+    image: "https://soft-liger-948183.netlify.app/images/photo-site5.webp",
     tags: ["1СЦ", "2СЦ", "4СЦ", "ВЦ", "СТП", "СТКК"],
   },
   {
     title: "Буксировочные тросы",
     subtitle: "Для авто и спецтехники",
     text: "Ленточные, стальные и динамические для авто и спецтехники.",
-    image: "/images/photo-site6.webp",
+    image: "https://soft-liger-948183.netlify.app/images/photo-site6.webp",
     tags: ["Ленточные", "Стальные", "Динамические", "5–25 т"],
   },
   {
     title: "Стальные канаты",
     subtitle: "Для лебёдок и кранов",
     text: "Для лебёдок, кранов и тельферов. Разные диаметры, под заказ.",
-    image: "/images/photo-site14.webp",
+    image: "https://soft-liger-948183.netlify.app/images/photo-site14.webp",
     tags: ["Ø 6–40 мм", "Под заказ", "Коуши"],
   },
   {
     title: "Такелаж",
     subtitle: "Комплектующие",
     text: "Скобы, крюки, талрепы, зажимы, коуши и другие комплектующие.",
-    image: "/images/photo-site7.webp",
+    image: "https://soft-liger-948183.netlify.app/images/photo-site7.webp",
     tags: ["Скобы", "Талрепы", "Зажимы", "Крюки"],
   },
   {
     title: "Траверсы",
     subtitle: "Изготовление по ТЗ",
     text: "Траверсы под конкретные схемы подъёма и габариты груза.",
-    image: "/images/photo-site9.webp",
+    image: "https://soft-liger-948183.netlify.app/images/photo-site9.webp",
     tags: ["По ТЗ", "Расчёт", "Изготовление"],
   },
 ];
@@ -445,7 +445,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
       >
         <div className="flex min-h-[68px] md:min-h-[92px] items-center justify-between px-4 md:px-10">
           <button type="button" onClick={() => openPage("home")} className="flex items-center gap-3 md:gap-5 text-left">
-            <img src="/logo.png" alt={COMPANY.full} className="h-10 w-auto object-contain md:h-14 lg:h-16" />
+            <img src="https://soft-liger-948183.netlify.app/logo.png" alt={COMPANY.full} className="h-10 w-auto object-contain md:h-14 lg:h-16" />
             <div>
               <div className={`max-w-[240px] md:max-w-[340px] text-[10px] sm:text-xs md:text-sm lg:text-base font-black leading-tight ${isHomePage ? "text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.7)]" : "text-[#0B1B33]"}`}>{COMPANY.full}</div>
               <div className={`text-[8px] md:text-[10px] lg:text-xs font-black uppercase tracking-[0.28em] md:tracking-[0.32em] ${isHomePage ? "text-white/80 drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)]" : "text-[#0B1B33]/65"}`}>STROPS</div>
@@ -518,7 +518,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
       {pageView === "home" && (
         <>
           <section className={`${styles.hero} relative overflow-hidden min-h-[640px] md:min-h-screen`}>
-            <div className={`${styles.heroImage} absolute inset-0 bg-cover bg-center`} style={{ backgroundImage: "url('/images/photo-site4.webp')" }} />
+            <div className={`${styles.heroImage} absolute inset-0 bg-cover bg-center`} style={{ backgroundImage: "url('https://soft-liger-948183.netlify.app/images/photo-site4.webp')" }} />
             <div className={`${styles.heroShade} absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/30`} />
 
             <div className={`${styles.heroContent} relative mx-auto grid max-w-[1600px] gap-8 md:gap-12 px-4 md:px-6 pt-[110px] pb-16 md:pt-[140px] md:pb-24 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:px-10 lg:pt-[160px] lg:pb-32`}>
@@ -570,9 +570,9 @@ export default function SiteClient({ initialView = "home", category, initialProd
 
               <div className="mt-10 md:mt-14 grid gap-5 md:gap-7 lg:grid-cols-3">
                 {[
-                  { title: "Производство", text: "Изготовление под длину, нагрузку и тип крепления.", image: "/images/photo-site9.webp", page: "production" as const },
-                  { title: "Документы", text: "Сертификаты, декларации, паспорта изделий.", image: "/images/photo-site10.webp", page: "documents" as const },
-                  { title: "Доставка", text: "Москва, область и отправка ТК по РФ.", image: "/images/photo-site11.webp", page: "delivery" as const },
+                  { title: "Производство", text: "Изготовление под длину, нагрузку и тип крепления.", image: "https://soft-liger-948183.netlify.app/images/photo-site9.webp", page: "production" as const },
+                  { title: "Документы", text: "Сертификаты, декларации, паспорта изделий.", image: "https://soft-liger-948183.netlify.app/images/photo-site10.webp", page: "documents" as const },
+                  { title: "Доставка", text: "Москва, область и отправка ТК по РФ.", image: "https://soft-liger-948183.netlify.app/images/photo-site11.webp", page: "delivery" as const },
                 ].map((item) => (
                   <button key={item.title} type="button" onClick={() => openPage(item.page)} className="group overflow-hidden rounded-[2rem] md:rounded-[3rem] bg-[#0B1B33] text-left text-white shadow-xl transition hover:-translate-y-1">
                     <div className="relative aspect-[16/9] md:aspect-auto md:h-72 overflow-hidden">
@@ -671,7 +671,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
             </div>
           </section>
 
-          <section id="request" className="relative overflow-hidden px-4 md:px-6 py-16 md:py-24" style={{ backgroundImage: "url('/images/photo-site13.webp')", backgroundSize: "cover", backgroundPosition: "center" }}>
+          <section id="request" className="relative overflow-hidden px-4 md:px-6 py-16 md:py-24" style={{ backgroundImage: "url('https://soft-liger-948183.netlify.app/images/photo-site13.webp')", backgroundSize: "cover", backgroundPosition: "center" }}>
             <div className="absolute inset-0 bg-[#0B1B33]/94" />
             <div className="relative mx-auto grid max-w-[1600px] gap-8 md:gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
               <div>

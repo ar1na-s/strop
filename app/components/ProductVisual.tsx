@@ -23,7 +23,7 @@ export default function ProductVisual({ product, length }: { product: Product; l
   const hook = <g><path d="M-7 0 L-7 16 C-8 27-24 32-22 48 C-20 66 8 66 14 50 L17 32 L8 41 C6 49-5 51-9 43 C-13 33 7 26 7 16 L7 0 Z" fill={red} stroke="#9c3628" strokeWidth="1.2"/><path d="M6 18 L15 35" stroke="#8494a0" strokeWidth="4"/><circle cy="7" r="3" fill="#fff"/></g>;
   if(product.image) return <figure className={styles.visual}>
     <div className={styles.visualTop}><span>{product.type || product.kind}</span><span>ВНЕШНИЙ ВИД</span></div>
-    <img className={styles.productPhoto} src={product.image} alt={product.name} width="480" height="400" loading="lazy" decoding="async"/>
+    <img className={styles.productPhoto} src={product.image.startsWith("/") ? `https://soft-liger-948183.netlify.app${product.image}` : product.image} alt={product.name} width="480" height="400" loading="lazy" decoding="async"/>
     <figcaption className={styles.dimensionNote}>Типовое исполнение. Комплектация зависит от выбранных параметров.</figcaption>
   </figure>;
   return <figure className={styles.visual}>
@@ -98,8 +98,8 @@ export function ComponentDimensions({ product }: { product: Product }) {
   return <div className={styles.componentDimensions}>
     <h4>Размеры комплектующих, мм</h4>
     <div className={styles.componentDrawings}>
-      <figure><a href={product.type==='4СЦ'?'/products/drawings/master-link.png':'/products/drawings/link.jpg'} target="_blank" rel="noreferrer"><img src={product.type==='4СЦ'?'/products/drawings/master-link.png':'/products/drawings/link.jpg'} width="110" height="192" alt="Чертёж звена из таблицы поставщика" loading="lazy"/></a><figcaption>Звено<br/>B = {d.width||'уточняется'}<br/>{product.type==='4СЦ'?'L':'A'} = {d.linkLength||'уточняется'}</figcaption></figure>
-      {product.type!=='ВЦ'&&<figure><a href="/products/drawings/hook.png" target="_blank" rel="noreferrer"><img src="/products/drawings/hook.png" width="110" height="145" alt="Чертёж крюка с обозначениями H и P1 из таблицы поставщика" loading="lazy"/></a><figcaption>Крюк<br/>H = {d.hookH||'уточняется'}<br/>P1 = {d.hookP||'уточняется'}</figcaption></figure>}
+      <figure><a href={product.type==='4СЦ'?'https://soft-liger-948183.netlify.app/products/drawings/master-link.png':'https://soft-liger-948183.netlify.app/products/drawings/link.jpg'} target="_blank" rel="noreferrer"><img src={product.type==='4СЦ'?'https://soft-liger-948183.netlify.app/products/drawings/master-link.png':'https://soft-liger-948183.netlify.app/products/drawings/link.jpg'} width="110" height="192" alt="Чертёж звена из таблицы поставщика" loading="lazy"/></a><figcaption>Звено<br/>B = {d.width||'уточняется'}<br/>{product.type==='4СЦ'?'L':'A'} = {d.linkLength||'уточняется'}</figcaption></figure>
+      {product.type!=='ВЦ'&&<figure><a href="https://soft-liger-948183.netlify.app/products/drawings/hook.png" target="_blank" rel="noreferrer"><img src="https://soft-liger-948183.netlify.app/products/drawings/hook.png" width="110" height="145" alt="Чертёж крюка с обозначениями H и P1 из таблицы поставщика" loading="lazy"/></a><figcaption>Крюк<br/>H = {d.hookH||'уточняется'}<br/>P1 = {d.hookP||'уточняется'}</figcaption></figure>}
     </div>
     <p>H обозначает высоту сечения крюка. Габаритная высота изделия зависит от исполнения и положения ветвей.</p>
   </div>;
