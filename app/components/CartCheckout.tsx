@@ -7,7 +7,13 @@ import { COMPANY } from "../data/company";
 import styles from "./checkout.module.css";
 
 const money = (value: number) => `${value.toLocaleString("ru-RU")} ₽`;
-const deliveryOptions = ["Самовывоз по согласованию", "Доставка транспортной компанией", "Доставка до адреса", "Нужна помощь с выбором"];
+const deliveryOptions = [
+  { value: "Самовывоз", title: "Самовывоз", detail: "Москва, ул. Горбунова, 2с3 · в день оплаты" },
+  { value: "Доставка по Москве", title: "Доставка по Москве", detail: "Собственная доставка / курьер · 1–2 дня" },
+  { value: "Доставка по Московской области", title: "Московская область", detail: "Срок 1–3 дня · стоимость по километражу от МКАД" },
+  { value: "Транспортная компания по РФ", title: "Регионы России", detail: "3–10 дней · Деловые Линии, СДЭК, ПЭК и другие" },
+  { value: "Нужна помощь менеджера", title: "Помогите выбрать способ", detail: "Менеджер предложит подходящий вариант" },
+];
 
 export default function CartCheckout({ items, onRemove, onClose }: { items: Product[]; onRemove: (index: number) => void; onClose: () => void }) {
   const [checkout, setCheckout] = useState(false);
@@ -49,9 +55,9 @@ export default function CartCheckout({ items, onRemove, onClose }: { items: Prod
         </li>)}</ul>
         <div className={styles.total}><span>Итого за товары</span><strong>{money(total)}</strong></div>
         {checkout ? <>
-          <fieldset className={styles.delivery}><legend>Как вы хотите получить товар?</legend>{deliveryOptions.map(option => <label key={option}><input type="radio" name="delivery" value={option} checked={delivery === option} onChange={() => { setDelivery(option); setCopied(false); }} />{option}</label>)}</fieldset>
+          <fieldset className={styles.delivery}><legend>Выберите способ получения</legend><p className={styles.deliveryIntro}>Сроки взяты из раздела «Доставка». Точную стоимость и дату менеджер подтвердит после проверки адреса и наличия.</p>{deliveryOptions.map(option => <label className={styles.deliveryOption} key={option.value}><input type="radio" name="delivery" value={option.value} checked={delivery === option.value} onChange={() => { setDelivery(option.value); setCopied(false); }} /><span><strong>{option.title}</strong><small>{option.detail}</small></span></label>)}</fieldset>
           <label className={styles.city}>Город и пожелания к доставке (необязательно)<textarea rows={2} maxLength={500} value={city} onChange={event => { setCity(event.target.value); setCopied(false); }} placeholder="Например: Казань, до терминала транспортной компании" /></label>
-          <p className={styles.note}>Стоимость доставки не включена в сумму. Наличие, сроки, способ получения и окончательную стоимость подтвердит менеджер.</p>
+          <p className={styles.note}>Сумма заказа показывает только товары. Доставка рассчитывается отдельно по адресу и не оплачивается автоматически на сайте.</p>
           <label className={styles.review}><input type="checkbox" checked={reviewed} onChange={event => setReviewed(event.target.checked)} />Я проверил товары, длину, комплектацию и сумму заказа</label>
           {ready ? <section className={styles.contact} aria-label="Связь с менеджером">
             <h3>Завершите оформление с менеджером</h3><p>Позвоните или отправьте состав заказа по почте. Заказ будет оформлен после согласования с менеджером.</p>
