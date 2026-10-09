@@ -5,6 +5,7 @@ import type { Product } from "../data/product";
 import { configureProduct } from "../data/product";
 import Link from "next/link";
 import ProductVisual, { ComponentDimensions } from "./ProductVisual";
+import { ProductDrawing } from "./ProductIllustration";
 import { formatPrice } from "./ProductCard";
 import styles from "./catalog.module.css";
 
@@ -35,7 +36,7 @@ export default function ProductDialog({ product, onClose, onAdd, onRequest, inli
     <div ref={ref} className={inline ? styles.inlineDetail : styles.dialog} role={inline ? undefined : "dialog"} aria-modal={inline ? undefined : true} aria-labelledby="product-title" tabIndex={-1}>
       {!inline&&<button type="button" className={styles.close} aria-label="Закрыть карточку товара" onClick={onClose}>×</button>}
       <div className={styles.detailGrid}>
-        <div className={styles.detailVisual}><ProductVisual product={product} length={configured.length}/><ComponentDimensions product={product}/></div>
+        <div className={styles.detailVisual}><ProductVisual product={product} length={configured.length}/><ProductDrawing product={product} length={configured.length}/><ComponentDimensions product={product}/></div>
         <div className={styles.detailBody}>
           <p className={styles.category}>{product.kind} / {product.type}</p>
           <Title id="product-title">{product.name}</Title>

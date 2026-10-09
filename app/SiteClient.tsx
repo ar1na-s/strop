@@ -10,6 +10,8 @@ import type { Product } from "./data/product";
 import { products, categories, type Category } from "./data/catalog";
 import { describeConfiguration } from "./data/product";
 import { useCart } from "./data/cart";
+import CartCheckout from "./components/CartCheckout";
+import ScrollToTop from "./components/ScrollToTop";
 import ProductCard from "./components/ProductCard";
 import ProductDialog from "./components/ProductDialog";
 import { reachGoal } from "./components/Analytics";
@@ -204,12 +206,6 @@ export default function SiteClient({ initialView = "home", category, initialProd
     setCartItems(next);
   };
 
-  const handleCheckout = () => {
-    const message = cartItems.map((item, index) => `${index + 1}. ${describeConfiguration(item)}`).join("\n");
-    setRequestForm(prev => ({ ...prev, message: `Прошу подготовить счёт:\n${message}` }));
-    setIsCartOpen(false);
-    openRequest();
-  };
 
   const handleRequestSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -748,7 +744,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
               </div>
             )}
 
-            <nav aria-label="Категории каталога" className="mt-8 flex flex-wrap gap-3"><Link href="/catalog" className={buttonOutline}>Все товары</Link>{categories.map(c=><Link key={c.slug} href={`/catalog/${c.slug}`} className={buttonOutline} aria-current={category?.slug===c.slug?"page":undefined}>{c.title}</Link>)}</nav>
+            <nav aria-label="Категории каталога" className="mt-8 flex flex-wrap gap-3">{category && filteredProducts.length < products.length && <Link href="/catalog" className={buttonOutline}>Все товары</Link>}{categories.map(c=><Link key={c.slug} href={`/catalog/${c.slug}`} className={buttonOutline} aria-current={category?.slug===c.slug?"page":undefined}>{c.title}</Link>)}</nav>
             <div className={catalogStyles.grid}>
               {filteredProducts.map((product) => <ProductCard key={product.name} product={product} onOpen={product=>{setSelectedProduct(product);reachGoal("product_open");}} />)}
             </div>
@@ -903,44 +899,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
           setSelectedProduct(null); openRequest();
         }} />}
 
-      {isCartOpen && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-[#0B1B33]/85 p-0 md:p-4 backdrop-blur-sm">
-          <div className="relative h-full md:h-auto max-h-full md:max-h-[80vh] w-full max-w-2xl overflow-y-auto md:rounded-[2.5rem] rounded-none bg-white shadow-2xl">
-            <button type="button" onClick={() => setIsCartOpen(false)} className="absolute right-3 md:right-5 top-3 md:top-5 z-10 flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full bg-[#0B1B33] text-xl md:text-2xl font-black text-white">×</button>
-            <div className="p-5 md:p-8">
-              <h2 className="text-2xl md:text-3xl font-black text-[#0B1B33]">Корзина</h2>
-              {cartItems.length === 0 ? (
-                <p className="mt-6 md:mt-8 text-base md:text-lg text-[#526174]">В корзине пока нет товаров.</p>
-              ) : (
-                <>
-                  <div className="mt-5 md:mt-6 divide-y divide-[#0B1B33]/10">
-                    {cartItems.map((item, index) => (
-                      <div key={index} className="flex items-start justify-between py-4 gap-3">
-                        <div className="flex-1 min-w-0">
-                          <div className="font-black text-[#0B1B33] text-sm md:text-base">{item.name}</div>
-                          <div className="text-xs md:text-sm text-[#526174]">{item.load} · {item.length}</div><div className="mt-1 text-xs text-[#526174]">{item.selectedServices?.map(s=>`${s.name} × ${s.quantity}`).join("; ")}</div>
-                        </div>
-                        <div className="flex flex-col md:flex-row items-end md:items-center gap-2 md:gap-4 shrink-0">
-                          <span className="font-black text-sm md:text-base">{item.price > 0 ? `${item.price.toLocaleString()} ₽` : "по запросу"}</span>
-                          <button type="button" onClick={() => removeFromCart(index)} className="text-xs md:text-sm text-red-600 hover:text-red-800">Удалить</button>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                  <div className="mt-5 md:mt-6 flex justify-between border-t border-[#0B1B33]/10 pt-5 md:pt-6">
-                    <span className="text-lg md:text-xl font-black">Итого:</span>
-                    <span className="text-lg md:text-xl font-black">{cartItems.reduce((sum, item) => sum + item.price, 0).toLocaleString()} ₽</span>
-                  </div>
-                  <div className="mt-5 md:mt-6 flex flex-col sm:flex-row gap-3 md:gap-4">
-                    <button type="button" onClick={handleCheckout} className="flex-1 rounded-full bg-[#0B1B33] px-6 py-3 md:py-4 text-center font-black text-white transition hover:bg-[#102744]">Оформить заказ</button>
-                    <button type="button" onClick={() => setIsCartOpen(false)} className="min-w-0 flex-1 rounded-full border-2 border-[#0B1B33] px-6 py-3 md:py-4 font-black text-[#0B1B33] transition hover:bg-[#0B1B33] hover:text-white">Продолжить</button>
-                  </div>
-                </>
-              )}
-            </div>
-          </div>
-        </div>
-      )}
+      {isCartOpen && <CartCheckout items={cartItems} onRemove={removeFromCart} onClose={() => setIsCartOpen(false)} />}
 
       {isFilterModalOpen && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-[#0B1B33]/85 p-0 md:p-4 backdrop-blur-sm">
@@ -1121,10 +1080,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
         </div>
       </footer>
 
-      <div className="fixed bottom-4 md:bottom-6 left-1/2 z-40 hidden md:flex -translate-x-1/2 rounded-full border border-[#0B1B33]/10 bg-white/95 p-2 shadow-2xl backdrop-blur-xl">
-        <a href={`tel:${COMPANY.phone.replace(/[^\d+]/g, "")}`} className="rounded-full px-5 lg:px-7 py-3 lg:py-4 text-sm lg:text-base font-black text-[#0B1B33] transition hover:bg-[#F4F7FB]">Позвонить</a>
-        <a href="https://max.ru/" target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#0B1B33] px-5 lg:px-7 py-3 lg:py-4 text-sm lg:text-base font-black text-white transition hover:bg-[#102744]">MAX</a>
-      </div>
+      <ScrollToTop hidden={isOverlayOpen} />
     </main>
   );
 }

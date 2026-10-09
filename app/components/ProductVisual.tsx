@@ -3,6 +3,7 @@
 import { useId } from "react";
 import type { Product } from "../data/product";
 import styles from "./catalog.module.css";
+import ProductIllustration, { illustrationFor } from "./ProductIllustration";
 
 // Vector illustrations stay sharp at any scale. Dimension labels refer to the
 // actual component in the supplier drawing, never to the drawing's pixel size.
@@ -21,6 +22,7 @@ export default function ProductVisual({ product, length }: { product: Product; l
   const line = (x1:number,y1:number,x2:number,y2:number) => <line x1={x1} y1={y1} x2={x2} y2={y2} stroke="#3d7092" strokeWidth="1.3" markerStart={`url(#${id}-arrow)`} markerEnd={`url(#${id}-arrow)`} />;
   const links = (count:number) => Array.from({length:count},(_,i)=><ellipse key={i} cx="0" cy={i*13} rx={i%2?3:7} ry="10" fill="none" stroke={metal} strokeWidth="4.5" />);
   const hook = <g><path d="M-7 0 L-7 16 C-8 27-24 32-22 48 C-20 66 8 66 14 50 L17 32 L8 41 C6 49-5 51-9 43 C-13 33 7 26 7 16 L7 0 Z" fill={red} stroke="#9c3628" strokeWidth="1.2"/><path d="M6 18 L15 35" stroke="#8494a0" strokeWidth="4"/><circle cy="7" r="3" fill="#fff"/></g>;
+  if (illustrationFor(product)) return <ProductIllustration product={product} />;
   if(product.image) return <figure className={styles.visual}>
     <div className={styles.visualTop}><span>{product.type || product.kind}</span><span>ВНЕШНИЙ ВИД</span></div>
     <img className={styles.productPhoto} src={product.image.startsWith("/") ? `https://soft-liger-948183.netlify.app${product.image}` : product.image} alt={product.name} width="480" height="400" loading="lazy" decoding="async"/>

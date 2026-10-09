@@ -7,7 +7,7 @@ export const formatPrice = (price: number) => new Intl.NumberFormat("ru-RU").for
 
 export default function ProductCard({ product, onOpen }: { product: Product; onOpen: (product: Product) => void }) {
   return <article className={styles.card}>
-    <Link href={`/product/${product.slug}`} className={styles.cardLink} onClick={e=>{if(!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&!e.altKey){e.preventDefault();onOpen(product);}}} aria-label={`Открыть ${product.name}`}>
+    <Link href={`/product/${product.slug}`} prefetch={false} className={styles.cardLink} onClick={e=>{if(!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&!e.altKey){e.preventDefault();onOpen(product);}}} aria-label={`Открыть ${product.name}`}>
     <ProductVisual product={product}/>
     <div className={styles.body}>
       <p className={styles.category}>{product.kind}</p>
