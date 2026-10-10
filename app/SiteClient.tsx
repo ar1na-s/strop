@@ -966,7 +966,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
       )}
 
       <div className="fixed bottom-20 md:bottom-24 right-4 md:right-6 z-50">
-        <button type="button" onClick={() => setIsAssistantOpen(!isAssistantOpen)} className="flex h-14 w-14 md:h-16 md:w-16 items-center justify-center rounded-full bg-[#0B1B33] text-2xl md:text-3xl text-white shadow-2xl transition hover:scale-105 hover:bg-[#102744]" aria-label="ИИ-ассистент">💬</button>
+        <button type="button" onClick={() => setIsAssistantOpen(!isAssistantOpen)} className="flex h-14 w-14 md:h-16 md:w-16 items-center justify-center rounded-full bg-[#0B1B33] text-2xl md:text-3xl text-white shadow-2xl transition hover:scale-105 hover:bg-[#102744]" aria-label="ИИ-ассистент" aria-expanded={isAssistantOpen}><span aria-hidden="true">💬</span></button>
       </div>
 
       {isAssistantOpen && (

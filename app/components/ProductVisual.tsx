@@ -25,7 +25,7 @@ export default function ProductVisual({ product, length }: { product: Product; l
   if (illustrationFor(product)) return <ProductIllustration product={product} />;
   if(product.image) return <figure className={styles.visual}>
     <div className={styles.visualTop}><span>{product.type || product.kind}</span><span>ВНЕШНИЙ ВИД</span></div>
-    <img className={styles.productPhoto} src={product.image.startsWith("/") ? `https://soft-liger-948183.netlify.app${product.image}` : product.image} alt={product.name} width="480" height="400" loading="lazy" decoding="async"/>
+    <img className={styles.productPhoto} src={product.image} alt={product.name} width="480" height="400" loading="lazy" decoding="async"/>
     <figcaption className={styles.dimensionNote}>Типовое исполнение. Комплектация зависит от выбранных параметров.</figcaption>
   </figure>;
   return <figure className={styles.visual}>

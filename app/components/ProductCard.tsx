@@ -19,7 +19,7 @@ export default function ProductCard({ product, onOpen }: { product: Product; onO
         {product.dimensions?.width&&<div><dt>{product.type==='СТП'||product.type==='Стяжной ремень'?'Ширина ленты':'Ширина звена'}</dt><dd>{product.dimensions.width}</dd></div>}
       </dl>
       <div className={styles.priceRow}><div><div className={styles.price}>{product.price>0?`от ${formatPrice(product.price)}`:'Цена по запросу'}</div><div className={styles.priceNote}>{product.variants?.[0]?`За изделие длиной ${product.variants[0].length}`:'За базовую комплектацию'}</div></div></div>
-      <div className={styles.cardHint}>Подробнее <span aria-hidden="true">↗</span></div>
+      <div className={styles.cardHint}><span className={styles.cardStock}><i aria-hidden="true"/>В наличии</span><span aria-hidden="true">↗</span></div>
     </div>
     </Link>
   </article>;
