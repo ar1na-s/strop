@@ -4,7 +4,7 @@ import { categories, categoryProducts } from "../../data/catalog";
 import { pageMetadata, SITE_URL, jsonLd } from "../../data/seo";
 type Props = { params: Promise<{ category: string }> };
 export const dynamicParams = false;
-export function generateStaticParams() { return categories.map(c=>({category:c.slug})); }
+export function generateStaticParams() { return categories.filter(c=>c.slug!=="traversy").map(c=>({category:c.slug})); }
 export async function generateMetadata({params}: Props) {
   const { category: slug } = await params;
   const category = categories.find(c=>c.slug===slug);

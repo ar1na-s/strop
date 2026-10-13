@@ -1,0 +1,2 @@
+export function normalizeSearch(value:string){return value.toLowerCase().replace(/ё/g,'е').replace(/(\d)[,.]0(?=\D|$)/g,'$1').replace(/(\d)\s*(?:тонн[а-я]*|т)(?=\s|$)/g,'$1т');}
+export function matchesSearch(text:string,query:string){const haystack=normalizeSearch(text);return normalizeSearch(query).trim().split(/\s+/).filter(Boolean).every(token=>/^\d+(?:[,.]\d+)?т$/.test(token)?haystack.split(/[^\p{L}\p{N},.]+/u).includes(token):haystack.includes(token));}

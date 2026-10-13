@@ -5,6 +5,7 @@ import type { Product } from "../data/product";
 import { describeConfiguration } from "../data/product";
 import { COMPANY } from "../data/company";
 import styles from "./checkout.module.css";
+import RequestForm from './RequestForm';
 
 const money = (value: number) => `${value.toLocaleString("ru-RU")} ₽`;
 const deliveryOptions = [
@@ -39,6 +40,7 @@ export default function CartCheckout({ items, onRemove, onClose }: { items: Prod
     return () => { document.removeEventListener("keydown", key); previous?.focus(); };
   }, []);
   const total = items.reduce((sum, item) => sum + item.price, 0);
+  const needsQuote = items.some(item=>item.requiresQuote);
   const ready = reviewed && !!delivery && items.length > 0;
   const summary = `Здравствуйте! Прошу оформить заказ:\n${items.map((item, i) => `${i + 1}. ${describeConfiguration(item)}`).join("\n")}\nИтого за товары: ${money(total)}\nСпособ получения: ${delivery}\nГород / пожелания: ${city || "уточню с менеджером"}\nПрошу подтвердить наличие, сроки и стоимость доставки.`;
   const changeStep = (value: boolean) => { setCheckout(value); setReviewed(false); setCopied(false); dialog.current?.scrollTo(0, 0); dialog.current?.focus(); };
@@ -53,14 +55,16 @@ export default function CartCheckout({ items, onRemove, onClose }: { items: Prod
           <div><strong>{item.name}</strong><p>{item.load} · {item.length} · 1 шт.</p>{!!item.selectedServices?.length && <p>{item.selectedServices.map(s => `${s.name} × ${s.quantity}`).join("; ")}</p>}</div>
           <div className={styles.itemPrice}><strong>{money(item.price)}</strong>{!checkout && <button onClick={() => { onRemove(i); setReviewed(false); }} aria-label={`Удалить ${item.name}`}>Удалить</button>}</div>
         </li>)}</ul>
-        <div className={styles.total}><span>Итого за товары</span><strong>{money(total)}</strong></div>
+        <div className={styles.total}><span>{needsQuote?'Предварительная сумма':'Итого за товары'}</span><strong>{money(total)}</strong></div>
+        {needsQuote&&<p className={styles.note}>В заказе есть параметры, требующие расчёта. Окончательную сумму подтвердит менеджер.</p>}
         {checkout ? <>
           <fieldset className={styles.delivery}><legend>Выберите способ получения</legend><p className={styles.deliveryIntro}>Сроки взяты из раздела «Доставка». Точную стоимость и дату менеджер подтвердит после проверки адреса и наличия.</p>{deliveryOptions.map(option => <label className={styles.deliveryOption} key={option.value}><input type="radio" name="delivery" value={option.value} checked={delivery === option.value} onChange={() => { setDelivery(option.value); setCopied(false); }} /><span><strong>{option.title}</strong><small>{option.detail}</small></span></label>)}</fieldset>
           <label className={styles.city}>Город и пожелания к доставке (необязательно)<textarea rows={2} maxLength={500} value={city} onChange={event => { setCity(event.target.value); setCopied(false); }} placeholder="Например: Казань, до терминала транспортной компании" /></label>
           <p className={styles.note}>Сумма заказа показывает только товары. Доставка рассчитывается отдельно по адресу и не оплачивается автоматически на сайте.</p>
           <label className={styles.review}><input type="checkbox" checked={reviewed} onChange={event => setReviewed(event.target.checked)} />Я проверил товары, длину, комплектацию и сумму заказа</label>
           {ready ? <section className={styles.contact} aria-label="Связь с менеджером">
-            <h3>Завершите оформление с менеджером</h3><p>Позвоните или отправьте состав заказа по почте. Заказ будет оформлен после согласования с менеджером.</p>
+            <RequestForm order subject="Заказ с сайта МПК" summary={summary}/>
+            <h3>Или свяжитесь с менеджером</h3><p>Можно также позвонить или отправить состав заказа по почте. Наличие, стоимость и сроки подтвердит менеджер.</p>
             <a href={`tel:${COMPANY.phone.replace(/[^\d+]/g, "")}`}>{COMPANY.phone}</a>
             <a href={`mailto:${COMPANY.email}?subject=${encodeURIComponent("Заказ с сайта МПК")}&body=${encodeURIComponent(summary)}`}>{COMPANY.email} — написать</a>
             <button onClick={async () => { try { await navigator.clipboard.writeText(summary); setCopied(true); } catch { setCopied(false); } }}>Скопировать состав заказа</button>

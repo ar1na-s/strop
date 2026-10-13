@@ -8,6 +8,10 @@ import catalogStyles from "./components/catalog.module.css";
 import { COMPANY } from "./data/company";
 import type { Product } from "./data/product";
 import { products, categories, type Category } from "./data/catalog";
+import { industrialPages } from "./data/industrial";
+
+import CatalogNavigation from "./components/CatalogNavigation";
+import { matchesSearch as matchesQuery } from './data/search';
 import { describeConfiguration } from "./data/product";
 import { useCart } from "./data/cart";
 import CartCheckout from "./components/CartCheckout";
@@ -98,7 +102,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
 
   const [cartItems, setCartItems] = useCart();
   const [isCartOpen, setIsCartOpen] = useState(false);
-  const cartCount = cartItems.length;
+
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -113,8 +117,12 @@ export default function SiteClient({ initialView = "home", category, initialProd
   const [assistantSendStatus, setAssistantSendStatus] = useState<"idle" | "sending" | "ok" | "error">("idle");
 
   const [directionIndex, setDirectionIndex] = useState(0);
+  const directionTrack = useRef<HTMLDivElement>(null);
+  const showDirection = (index:number) => {const track=directionTrack.current;if(track)track.scrollTo({left:index*track.clientWidth,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});};
+  const cartCount = cartItems.length;
 
   const [pageView, setPageView] = useState<"home" | "catalog" | "product" | "documents" | "production" | "delivery">(initialView);
+  const isHomePage = pageView === 'home';
   const prevPageRef = useRef<"home" | "catalog" | "product" | "documents" | "production" | "delivery">("home");
   const scrollPositionsRef = useRef<Record<string, number>>({});
 
@@ -147,8 +155,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
     !!catalogFilter.length;
 
   const filteredProducts = products.filter((product) => {
-    const query = search.trim().toLowerCase();
-    const matchesSearch = !query || product.name.toLowerCase().includes(query) || product.description?.toLowerCase().includes(query) || product.type?.toLowerCase().includes(query) || product.load?.toLowerCase().includes(query);
+    const matchesSearch = matchesQuery([product.name,product.description,product.type,product.load,product.kind].join(' '),search);
     const matchesGroup = catalogFilter.group === "all" || product.group === catalogFilter.group;
     const matchesKind = catalogFilter.kind === "all" || !catalogFilter.kind || product.kind === catalogFilter.kind;
     const matchesType = !catalogFilter.type || product.type === catalogFilter.type;
@@ -416,7 +423,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
     setIsFilterModalOpen(false);
   };
 
-  const isHomePage = pageView === "home";
+
   const isOverlayOpen = !!selectedProduct || isCartOpen || isFilterModalOpen || isMobileMenuOpen;
 
   useEffect(() => {
@@ -511,6 +518,8 @@ export default function SiteClient({ initialView = "home", category, initialProd
         </div>
       )}
 
+
+
       {pageView === "home" && (
         <>
           <section className={`${styles.hero} relative overflow-hidden min-h-[640px] md:min-h-screen`}>
@@ -520,28 +529,16 @@ export default function SiteClient({ initialView = "home", category, initialProd
             <div className={`${styles.heroContent} relative mx-auto grid max-w-[1600px] gap-8 md:gap-12 px-4 md:px-6 pt-[110px] pb-16 md:pt-[140px] md:pb-24 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:px-10 lg:pt-[160px] lg:pb-32`}>
               <div className="w-full max-w-[900px] rounded-[2rem] md:rounded-[2.5rem] border border-white/20 bg-black/60 p-6 md:p-8 lg:p-10 shadow-2xl backdrop-blur-md">
                 <div className="mb-4 md:mb-6 inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-3 md:px-5 py-1.5 md:py-2 text-[10px] md:text-sm font-black uppercase tracking-[0.2em] md:tracking-[0.25em] text-white">
-                  {COMPANY.full} · Подбор · Документы
+                  Производство · Подбор · Доставка
                 </div>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-[0.95] text-white">
-                  Грузоподъёмные<br />решения<br />нового поколения
+                <h1 className={styles.heroTitle}>
+                  Стропы и грузоподъёмное оборудование в Москве
                 </h1>
                 <p className="mt-5 md:mt-7 max-w-2xl text-base md:text-lg leading-7 md:leading-8 text-white/90">
-                  Подбираем <b className="text-white">стропы</b>, <b className="text-white">канаты</b>, <b className="text-white">тросы</b> и <b className="text-white">такелаж</b> под груз, объект и реальные условия работы.
+                  Цепные и текстильные стропы, траверсы и средства крепления груза. Подберём нагрузку, длину и комплектацию. Доставка по Москве, МО и России.
                 </p>
-                <div className="mt-6 md:mt-10 grid grid-cols-3 gap-3 md:gap-5 border-t border-white/20 pt-5 md:pt-7">
-                  <div>
-                    <div className="text-xl md:text-3xl font-black text-white">12+</div>
-                    <div className="text-xs md:text-sm text-white/80">лет на рынке</div>
-                  </div>
-                  <div>
-                    <div className="text-xl md:text-3xl font-black text-white">500+</div>
-                    <div className="text-xs md:text-sm text-white/80">позиций</div>
-                  </div>
-                  <div>
-                    <div className="text-xl md:text-3xl font-black text-white">1–3 дня</div>
-                    <div className="text-xs md:text-sm text-white/80">отгрузка</div>
-                  </div>
-                </div>
+                <div className="mt-6 flex flex-wrap gap-3"><button onClick={openRequest} className={buttonOutlineOnDark}>Получить расчёт</button></div>
+                <div className="mt-8 grid grid-cols-3 gap-4 border-t border-white/20 pt-6 text-white"><div><strong className="text-2xl">{products.length}</strong><p className="text-sm">исполнений в каталоге</p></div><div><strong className="text-xl">По задаче</strong><p className="text-sm">длина и комплектация</p></div><div><strong className="text-xl">Москва и РФ</strong><p className="text-sm">получение и доставка</p></div></div>
               </div>
               <div className="grid gap-3 md:gap-5 grid-cols-1 sm:grid-cols-2">
                 {[
@@ -587,15 +584,16 @@ export default function SiteClient({ initialView = "home", category, initialProd
           </section>
 
           <section id="directions" className="scroll-mt-28 bg-white px-4 md:px-6 py-16 md:py-20">
-            <div className="mx-auto max-w-[1500px]">
+            <div className={styles.directionsContainer}>
               <p className={labelLight}>Каталог</p>
               <h2 className={titleLight}>Основные направления</h2>
 
-              <div className="relative mt-8 md:mt-10">
+              <div className={`${styles.directionFrame} relative mt-8 md:mt-10`}>
                 <div className="overflow-hidden rounded-[2rem] md:rounded-[2.5rem] shadow-2xl">
                   <div
-                    className="flex transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)]"
-                    style={{ transform: `translateX(-${directionIndex * 100}%)` }}
+                    className={styles.directionTrack}
+                    ref={directionTrack}
+                    onScroll={e=>{const el=e.currentTarget;setDirectionIndex(Math.round(el.scrollLeft/el.clientWidth));}}
                   >
                     {directions.map((d, i) => (
                       <Link
@@ -633,16 +631,16 @@ export default function SiteClient({ initialView = "home", category, initialProd
                 <button
                   type="button"
                   aria-label="Предыдущее направление"
-                  onClick={(e) => { e.stopPropagation(); setDirectionIndex((p) => (p - 1 + directions.length) % directions.length); }}
-                  className="absolute left-2 md:left-3 top-[100px] md:top-1/2 z-10 flex h-11 w-11 md:h-14 md:w-14 -translate-y-1/2 items-center justify-center rounded-full border border-white/30 bg-[#0B1B33]/70 text-2xl md:text-3xl font-black text-white backdrop-blur-md transition-all duration-300 hover:scale-110 hover:bg-[#0B1B33]"
+                  onClick={(e) => { e.stopPropagation(); showDirection((directionIndex - 1 + directions.length) % directions.length); }}
+                  className={`${styles.directionArrow} ${styles.directionPrev}`}
                 >
                   ‹
                 </button>
                 <button
                   type="button"
                   aria-label="Следующее направление"
-                  onClick={(e) => { e.stopPropagation(); setDirectionIndex((p) => (p + 1) % directions.length); }}
-                  className="absolute right-2 md:right-3 top-[100px] md:top-1/2 z-10 flex h-11 w-11 md:h-14 md:w-14 -translate-y-1/2 items-center justify-center rounded-full border border-white/30 bg-[#0B1B33]/70 text-2xl md:text-3xl font-black text-white backdrop-blur-md transition-all duration-300 hover:scale-110 hover:bg-[#0B1B33]"
+                  onClick={(e) => { e.stopPropagation(); showDirection((directionIndex + 1) % directions.length); }}
+                  className={`${styles.directionArrow} ${styles.directionNext}`}
                 >
                   ›
                 </button>
@@ -654,7 +652,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
                         key={i}
                         type="button"
                         aria-label={`Показать направление ${i + 1}`}
-                        onClick={() => setDirectionIndex(i)}
+                        onClick={() => showDirection(i)}
                         className={`h-2 rounded-full transition-all duration-500 ${i === directionIndex ? "w-8 md:w-10 bg-[#0B1B33]" : "w-2 bg-[#0B1B33]/25 hover:bg-[#0B1B33]/50"}`}
                       />
                     ))}
@@ -671,11 +669,11 @@ export default function SiteClient({ initialView = "home", category, initialProd
             <div className="absolute inset-0 bg-[#0B1B33]/94" />
             <div className="relative mx-auto grid max-w-[1600px] gap-8 md:gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
               <div>
-                <p className={labelDark}>Расчёт за 15 минут</p>
+                <p className={labelDark}>Расчёт по вашей задаче</p>
                 <h2 className={titleDark}>Получить предложение</h2>
                 <p className="mt-4 md:mt-6 text-base md:text-lg leading-7 md:leading-8 text-[#C8D2E0]">Опишите задачу — менеджер уточнит параметры и подготовит предложение.</p>
                 <div className="mt-6 md:mt-8 space-y-2 md:space-y-3">
-                  {["Ответим в течение 15 минут в рабочее время", "Подберём 2–3 варианта под ваш бюджет", "Пришлём спецификацию и коммерческое предложение"].map((t) => (
+                  {["Ответим в рабочее время", "Подберём 2–3 варианта под ваш бюджет", "Пришлём спецификацию и коммерческое предложение"].map((t) => (
                     <div key={t} className="flex items-start gap-3 text-white text-sm md:text-base">
                       <span className="mt-2 h-1 w-1 flex-shrink-0 rounded-full bg-white/60" />
                       <span>{t}</span>
@@ -686,16 +684,16 @@ export default function SiteClient({ initialView = "home", category, initialProd
 
               <form onSubmit={handleRequestSubmit} className="rounded-[2rem] md:rounded-[3rem] bg-[#0B1B33] p-5 md:p-8 lg:p-10 text-white shadow-2xl ring-1 ring-white/10">
                 <div className="grid gap-4 md:gap-5 md:grid-cols-2">
-                  <input name="name" required value={requestForm.name} onChange={(e) => setRequestForm({ ...requestForm, name: e.target.value })} placeholder="Ваше имя" className="rounded-2xl border border-white/10 bg-[#102744] px-4 md:px-5 py-3 md:py-4 text-white outline-none placeholder:text-[#C8D2E0]/60 focus:border-white" />
-                  <input name="phone" required value={requestForm.phone} onChange={(e) => setRequestForm({ ...requestForm, phone: e.target.value })} placeholder="Телефон" className="rounded-2xl border border-white/10 bg-[#102744] px-4 md:px-5 py-3 md:py-4 text-white outline-none placeholder:text-[#C8D2E0]/60 focus:border-white" />
-                  <input name="company" value={requestForm.company} onChange={(e) => setRequestForm({ ...requestForm, company: e.target.value })} placeholder="Компания" className="rounded-2xl border border-white/10 bg-[#102744] px-4 md:px-5 py-3 md:py-4 text-white outline-none placeholder:text-[#C8D2E0]/60 focus:border-white" />
-                  <input name="email" type="email" value={requestForm.email} onChange={(e) => setRequestForm({ ...requestForm, email: e.target.value })} placeholder="E-mail" className="rounded-2xl border border-white/10 bg-[#102744] px-4 md:px-5 py-3 md:py-4 text-white outline-none placeholder:text-[#C8D2E0]/60 focus:border-white" />
-                  <textarea name="message" rows={5} value={requestForm.message} onChange={(e) => setRequestForm({ ...requestForm, message: e.target.value })} placeholder="Что нужно изготовить или подобрать?" className="rounded-2xl border border-white/10 bg-[#102744] px-4 md:px-5 py-3 md:py-4 text-white outline-none placeholder:text-[#C8D2E0]/60 focus:border-white md:col-span-2" />
+                  <input name="name" autoComplete="name" aria-label="Ваше имя" required value={requestForm.name} onChange={(e) => setRequestForm({ ...requestForm, name: e.target.value })} placeholder="Ваше имя" className="rounded-2xl border border-white/10 bg-[#102744] px-4 md:px-5 py-3 md:py-4 text-white outline-none placeholder:text-[#C8D2E0]/60 focus:border-white" />
+                  <input name="phone" type="tel" autoComplete="tel" aria-label="Телефон" required value={requestForm.phone} onChange={(e) => setRequestForm({ ...requestForm, phone: e.target.value })} placeholder="Телефон" className="rounded-2xl border border-white/10 bg-[#102744] px-4 md:px-5 py-3 md:py-4 text-white outline-none placeholder:text-[#C8D2E0]/60 focus:border-white" />
+                  <input name="company" aria-label="Компания" value={requestForm.company} onChange={(e) => setRequestForm({ ...requestForm, company: e.target.value })} placeholder="Компания" className="rounded-2xl border border-white/10 bg-[#102744] px-4 md:px-5 py-3 md:py-4 text-white outline-none placeholder:text-[#C8D2E0]/60 focus:border-white" />
+                  <input name="email" aria-label="Электронная почта" type="email" value={requestForm.email} onChange={(e) => setRequestForm({ ...requestForm, email: e.target.value })} placeholder="E-mail" className="rounded-2xl border border-white/10 bg-[#102744] px-4 md:px-5 py-3 md:py-4 text-white outline-none placeholder:text-[#C8D2E0]/60 focus:border-white" />
+                  <textarea name="message" aria-label="Задача для расчёта" rows={5} value={requestForm.message} onChange={(e) => setRequestForm({ ...requestForm, message: e.target.value })} placeholder="Что нужно изготовить или подобрать?" className="rounded-2xl border border-white/10 bg-[#102744] px-4 md:px-5 py-3 md:py-4 text-white outline-none placeholder:text-[#C8D2E0]/60 focus:border-white md:col-span-2" />
                 </div>
                 <button type="submit" disabled={requestStatus === "sending"} className={`mt-5 md:mt-6 w-full ${buttonOutlineOnDark} disabled:opacity-60`}>
                   {requestStatus === "sending" ? "Отправляем..." : "Получить расчёт"}
                 </button>
-                {requestStatus === "ok" && (<p className="mt-4 text-sm leading-6 text-green-300">Заявка отправлена. Менеджер свяжется с вами в течение 15 минут.</p>)}
+                {requestStatus === "ok" && (<p className="mt-4 text-sm leading-6 text-green-300">Заявка отправлена. Менеджер свяжется с вами в рабочее время.</p>)}
                 {requestStatus === "error" && (<p className="mt-4 text-sm leading-6 text-red-300">{requestError}</p>)}
                 {requestStatus === "idle" && (<p className="mt-4 text-xs md:text-sm leading-6 text-[#C8D2E0]">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>)}
               </form>
@@ -717,7 +715,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
       )}
 
       {pageView === "catalog" && (
-        <section className="scroll-mt-28 bg-white px-4 md:px-6 py-16 md:py-24">
+        <section className={`${styles.catalogSection} scroll-mt-28 bg-white px-4 md:px-6 py-16 md:py-24`}>
           <div className="mx-auto max-w-[1600px]">
             <p className={labelLight}>Продукция</p>
             <h1 className={titleLight}>{category?.title || "Каталог товаров"}</h1>
@@ -744,7 +742,9 @@ export default function SiteClient({ initialView = "home", category, initialProd
               </div>
             )}
 
-            <nav aria-label="Категории каталога" className="mt-8 flex flex-wrap gap-3">{category && filteredProducts.length < products.length && <Link href="/catalog" className={buttonOutline}>Все товары</Link>}{categories.map(c=><Link key={c.slug} href={`/catalog/${c.slug}`} className={buttonOutline} aria-current={category?.slug===c.slug?"page":undefined}>{c.title}</Link>)}</nav>
+            <CatalogNavigation/>
+            <div className="mt-6 flex flex-wrap items-center gap-3"><label htmlFor="catalog-search" className="font-bold text-[#0B1B33]">Поиск в каталоге</label><input id="catalog-search" type="search" value={search} onChange={e=>setSearch(e.target.value)} placeholder="Название, модель или нагрузка" className="min-w-0 w-full sm:w-80 rounded-xl border border-slate-300 px-4 py-3 text-base"/>{search&&<button onClick={()=>setSearch('')} className={buttonOutline}>Очистить</button>}<p role="status" className="text-sm text-slate-600">Товаров: {filteredProducts.length}</p></div>
+            {search.trim()&&<nav aria-label="Найденные разделы" className="mt-5 flex flex-wrap gap-3">{industrialPages.filter(p=>search.trim().toLowerCase().replace(/ё/g,'е').split(/\s+/).every(q=>(p.title+' '+p.intro).toLowerCase().replace(/ё/g,'е').includes(q))).slice(0,8).map(p=><Link className={buttonOutline} key={p.path} href={p.path}>{p.title} ↗</Link>)}</nav>}
             <div className={catalogStyles.grid}>
               {filteredProducts.map((product) => <ProductCard key={product.name} product={product} onOpen={product=>{setSelectedProduct(product);reachGoal("product_open");}} />)}
             </div>
@@ -753,7 +753,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
       )}
 
       {pageView === "documents" && (
-        <section className="relative min-h-screen px-4 md:px-6 py-16 md:py-24 bg-[#FAFAF7]">
+        <section className={styles.infoPage}><div aria-hidden="true" className={styles.infoBackground} style={{backgroundImage:"url('https://soft-liger-948183.netlify.app/images/photo-site10.webp')"}}/>
           <div className="relative mx-auto max-w-[1600px]">
             <div className="flex flex-wrap gap-3 md:gap-4">
               <button type="button" onClick={goBack} className={buttonOutline}>← Вернуться назад</button>
@@ -789,7 +789,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
       )}
 
       {pageView === "production" && (
-        <section className="relative min-h-screen px-4 md:px-6 py-16 md:py-24 bg-white">
+        <section className={styles.infoPage}><div aria-hidden="true" className={styles.infoBackground} style={{backgroundImage:"url('https://soft-liger-948183.netlify.app/images/photo-site9.webp')"}}/>
           <div className="relative mx-auto max-w-[1600px]">
             <div className="flex flex-wrap gap-3 md:gap-4">
               <button type="button" onClick={goBack} className={buttonOutline}>← Вернуться назад</button>
@@ -844,7 +844,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
       )}
 
       {pageView === "delivery" && (
-        <section className="relative min-h-screen px-4 md:px-6 py-16 md:py-24 bg-white">
+        <section className={styles.infoPage}><div aria-hidden="true" className={styles.infoBackground} style={{backgroundImage:"url('https://soft-liger-948183.netlify.app/images/photo-site11.webp')"}}/>
           <div className="relative mx-auto max-w-[1600px]">
             <div className="flex flex-wrap gap-3 md:gap-4">
               <button type="button" onClick={goBack} className={buttonOutline}>← Вернуться назад</button>
