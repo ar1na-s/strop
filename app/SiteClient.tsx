@@ -6,6 +6,7 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import catalogStyles from "./components/catalog.module.css";
 import { COMPANY } from "./data/company";
+import { publicAsset } from "./data/public-asset";
 import type { Product } from "./data/product";
 import { products, categories, type Category } from "./data/catalog";
 import { describeConfiguration } from "./data/product";
@@ -516,7 +517,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
       {pageView === "home" && (
         <>
           <section className={`${styles.hero} relative overflow-hidden min-h-[640px] md:min-h-screen`}>
-            <div className={`${styles.heroImage} absolute inset-0 bg-cover bg-center`} style={{ backgroundImage: "url('/images/photo-site4.webp')" }} />
+            <div className={`${styles.heroImage} absolute inset-0 bg-cover bg-center`} style={{ backgroundImage: `url('${publicAsset('/images/photo-site4.webp')}')` }} />
             <div className={`${styles.heroShade} absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/30`} />
 
             <div className={`${styles.heroContent} relative mx-auto grid max-w-[1600px] gap-8 md:gap-12 px-4 md:px-6 pt-[110px] pb-16 md:pt-[140px] md:pb-24 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:px-10 lg:pt-[160px] lg:pb-32`}>
@@ -574,7 +575,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
                 ].map((item) => (
                   <button key={item.title} type="button" onClick={() => openPage(item.page)} className="group overflow-hidden rounded-[2rem] md:rounded-[3rem] bg-[#0B1B33] text-left text-white shadow-xl transition hover:-translate-y-1">
                     <div className="relative aspect-[16/9] md:aspect-auto md:h-72 overflow-hidden">
-                      <div className="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-105" style={{ backgroundImage: `url('${item.image}')` }} />
+                      <div className="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-105" style={{ backgroundImage: `url('${publicAsset(item.image)}')` }} />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#0B1B33] via-[#0B1B33]/55 to-transparent" />
                     </div>
                     <div className="p-6 md:p-8">
@@ -609,7 +610,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
                       >
                         <div
                           className={`${styles.directionImage} absolute inset-0 bg-cover bg-center transition-transform duration-[2000ms] ease-out ${i === directionIndex ? "scale-100" : "scale-110"}`}
-                          style={{ backgroundImage: `url('${d.image}')` }}
+                          style={{ backgroundImage: `url('${publicAsset(d.image)}')` }}
                         />
                         <div className={`${styles.directionShade} absolute inset-0 bg-gradient-to-t from-[#0B1B33] via-[#0B1B33]/70 to-[#0B1B33]/10`} />
                         <div className={`${styles.directionContent} absolute inset-x-0 bottom-0 p-5 md:p-8 lg:p-14 transition-all duration-700 ${i === directionIndex ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"}`}>
@@ -669,7 +670,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
             </div>
           </section>
 
-          <section id="request" className="relative overflow-hidden px-4 md:px-6 py-16 md:py-24" style={{ backgroundImage: "url('/images/photo-site13.webp')", backgroundSize: "cover", backgroundPosition: "center" }}>
+          <section id="request" className="relative overflow-hidden px-4 md:px-6 py-16 md:py-24" style={{ backgroundImage: `url('${publicAsset('/images/photo-site13.webp')}')`, backgroundSize: "cover", backgroundPosition: "center" }}>
             <div className="absolute inset-0 bg-[#0B1B33]/94" />
             <div className="relative mx-auto grid max-w-[1600px] gap-8 md:gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
               <div>
