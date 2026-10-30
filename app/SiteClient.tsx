@@ -8,16 +8,13 @@ import catalogStyles from "./components/catalog.module.css";
 import { COMPANY } from "./data/company";
 import type { Product } from "./data/product";
 import { products, categories, type Category } from "./data/catalog";
-import { industrialPages } from "./data/industrial";
-
-import CatalogNavigation from "./components/CatalogNavigation";
-import { matchesSearch as matchesQuery } from './data/search';
 import { describeConfiguration } from "./data/product";
 import { useCart } from "./data/cart";
 import CartCheckout from "./components/CartCheckout";
 import ScrollToTop from "./components/ScrollToTop";
 import ProductCard from "./components/ProductCard";
 import ProductDialog from "./components/ProductDialog";
+import { industrialPages } from "./data/industrial";
 import { reachGoal } from "./components/Analytics";
 
 
@@ -45,35 +42,35 @@ const directions = [
     title: "Стропы",
     subtitle: "Хит продаж",
     text: "Цепные, текстильные, канатные и круглопрядные решения для подъёма грузов.",
-    image: "https://soft-liger-948183.netlify.app/images/photo-site5.webp",
+    image: "/images/photo-site5.webp",
     tags: ["1СЦ", "2СЦ", "4СЦ", "ВЦ", "СТП", "СТКК"],
   },
   {
     title: "Буксировочные тросы",
     subtitle: "Для авто и спецтехники",
     text: "Ленточные, стальные и динамические для авто и спецтехники.",
-    image: "https://soft-liger-948183.netlify.app/images/photo-site6.webp",
+    image: "/images/photo-site6.webp",
     tags: ["Ленточные", "Стальные", "Динамические", "5–25 т"],
   },
   {
     title: "Стальные канаты",
     subtitle: "Для лебёдок и кранов",
     text: "Для лебёдок, кранов и тельферов. Разные диаметры, под заказ.",
-    image: "https://soft-liger-948183.netlify.app/images/photo-site14.webp",
+    image: "/images/photo-site14.webp",
     tags: ["Ø 6–40 мм", "Под заказ", "Коуши"],
   },
   {
     title: "Такелаж",
     subtitle: "Комплектующие",
     text: "Скобы, крюки, талрепы, зажимы, коуши и другие комплектующие.",
-    image: "https://soft-liger-948183.netlify.app/images/photo-site7.webp",
+    image: "/images/photo-site7.webp",
     tags: ["Скобы", "Талрепы", "Зажимы", "Крюки"],
   },
   {
     title: "Траверсы",
     subtitle: "Изготовление по ТЗ",
     text: "Траверсы под конкретные схемы подъёма и габариты груза.",
-    image: "https://soft-liger-948183.netlify.app/images/photo-site9.webp",
+    image: "/images/photo-site9.webp",
     tags: ["По ТЗ", "Расчёт", "Изготовление"],
   },
 ];
@@ -102,7 +99,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
 
   const [cartItems, setCartItems] = useCart();
   const [isCartOpen, setIsCartOpen] = useState(false);
-
+  const cartCount = cartItems.length;
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -117,19 +114,15 @@ export default function SiteClient({ initialView = "home", category, initialProd
   const [assistantSendStatus, setAssistantSendStatus] = useState<"idle" | "sending" | "ok" | "error">("idle");
 
   const [directionIndex, setDirectionIndex] = useState(0);
-  const directionTrack = useRef<HTMLDivElement>(null);
-  const showDirection = (index:number) => {const track=directionTrack.current;if(track)track.scrollTo({left:index*track.clientWidth,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});};
-  const cartCount = cartItems.length;
 
   const [pageView, setPageView] = useState<"home" | "catalog" | "product" | "documents" | "production" | "delivery">(initialView);
-  const isHomePage = pageView === 'home';
   const prevPageRef = useRef<"home" | "catalog" | "product" | "documents" | "production" | "delivery">("home");
   const scrollPositionsRef = useRef<Record<string, number>>({});
 
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
   const [isFilterModalOpen, setIsFilterModalOpen] = useState(false);
-  const [filterGroup, setFilterGroup] = useState<"all" | "slings" | "ropes" | "other">("all");
+  const [filterGroup, setFilterGroup] = useState<string>("all");
   const [filterKind, setFilterKind] = useState("all");
   const [filterType, setFilterType] = useState("");
   const [filterLoad, setFilterLoad] = useState("");
@@ -155,7 +148,8 @@ export default function SiteClient({ initialView = "home", category, initialProd
     !!catalogFilter.length;
 
   const filteredProducts = products.filter((product) => {
-    const matchesSearch = matchesQuery([product.name,product.description,product.type,product.load,product.kind].join(' '),search);
+    const query = search.trim().toLowerCase();
+    const matchesSearch = !query || product.name.toLowerCase().includes(query) || product.description?.toLowerCase().includes(query) || product.type?.toLowerCase().includes(query) || product.load?.toLowerCase().includes(query);
     const matchesGroup = catalogFilter.group === "all" || product.group === catalogFilter.group;
     const matchesKind = catalogFilter.kind === "all" || !catalogFilter.kind || product.kind === catalogFilter.kind;
     const matchesType = !catalogFilter.type || product.type === catalogFilter.type;
@@ -398,7 +392,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
   };
 
   const openFilterModal = () => {
-    setFilterGroup(catalogFilter.group);
+    setFilterGroup(catalogFilter.group === "all" ? "all" : categories.find(c => c.group === catalogFilter.group && (c.kind === "all" || c.kind === catalogFilter.kind))?.slug || "all");
     setFilterKind(catalogFilter.kind);
     setFilterType(catalogFilter.type || "");
     setFilterLoad(catalogFilter.load || "");
@@ -408,7 +402,8 @@ export default function SiteClient({ initialView = "home", category, initialProd
   };
 
   const applyFilter = () => {
-    setCatalogFilter({ group: filterGroup, kind: filterKind, type: filterType || undefined, load: filterLoad || undefined, length: filterLength || undefined });
+    const direction = categories.find(c => c.slug === filterGroup);
+    setCatalogFilter({ group: direction?.group || "all", kind: direction?.kind === "all" ? filterKind : direction?.kind || "all", type: filterType || undefined, load: filterLoad || undefined, length: filterLength || undefined });
     openPage("catalog");
     setIsFilterModalOpen(false);
   };
@@ -423,7 +418,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
     setIsFilterModalOpen(false);
   };
 
-
+  const isHomePage = pageView === "home";
   const isOverlayOpen = !!selectedProduct || isCartOpen || isFilterModalOpen || isMobileMenuOpen;
 
   useEffect(() => {
@@ -448,10 +443,10 @@ export default function SiteClient({ initialView = "home", category, initialProd
       >
         <div className="flex min-h-[68px] md:min-h-[92px] items-center justify-between px-4 md:px-10">
           <button type="button" onClick={() => openPage("home")} className="flex items-center gap-3 md:gap-5 text-left">
-            <img src="https://soft-liger-948183.netlify.app/logo.png" alt={COMPANY.full} className="h-10 w-auto object-contain md:h-14 lg:h-16" />
+            <img src="/brand-mark.svg" alt={COMPANY.full} className="h-10 w-auto object-contain md:h-14 lg:h-16" />
             <div>
               <div className={`max-w-[240px] md:max-w-[340px] text-[10px] sm:text-xs md:text-sm lg:text-base font-black leading-tight ${isHomePage ? "text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.7)]" : "text-[#0B1B33]"}`}>{COMPANY.full}</div>
-              <div className={`text-[8px] md:text-[10px] lg:text-xs font-black uppercase tracking-[0.28em] md:tracking-[0.32em] ${isHomePage ? "text-white/80 drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)]" : "text-[#0B1B33]/65"}`}>STROPS</div>
+              <div className={`text-[8px] md:text-[10px] lg:text-xs font-black uppercase tracking-[0.28em] md:tracking-[0.32em] ${isHomePage ? "text-white/80 drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)]" : "text-[#0B1B33]/65"}`}>STROP.SU</div>
             </div>
           </button>
 
@@ -518,27 +513,37 @@ export default function SiteClient({ initialView = "home", category, initialProd
         </div>
       )}
 
-
-
       {pageView === "home" && (
         <>
           <section className={`${styles.hero} relative overflow-hidden min-h-[640px] md:min-h-screen`}>
-            <div className={`${styles.heroImage} absolute inset-0 bg-cover bg-center`} style={{ backgroundImage: "url('https://soft-liger-948183.netlify.app/images/photo-site4.webp')" }} />
+            <div className={`${styles.heroImage} absolute inset-0 bg-cover bg-center`} style={{ backgroundImage: "url('/images/photo-site4.webp')" }} />
             <div className={`${styles.heroShade} absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/30`} />
 
             <div className={`${styles.heroContent} relative mx-auto grid max-w-[1600px] gap-8 md:gap-12 px-4 md:px-6 pt-[110px] pb-16 md:pt-[140px] md:pb-24 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:px-10 lg:pt-[160px] lg:pb-32`}>
               <div className="w-full max-w-[900px] rounded-[2rem] md:rounded-[2.5rem] border border-white/20 bg-black/60 p-6 md:p-8 lg:p-10 shadow-2xl backdrop-blur-md">
                 <div className="mb-4 md:mb-6 inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-3 md:px-5 py-1.5 md:py-2 text-[10px] md:text-sm font-black uppercase tracking-[0.2em] md:tracking-[0.25em] text-white">
-                  Производство · Подбор · Доставка
+                  {COMPANY.full} · Подбор · Документы
                 </div>
-                <h1 className={styles.heroTitle}>
-                  Стропы и грузоподъёмное оборудование в Москве
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-[0.95] text-white">
+                  Грузоподъёмные<br />решения<br />нового поколения
                 </h1>
                 <p className="mt-5 md:mt-7 max-w-2xl text-base md:text-lg leading-7 md:leading-8 text-white/90">
-                  Цепные и текстильные стропы, траверсы и средства крепления груза. Подберём нагрузку, длину и комплектацию. Доставка по Москве, МО и России.
+                  Подбираем <b className="text-white">стропы</b>, <b className="text-white">канаты</b>, <b className="text-white">тросы</b> и <b className="text-white">такелаж</b> под груз, объект и реальные условия работы.
                 </p>
-                <div className="mt-6 flex flex-wrap gap-3"><button onClick={openRequest} className={buttonOutlineOnDark}>Получить расчёт</button></div>
-                <div className="mt-8 grid grid-cols-3 gap-4 border-t border-white/20 pt-6 text-white"><div><strong className="text-2xl">{products.length}</strong><p className="text-sm">исполнений в каталоге</p></div><div><strong className="text-xl">По задаче</strong><p className="text-sm">длина и комплектация</p></div><div><strong className="text-xl">Москва и РФ</strong><p className="text-sm">получение и доставка</p></div></div>
+                <div className="mt-6 md:mt-10 grid grid-cols-3 gap-3 md:gap-5 border-t border-white/20 pt-5 md:pt-7">
+                  <div>
+                    <div className="text-xl md:text-3xl font-black text-white">12+</div>
+                    <div className="text-xs md:text-sm text-white/80">лет на рынке</div>
+                  </div>
+                  <div>
+                    <div className="text-xl md:text-3xl font-black text-white">500+</div>
+                    <div className="text-xs md:text-sm text-white/80">позиций</div>
+                  </div>
+                  <div>
+                    <div className="text-xl md:text-3xl font-black text-white">1–3 дня</div>
+                    <div className="text-xs md:text-sm text-white/80">отгрузка</div>
+                  </div>
+                </div>
               </div>
               <div className="grid gap-3 md:gap-5 grid-cols-1 sm:grid-cols-2">
                 {[
@@ -563,9 +568,9 @@ export default function SiteClient({ initialView = "home", category, initialProd
 
               <div className="mt-10 md:mt-14 grid gap-5 md:gap-7 lg:grid-cols-3">
                 {[
-                  { title: "Производство", text: "Изготовление под длину, нагрузку и тип крепления.", image: "https://soft-liger-948183.netlify.app/images/photo-site9.webp", page: "production" as const },
-                  { title: "Документы", text: "Сертификаты, декларации, паспорта изделий.", image: "https://soft-liger-948183.netlify.app/images/photo-site10.webp", page: "documents" as const },
-                  { title: "Доставка", text: "Москва, область и отправка ТК по РФ.", image: "https://soft-liger-948183.netlify.app/images/photo-site11.webp", page: "delivery" as const },
+                  { title: "Производство", text: "Изготовление под длину, нагрузку и тип крепления.", image: "/images/photo-site9.webp", page: "production" as const },
+                  { title: "Документы", text: "Сертификаты, декларации, паспорта изделий.", image: "/images/photo-site10.webp", page: "documents" as const },
+                  { title: "Доставка", text: "Москва, область и отправка ТК по РФ.", image: "/images/photo-site11.webp", page: "delivery" as const },
                 ].map((item) => (
                   <button key={item.title} type="button" onClick={() => openPage(item.page)} className="group overflow-hidden rounded-[2rem] md:rounded-[3rem] bg-[#0B1B33] text-left text-white shadow-xl transition hover:-translate-y-1">
                     <div className="relative aspect-[16/9] md:aspect-auto md:h-72 overflow-hidden">
@@ -584,16 +589,15 @@ export default function SiteClient({ initialView = "home", category, initialProd
           </section>
 
           <section id="directions" className="scroll-mt-28 bg-white px-4 md:px-6 py-16 md:py-20">
-            <div className={styles.directionsContainer}>
+            <div className="mx-auto max-w-[1500px]">
               <p className={labelLight}>Каталог</p>
               <h2 className={titleLight}>Основные направления</h2>
 
-              <div className={`${styles.directionFrame} relative mt-8 md:mt-10`}>
+              <div className="relative mt-8 md:mt-10">
                 <div className="overflow-hidden rounded-[2rem] md:rounded-[2.5rem] shadow-2xl">
                   <div
-                    className={styles.directionTrack}
-                    ref={directionTrack}
-                    onScroll={e=>{const el=e.currentTarget;setDirectionIndex(Math.round(el.scrollLeft/el.clientWidth));}}
+                    className="flex transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)]"
+                    style={{ transform: `translateX(-${directionIndex * 100}%)` }}
                   >
                     {directions.map((d, i) => (
                       <Link
@@ -631,16 +635,16 @@ export default function SiteClient({ initialView = "home", category, initialProd
                 <button
                   type="button"
                   aria-label="Предыдущее направление"
-                  onClick={(e) => { e.stopPropagation(); showDirection((directionIndex - 1 + directions.length) % directions.length); }}
-                  className={`${styles.directionArrow} ${styles.directionPrev}`}
+                  onClick={(e) => { e.stopPropagation(); setDirectionIndex((p) => (p - 1 + directions.length) % directions.length); }}
+                  className="absolute left-2 md:left-3 top-[100px] md:top-1/2 z-10 flex h-11 w-11 md:h-14 md:w-14 -translate-y-1/2 items-center justify-center rounded-full border border-white/30 bg-[#0B1B33]/70 text-2xl md:text-3xl font-black text-white backdrop-blur-md transition-all duration-300 hover:scale-110 hover:bg-[#0B1B33]"
                 >
                   ‹
                 </button>
                 <button
                   type="button"
                   aria-label="Следующее направление"
-                  onClick={(e) => { e.stopPropagation(); showDirection((directionIndex + 1) % directions.length); }}
-                  className={`${styles.directionArrow} ${styles.directionNext}`}
+                  onClick={(e) => { e.stopPropagation(); setDirectionIndex((p) => (p + 1) % directions.length); }}
+                  className="absolute right-2 md:right-3 top-[100px] md:top-1/2 z-10 flex h-11 w-11 md:h-14 md:w-14 -translate-y-1/2 items-center justify-center rounded-full border border-white/30 bg-[#0B1B33]/70 text-2xl md:text-3xl font-black text-white backdrop-blur-md transition-all duration-300 hover:scale-110 hover:bg-[#0B1B33]"
                 >
                   ›
                 </button>
@@ -652,7 +656,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
                         key={i}
                         type="button"
                         aria-label={`Показать направление ${i + 1}`}
-                        onClick={() => showDirection(i)}
+                        onClick={() => setDirectionIndex(i)}
                         className={`h-2 rounded-full transition-all duration-500 ${i === directionIndex ? "w-8 md:w-10 bg-[#0B1B33]" : "w-2 bg-[#0B1B33]/25 hover:bg-[#0B1B33]/50"}`}
                       />
                     ))}
@@ -665,15 +669,15 @@ export default function SiteClient({ initialView = "home", category, initialProd
             </div>
           </section>
 
-          <section id="request" className="relative overflow-hidden px-4 md:px-6 py-16 md:py-24" style={{ backgroundImage: "url('https://soft-liger-948183.netlify.app/images/photo-site13.webp')", backgroundSize: "cover", backgroundPosition: "center" }}>
+          <section id="request" className="relative overflow-hidden px-4 md:px-6 py-16 md:py-24" style={{ backgroundImage: "url('/images/photo-site13.webp')", backgroundSize: "cover", backgroundPosition: "center" }}>
             <div className="absolute inset-0 bg-[#0B1B33]/94" />
             <div className="relative mx-auto grid max-w-[1600px] gap-8 md:gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
               <div>
-                <p className={labelDark}>Расчёт по вашей задаче</p>
+                <p className={labelDark}>Расчёт за 15 минут</p>
                 <h2 className={titleDark}>Получить предложение</h2>
                 <p className="mt-4 md:mt-6 text-base md:text-lg leading-7 md:leading-8 text-[#C8D2E0]">Опишите задачу — менеджер уточнит параметры и подготовит предложение.</p>
                 <div className="mt-6 md:mt-8 space-y-2 md:space-y-3">
-                  {["Ответим в рабочее время", "Подберём 2–3 варианта под ваш бюджет", "Пришлём спецификацию и коммерческое предложение"].map((t) => (
+                  {["Ответим в течение 15 минут в рабочее время", "Подберём 2–3 варианта под ваш бюджет", "Пришлём спецификацию и коммерческое предложение"].map((t) => (
                     <div key={t} className="flex items-start gap-3 text-white text-sm md:text-base">
                       <span className="mt-2 h-1 w-1 flex-shrink-0 rounded-full bg-white/60" />
                       <span>{t}</span>
@@ -684,16 +688,16 @@ export default function SiteClient({ initialView = "home", category, initialProd
 
               <form onSubmit={handleRequestSubmit} className="rounded-[2rem] md:rounded-[3rem] bg-[#0B1B33] p-5 md:p-8 lg:p-10 text-white shadow-2xl ring-1 ring-white/10">
                 <div className="grid gap-4 md:gap-5 md:grid-cols-2">
-                  <input name="name" autoComplete="name" aria-label="Ваше имя" required value={requestForm.name} onChange={(e) => setRequestForm({ ...requestForm, name: e.target.value })} placeholder="Ваше имя" className="rounded-2xl border border-white/10 bg-[#102744] px-4 md:px-5 py-3 md:py-4 text-white outline-none placeholder:text-[#C8D2E0]/60 focus:border-white" />
-                  <input name="phone" type="tel" autoComplete="tel" aria-label="Телефон" required value={requestForm.phone} onChange={(e) => setRequestForm({ ...requestForm, phone: e.target.value })} placeholder="Телефон" className="rounded-2xl border border-white/10 bg-[#102744] px-4 md:px-5 py-3 md:py-4 text-white outline-none placeholder:text-[#C8D2E0]/60 focus:border-white" />
-                  <input name="company" aria-label="Компания" value={requestForm.company} onChange={(e) => setRequestForm({ ...requestForm, company: e.target.value })} placeholder="Компания" className="rounded-2xl border border-white/10 bg-[#102744] px-4 md:px-5 py-3 md:py-4 text-white outline-none placeholder:text-[#C8D2E0]/60 focus:border-white" />
-                  <input name="email" aria-label="Электронная почта" type="email" value={requestForm.email} onChange={(e) => setRequestForm({ ...requestForm, email: e.target.value })} placeholder="E-mail" className="rounded-2xl border border-white/10 bg-[#102744] px-4 md:px-5 py-3 md:py-4 text-white outline-none placeholder:text-[#C8D2E0]/60 focus:border-white" />
-                  <textarea name="message" aria-label="Задача для расчёта" rows={5} value={requestForm.message} onChange={(e) => setRequestForm({ ...requestForm, message: e.target.value })} placeholder="Что нужно изготовить или подобрать?" className="rounded-2xl border border-white/10 bg-[#102744] px-4 md:px-5 py-3 md:py-4 text-white outline-none placeholder:text-[#C8D2E0]/60 focus:border-white md:col-span-2" />
+                  <input name="name" required value={requestForm.name} onChange={(e) => setRequestForm({ ...requestForm, name: e.target.value })} placeholder="Ваше имя" className="rounded-2xl border border-white/10 bg-[#102744] px-4 md:px-5 py-3 md:py-4 text-white outline-none placeholder:text-[#C8D2E0]/60 focus:border-white" />
+                  <input name="phone" required value={requestForm.phone} onChange={(e) => setRequestForm({ ...requestForm, phone: e.target.value })} placeholder="Телефон" className="rounded-2xl border border-white/10 bg-[#102744] px-4 md:px-5 py-3 md:py-4 text-white outline-none placeholder:text-[#C8D2E0]/60 focus:border-white" />
+                  <input name="company" value={requestForm.company} onChange={(e) => setRequestForm({ ...requestForm, company: e.target.value })} placeholder="Компания" className="rounded-2xl border border-white/10 bg-[#102744] px-4 md:px-5 py-3 md:py-4 text-white outline-none placeholder:text-[#C8D2E0]/60 focus:border-white" />
+                  <input name="email" type="email" value={requestForm.email} onChange={(e) => setRequestForm({ ...requestForm, email: e.target.value })} placeholder="E-mail" className="rounded-2xl border border-white/10 bg-[#102744] px-4 md:px-5 py-3 md:py-4 text-white outline-none placeholder:text-[#C8D2E0]/60 focus:border-white" />
+                  <textarea name="message" rows={5} value={requestForm.message} onChange={(e) => setRequestForm({ ...requestForm, message: e.target.value })} placeholder="Что нужно изготовить или подобрать?" className="rounded-2xl border border-white/10 bg-[#102744] px-4 md:px-5 py-3 md:py-4 text-white outline-none placeholder:text-[#C8D2E0]/60 focus:border-white md:col-span-2" />
                 </div>
                 <button type="submit" disabled={requestStatus === "sending"} className={`mt-5 md:mt-6 w-full ${buttonOutlineOnDark} disabled:opacity-60`}>
                   {requestStatus === "sending" ? "Отправляем..." : "Получить расчёт"}
                 </button>
-                {requestStatus === "ok" && (<p className="mt-4 text-sm leading-6 text-green-300">Заявка отправлена. Менеджер свяжется с вами в рабочее время.</p>)}
+                {requestStatus === "ok" && (<p className="mt-4 text-sm leading-6 text-green-300">Заявка отправлена. Менеджер свяжется с вами в течение 15 минут.</p>)}
                 {requestStatus === "error" && (<p className="mt-4 text-sm leading-6 text-red-300">{requestError}</p>)}
                 {requestStatus === "idle" && (<p className="mt-4 text-xs md:text-sm leading-6 text-[#C8D2E0]">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>)}
               </form>
@@ -715,7 +719,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
       )}
 
       {pageView === "catalog" && (
-        <section className={`${styles.catalogSection} scroll-mt-28 bg-white px-4 md:px-6 py-16 md:py-24`}>
+        <section className={`${catalogStyles.catalogSection} scroll-mt-28 bg-white px-4 md:px-6`}>
           <div className="mx-auto max-w-[1600px]">
             <p className={labelLight}>Продукция</p>
             <h1 className={titleLight}>{category?.title || "Каталог товаров"}</h1>
@@ -742,18 +746,17 @@ export default function SiteClient({ initialView = "home", category, initialProd
               </div>
             )}
 
-            <CatalogNavigation/>
-            <div className="mt-6 flex flex-wrap items-center gap-3"><label htmlFor="catalog-search" className="font-bold text-[#0B1B33]">Поиск в каталоге</label><input id="catalog-search" type="search" value={search} onChange={e=>setSearch(e.target.value)} placeholder="Название, модель или нагрузка" className="min-w-0 w-full sm:w-80 rounded-xl border border-slate-300 px-4 py-3 text-base"/>{search&&<button onClick={()=>setSearch('')} className={buttonOutline}>Очистить</button>}<p role="status" className="text-sm text-slate-600">Товаров: {filteredProducts.length}</p></div>
-            {search.trim()&&<nav aria-label="Найденные разделы" className="mt-5 flex flex-wrap gap-3">{industrialPages.filter(p=>search.trim().toLowerCase().replace(/ё/g,'е').split(/\s+/).every(q=>(p.title+' '+p.intro).toLowerCase().replace(/ё/g,'е').includes(q))).slice(0,8).map(p=><Link className={buttonOutline} key={p.path} href={p.path}>{p.title} ↗</Link>)}</nav>}
+            <nav aria-label="Категории каталога" className="mt-8 flex flex-wrap gap-3">{category && filteredProducts.length < products.length && <Link href="/catalog" className={buttonOutline}>Все товары</Link>}{categories.map(c=><Link key={c.slug} href={`/catalog/${c.slug}`} className={buttonOutline} aria-current={category?.slug===c.slug?"page":undefined}>{c.title}</Link>)}</nav>
+            <details className={catalogStyles.sectionDirectory}><summary>Все разделы каталога и подбор по задаче</summary><nav aria-label="Все разделы каталога">{industrialPages.map(p=><Link key={p.path} href={p.path}>{p.title}</Link>)}</nav></details>
             <div className={catalogStyles.grid}>
-              {filteredProducts.map((product) => <ProductCard key={product.name} product={product} onOpen={product=>{setSelectedProduct(product);reachGoal("product_open");}} />)}
+              {filteredProducts.map((product) => <ProductCard key={product.slug} product={product} onOpen={product=>{setSelectedProduct(product);reachGoal("product_open");}} />)}
             </div>
           </div>
         </section>
       )}
 
       {pageView === "documents" && (
-        <section className={styles.infoPage}><div aria-hidden="true" className={styles.infoBackground} style={{backgroundImage:"url('https://soft-liger-948183.netlify.app/images/photo-site10.webp')"}}/>
+        <section className="relative min-h-screen px-4 md:px-6 py-16 md:py-24 bg-[#FAFAF7]">
           <div className="relative mx-auto max-w-[1600px]">
             <div className="flex flex-wrap gap-3 md:gap-4">
               <button type="button" onClick={goBack} className={buttonOutline}>← Вернуться назад</button>
@@ -789,7 +792,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
       )}
 
       {pageView === "production" && (
-        <section className={styles.infoPage}><div aria-hidden="true" className={styles.infoBackground} style={{backgroundImage:"url('https://soft-liger-948183.netlify.app/images/photo-site9.webp')"}}/>
+        <section className="relative min-h-screen px-4 md:px-6 py-16 md:py-24 bg-white">
           <div className="relative mx-auto max-w-[1600px]">
             <div className="flex flex-wrap gap-3 md:gap-4">
               <button type="button" onClick={goBack} className={buttonOutline}>← Вернуться назад</button>
@@ -844,7 +847,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
       )}
 
       {pageView === "delivery" && (
-        <section className={styles.infoPage}><div aria-hidden="true" className={styles.infoBackground} style={{backgroundImage:"url('https://soft-liger-948183.netlify.app/images/photo-site11.webp')"}}/>
+        <section className="relative min-h-screen px-4 md:px-6 py-16 md:py-24 bg-white">
           <div className="relative mx-auto max-w-[1600px]">
             <div className="flex flex-wrap gap-3 md:gap-4">
               <button type="button" onClick={goBack} className={buttonOutline}>← Вернуться назад</button>
@@ -910,16 +913,16 @@ export default function SiteClient({ initialView = "home", category, initialProd
               <div className="mt-5 md:mt-6 grid gap-4 md:gap-5">
                 <label className="block">
                   <span className="font-black text-[#0B1B33] text-sm md:text-base">Группа товаров</span>
-                  <select value={filterGroup} onChange={(e) => { setFilterGroup(e.target.value as typeof filterGroup); setFilterKind("all"); setFilterType(""); }} className="mt-2 w-full rounded-2xl border border-[#0B1B33]/20 bg-white px-4 md:px-5 py-3 md:py-4 text-[#0B1B33] outline-none">
-                    <option value="all">Все</option><option value="slings">Стропы</option><option value="ropes">Буксировочные тросы</option><option value="other">Другое</option>
+                  <select value={filterGroup} onChange={(e) => { setFilterGroup(e.target.value as typeof filterGroup); setFilterKind("all"); setFilterType(""); setFilterLoad(""); setFilterLength(""); }} className="mt-2 w-full rounded-2xl border border-[#0B1B33]/20 bg-white px-4 md:px-5 py-3 md:py-4 text-[#0B1B33] outline-none">
+                    <option value="all">Все направления</option>{categories.map(c => <option key={c.slug} value={c.slug}>{c.title}</option>)}
                   </select>
                 </label>
-                {filterGroup === "slings" && (
+                {filterGroup === "stropy" && (
                   <>
                     <label className="block">
                       <span className="font-black text-[#0B1B33] text-sm md:text-base">Вид стропа</span>
                       <select value={filterKind} onChange={(e) => { setFilterKind(e.target.value); setFilterType(""); }} className="mt-2 w-full rounded-2xl border border-[#0B1B33]/20 bg-white px-4 md:px-5 py-3 md:py-4 text-[#0B1B33] outline-none">
-                        <option value="all">Все</option><option value="Текстильные">Текстильные</option><option value="Канатные">Канатные</option><option value="Цепные">Цепные</option>
+                        <option value="all">Все</option><option value="Текстильные">Текстильные</option><option value="Канатные">Канатные</option><option value="Цепные">Цепные</option><option value="Спансеты">Спансеты</option>
                       </select>
                     </label>
                     {filterKind !== "all" && (
@@ -929,13 +932,14 @@ export default function SiteClient({ initialView = "home", category, initialProd
                           <option value="">Все</option>
                           {filterKind === "Цепные" && (<><option value="4СЦ">4СЦ</option><option value="2СЦ">2СЦ</option><option value="1СЦ">1СЦ</option><option value="ВЦ">ВЦ</option><option value="Цепь крепления">Цепь крепления</option><option value="Цепь + талреп">Цепь + талреп</option></>)}
                           {filterKind === "Текстильные" && (<><option value="СТП">СТП</option><option value="СТКК/СТПК">СТКК/СТПК</option></>)}
-                          {filterKind === "Канатные" && (<><option value="1СК">1СК</option><option value="4СК">4СК</option></>)}
+                          {filterKind === "Спансеты" && (<><option value="Спансет текстильный">Текстильный</option><option value="Спансет стальной">Стальной</option></>)}
+                          {filterKind === "Канатные" && (<><option value="УСК1 (СКП)">УСК1 (СКП)</option><option value="4СК">4СК</option></>)}
                         </select>
                       </label>
                     )}
                   </>
                 )}
-                {filterGroup === "ropes" && (
+                {filterGroup === "buksirovochnye-trosy" && (
                   <label className="block">
                     <span className="font-black text-[#0B1B33] text-sm md:text-base">Вид троса</span>
                     <select value={filterKind} onChange={(e) => setFilterKind(e.target.value)} className="mt-2 w-full rounded-2xl border border-[#0B1B33]/20 bg-white px-4 md:px-5 py-3 md:py-4 text-[#0B1B33] outline-none">
@@ -952,7 +956,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
                 <label className="block">
                   <span className="font-black text-[#0B1B33] text-sm md:text-base">Длина</span>
                   <select value={filterLength} onChange={(e) => setFilterLength(e.target.value)} className="mt-2 w-full rounded-2xl border border-[#0B1B33]/20 bg-white px-4 md:px-5 py-3 md:py-4 text-[#0B1B33] outline-none">
-                    <option value="">Любая</option><option value="1 м">1 м</option><option value="2 м">2 м</option><option value="3 м">3 м</option><option value="4 м">4 м</option><option value="5 м">5 м</option><option value="6 м">6 м</option><option value="7 м">7 м</option><option value="8 м">8 м</option><option value="10 м">10 м</option>
+                    <option value="">Любая</option>{Array.from(new Set(products.flatMap(p => p.variants?.map(v => v.length) || (p.length ? [p.length] : [])))).filter(l => /^\d+(?:,\d+)? м$/.test(l)).sort((a,b) => parseFloat(a)-parseFloat(b)).map(l => <option key={l} value={l}>{l}</option>)}
                   </select>
                 </label>
               </div>
@@ -966,7 +970,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
       )}
 
       <div className="fixed bottom-20 md:bottom-24 right-4 md:right-6 z-50">
-        <button type="button" onClick={() => setIsAssistantOpen(!isAssistantOpen)} className="flex h-14 w-14 md:h-16 md:w-16 items-center justify-center rounded-full bg-[#0B1B33] text-2xl md:text-3xl text-white shadow-2xl transition hover:scale-105 hover:bg-[#102744]" aria-label="ИИ-ассистент" aria-expanded={isAssistantOpen}><span aria-hidden="true">💬</span></button>
+        <button type="button" onClick={() => setIsAssistantOpen(!isAssistantOpen)} className="flex h-14 w-14 md:h-16 md:w-16 items-center justify-center rounded-full bg-[#0B1B33] text-2xl md:text-3xl text-white shadow-2xl transition hover:scale-105 hover:bg-[#102744]" aria-label="ИИ-ассистент">💬</button>
       </div>
 
       {isAssistantOpen && (
@@ -1032,8 +1036,8 @@ export default function SiteClient({ initialView = "home", category, initialProd
         <div className="mx-auto max-w-[1600px]">
           <div className="grid gap-8 md:gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
             <div>
-              <div className="text-2xl md:text-3xl font-black text-[#0B1B33]">{COMPANY.full}</div>
-              <div className="mt-2 text-[10px] font-black uppercase tracking-[0.32em] text-[#0B1B33]/60">STROPS</div>
+              <img src="/logo.svg" width="280" height="72" alt="МПК — грузоподъёмные решения"/>
+              <div className="mt-2 text-[10px] font-black uppercase tracking-[0.32em] text-[#0B1B33]/60">STROP.SU</div>
               <p className="mt-4 md:mt-6 text-sm md:text-base leading-7 text-[#526174]">Производство и поставка грузоподъёмного оборудования, стропов, канатов и такелажа. Работаем с 2013 года.</p>
             </div>
 

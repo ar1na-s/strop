@@ -5,6 +5,7 @@ import { SITE_URL, jsonLd } from "./data/seo";
 import Analytics from "./components/Analytics";
 
 export const metadata: Metadata = {
+  icons: { icon: "/brand-mark.svg", apple: "/brand-mark.png" },
   metadataBase: new URL(SITE_URL),
   verification: {
     google: process.env.GOOGLE_SITE_VERIFICATION || undefined,
@@ -44,7 +45,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body><script type="application/ld+json" dangerouslySetInnerHTML={{__html:jsonLd({"@context":"https://schema.org","@type":"Organization",name:COMPANY.full,url:SITE_URL,logo:`${SITE_URL}/logo.png`,telephone:COMPANY.phone,email:COMPANY.email,address:{"@type":"PostalAddress",streetAddress:COMPANY.physicalAddress,addressLocality:"Москва",addressCountry:"RU"}})}}/>{children}<Analytics/></body>
+      <body><script type="application/ld+json" dangerouslySetInnerHTML={{__html:jsonLd({"@context":"https://schema.org","@type":"Organization",name:COMPANY.full,url:SITE_URL,logo:`${SITE_URL}/logo-v2.png`,telephone:COMPANY.phone,email:COMPANY.email,address:{"@type":"PostalAddress",streetAddress:COMPANY.physicalAddress,addressLocality:"Москва",addressCountry:"RU"}})}}/>{children}<Analytics/></body>
     </html>
   );
 }
