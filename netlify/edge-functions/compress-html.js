@@ -31,6 +31,10 @@ export default async function compressHtml(request, context) {
     headers.set('Content-Encoding', 'gzip');
     headers.set('Content-Length', String(compressed.byteLength));
     headers.set('X-MPK-HTML', 'gzip-v1');
+    const cacheControl = headers.get('Cache-Control') || '';
+    if (!cacheControl.toLowerCase().includes('no-transform')) {
+      headers.set('Cache-Control', [cacheControl, 'no-transform'].filter(Boolean).join(', '));
+    }
     const vary = headers.get('Vary') || '';
     if (!vary.toLowerCase().split(',').some(v => v.trim() === 'accept-encoding')) {
       headers.set('Vary', [vary, 'Accept-Encoding'].filter(Boolean).join(', '));
