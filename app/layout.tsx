@@ -45,6 +45,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
+      <head><link rel="preconnect" href="https://soft-liger-948183.netlify.app"/><link rel="dns-prefetch" href="https://soft-liger-948183.netlify.app"/></head>
       <body><script type="application/ld+json" dangerouslySetInnerHTML={{__html:jsonLd({"@context":"https://schema.org","@type":"Organization",name:COMPANY.full,url:SITE_URL,logo:`${SITE_URL}/logo-v2.png`,telephone:COMPANY.phone,email:COMPANY.email,address:{"@type":"PostalAddress",streetAddress:COMPANY.physicalAddress,addressLocality:"Москва",addressCountry:"RU"}})}}/>{children}<Analytics/></body>
     </html>
   );

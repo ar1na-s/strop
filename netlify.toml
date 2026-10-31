@@ -48,3 +48,13 @@ force = true
 for = "/_next/static/*"
 [headers.values]
 Access-Control-Allow-Origin = "*"
+
+[[headers]]
+for = "/images/optimized-v1/*"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/products/thumbs-v1/*"
+[headers.values]
+Cache-Control = "public, max-age=31536000, immutable"

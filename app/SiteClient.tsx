@@ -3,6 +3,8 @@
 import { useState, Suspense, useRef, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
+import dynamic from "next/dynamic";
+import BrandMark from "./components/BrandMark";
 import styles from "./page.module.css";
 import catalogStyles from "./components/catalog.module.css";
 import { COMPANY } from "./data/company";
@@ -11,10 +13,10 @@ import type { Product } from "./data/product";
 import { products, categories, type Category } from "./data/catalog";
 import { describeConfiguration } from "./data/product";
 import { useCart } from "./data/cart";
-import CartCheckout from "./components/CartCheckout";
+const CartCheckout = dynamic(() => import("./components/CartCheckout"));
 import ScrollToTop from "./components/ScrollToTop";
 import ProductCard from "./components/ProductCard";
-import ProductDialog from "./components/ProductDialog";
+const ProductDialog = dynamic(() => import("./components/ProductDialog"));
 import { industrialPages } from "./data/industrial";
 import { reachGoal } from "./components/Analytics";
 
@@ -97,6 +99,7 @@ function SearchParamsSync({ onSearchChange }: { onSearchChange: (search: string)
 
 export default function SiteClient({ initialView = "home", category, initialProduct }: { initialView?: "home" | "catalog" | "product"; category?: Category; initialProduct?: Product }) {
   const [search, setSearch] = useState("");
+  const [visibleCount, setVisibleCount] = useState(24);
 
   const [cartItems, setCartItems] = useCart();
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -158,6 +161,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
     const matchesLength = !catalogFilter.length || (product.variants?.some(v => v.length === catalogFilter.length) || product.length === catalogFilter.length || (!product.variants && /^(\d+)–(\d+) м$/.test(product.length || "") && Number.parseInt(catalogFilter.length) >= Number.parseInt(product.length!) && Number.parseInt(catalogFilter.length) <= Number.parseInt(product.length!.split("–")[1])));
     return matchesSearch && matchesGroup && matchesKind && matchesType && matchesLoad && matchesLength;
   });
+  useEffect(() => { setVisibleCount(24); }, [search, catalogFilter]);
 
   const openPage = (view: "home" | "catalog" | "product" | "documents" | "production" | "delivery") => {
     if (typeof window !== "undefined") {
@@ -444,7 +448,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
       >
         <div className="flex min-h-[68px] md:min-h-[92px] items-center justify-between px-4 md:px-10">
           <button type="button" onClick={() => openPage("home")} className="flex items-center gap-3 md:gap-5 text-left">
-            <img src="/brand-mark.svg" alt={COMPANY.full} className="h-10 w-auto object-contain md:h-14 lg:h-16" />
+            <BrandMark className="h-10 w-auto object-contain md:h-14 lg:h-16" />
             <div>
               <div className={`max-w-[240px] md:max-w-[340px] text-[10px] sm:text-xs md:text-sm lg:text-base font-black leading-tight ${isHomePage ? "text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.7)]" : "text-[#0B1B33]"}`}>{COMPANY.full}</div>
               <div className={`text-[8px] md:text-[10px] lg:text-xs font-black uppercase tracking-[0.28em] md:tracking-[0.32em] ${isHomePage ? "text-white/80 drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)]" : "text-[#0B1B33]/65"}`}>STROP.SU</div>
@@ -517,7 +521,12 @@ export default function SiteClient({ initialView = "home", category, initialProd
       {pageView === "home" && (
         <>
           <section className={`${styles.hero} relative overflow-hidden min-h-[640px] md:min-h-screen`}>
-            <div className={`${styles.heroImage} absolute inset-0 bg-cover bg-center`} style={{ backgroundImage: `url('${publicAsset('/images/photo-site4.webp')}')` }} />
+            <link rel="preload" as="image" href={publicAsset('/images/optimized-v1/hero-mobile.webp')} media="(max-width: 767px)" fetchPriority="high"/>
+            <link rel="preload" as="image" href={publicAsset('/images/photo-site4.webp')} media="(min-width: 768px)" fetchPriority="high"/>
+            <picture className={`${styles.heroImage} absolute inset-0`} aria-hidden="true">
+              <source media="(max-width: 767px)" srcSet={publicAsset('/images/optimized-v1/hero-mobile.webp')}/>
+              <img src={publicAsset('/images/photo-site4.webp')} width="1440" height="960" alt="" fetchPriority="high" decoding="async" className={styles.heroPhoto}/>
+            </picture>
             <div className={`${styles.heroShade} absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/30`} />
 
             <div className={`${styles.heroContent} relative mx-auto grid max-w-[1600px] gap-8 md:gap-12 px-4 md:px-6 pt-[110px] pb-16 md:pt-[140px] md:pb-24 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:px-10 lg:pt-[160px] lg:pb-32`}>
@@ -575,7 +584,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
                 ].map((item) => (
                   <button key={item.title} type="button" onClick={() => openPage(item.page)} className="group overflow-hidden rounded-[2rem] md:rounded-[3rem] bg-[#0B1B33] text-left text-white shadow-xl transition hover:-translate-y-1">
                     <div className="relative aspect-[16/9] md:aspect-auto md:h-72 overflow-hidden">
-                      <div className="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-105" style={{ backgroundImage: `url('${publicAsset(item.image)}')` }} />
+                      <img className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105" src={publicAsset(item.image)} alt="" loading="lazy" decoding="async" width="1000" height="700"/>
                       <div className="absolute inset-0 bg-gradient-to-t from-[#0B1B33] via-[#0B1B33]/55 to-transparent" />
                     </div>
                     <div className="p-6 md:p-8">
@@ -608,9 +617,9 @@ export default function SiteClient({ initialView = "home", category, initialProd
                         aria-hidden={i !== directionIndex}
                         className={`${styles.direction} relative min-h-[380px] md:min-h-[500px] w-full flex-shrink-0 cursor-pointer overflow-hidden bg-[#0B1B33] text-white transition-opacity duration-700 ${i === directionIndex ? "opacity-100" : "opacity-60"}`}
                       >
-                        <div
+                        <img
                           className={`${styles.directionImage} absolute inset-0 bg-cover bg-center transition-transform duration-[2000ms] ease-out ${i === directionIndex ? "scale-100" : "scale-110"}`}
-                          style={{ backgroundImage: `url('${publicAsset(d.image)}')` }}
+                          src={publicAsset(d.image)} alt="" loading="lazy" decoding="async" width="1000" height="700"
                         />
                         <div className={`${styles.directionShade} absolute inset-0 bg-gradient-to-t from-[#0B1B33] via-[#0B1B33]/70 to-[#0B1B33]/10`} />
                         <div className={`${styles.directionContent} absolute inset-x-0 bottom-0 p-5 md:p-8 lg:p-14 transition-all duration-700 ${i === directionIndex ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"}`}>
@@ -750,8 +759,9 @@ export default function SiteClient({ initialView = "home", category, initialProd
             <nav aria-label="Категории каталога" className="mt-8 flex flex-wrap gap-3">{category && filteredProducts.length < products.length && <Link href="/catalog" className={buttonOutline}>Все товары</Link>}{categories.map(c=><Link key={c.slug} href={`/catalog/${c.slug}`} className={buttonOutline} aria-current={category?.slug===c.slug?"page":undefined}>{c.title}</Link>)}</nav>
             <details className={catalogStyles.sectionDirectory}><summary>Все разделы каталога и подбор по задаче</summary><nav aria-label="Все разделы каталога">{industrialPages.map(p=><Link key={p.path} href={p.path}>{p.title}</Link>)}</nav></details>
             <div className={catalogStyles.grid}>
-              {filteredProducts.map((product) => <ProductCard key={product.slug} product={product} onOpen={product=>{setSelectedProduct(product);reachGoal("product_open");}} />)}
+              {filteredProducts.slice(0, visibleCount).map((product) => <ProductCard key={product.slug} product={product} onOpen={product=>{setSelectedProduct(product);reachGoal("product_open");}} />)}
             </div>
+            {filteredProducts.length > visibleCount && <div className="mt-8 text-center"><p className="mb-3 text-sm">Показано {Math.min(visibleCount, filteredProducts.length)} из {filteredProducts.length}</p><button type="button" className={buttonOutline} onClick={()=>setVisibleCount(n=>n+24)}>Показать ещё 24 товара</button></div>}
           </div>
         </section>
       )}
@@ -1037,7 +1047,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
         <div className="mx-auto max-w-[1600px]">
           <div className="grid gap-8 md:gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
             <div>
-              <img src="/logo.svg" width="280" height="72" alt="МПК — грузоподъёмные решения"/>
+              <img src="/logo.svg" width="280" height="72" alt="МПК — грузоподъёмные решения" loading="lazy"/>
               <div className="mt-2 text-[10px] font-black uppercase tracking-[0.32em] text-[#0B1B33]/60">STROP.SU</div>
               <p className="mt-4 md:mt-6 text-sm md:text-base leading-7 text-[#526174]">Производство и поставка грузоподъёмного оборудования, стропов, канатов и такелажа. Работаем с 2013 года.</p>
             </div>

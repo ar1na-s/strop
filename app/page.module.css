@@ -1,6 +1,9 @@
 .site {
   overflow-wrap: anywhere;
 }
+.heroPhoto{width:100%;height:100%;object-fit:cover;object-position:center}
+.directionImage{width:100%;height:100%;object-fit:cover;object-position:center}
+@media(max-width:767px){.heroPhoto{object-position:62% center}.directionImage{object-fit:contain}}
 
 .site input,
 .site textarea,
