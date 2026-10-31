@@ -2,7 +2,7 @@
 import type { Product } from "../data/product";
 import ProductPhoto from "./ProductPhoto";
 import styles from "./catalog.module.css";
-import Link from "next/link";
+import Link from "./SiteLink";
 
 export const formatPrice = (price: number) => new Intl.NumberFormat("ru-RU").format(price) + " ₽";
 function compactName(p:Product) {

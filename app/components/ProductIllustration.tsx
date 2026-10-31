@@ -1,10 +1,11 @@
 import type { Product } from "../data/product";
 import styles from "./catalog.module.css";
+import { webbingColor } from "../data/product-images";
 
 export function illustrationFor(product: Product) {
   if (product.type === "Цепь крепления") return "lashing-chain";
   if (product.type === "Цепь + талреп") return "lashing-chain-binder";
-  if (product.type === "СТП") return product.image?.split("/").pop()?.replace(".svg", "") || "webbing-sling";
+  if (product.type === "СТП") return `webbing-${webbingColor(product.load)}`;
   return null;
 }
 

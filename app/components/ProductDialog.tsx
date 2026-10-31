@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { Product } from "../data/product";
 import { configureProduct } from "../data/product";
-import Link from "next/link";
+import Link from "./SiteLink";
 import ProductVisual, { ComponentDimensions } from "./ProductVisual";
 import { ProductDrawing } from "./ProductIllustration";
 import { illustrationFor } from "./ProductIllustration";

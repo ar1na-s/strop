@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from './SiteLink';
 import { COMPANY } from '../data/company';
 import { industrialPages, industrialNavigation, industrialByPath } from '../data/industrial';
 import { jsonLd, SITE_URL } from '../data/seo';

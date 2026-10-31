@@ -2,7 +2,7 @@
 
 import { useState, Suspense, useRef, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
-import Link from "next/link";
+import Link from "./components/SiteLink";
 import dynamic from "next/dynamic";
 import BrandMark from "./components/BrandMark";
 import styles from "./page.module.css";
@@ -174,6 +174,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
   };
 
   const goBack = () => {
+    if (pageView === "catalog") { window.location.assign("/"); return; }
     const targetView = prevPageRef.current || "home";
     const savedY = scrollPositionsRef.current[targetView] || 0;
     setPageView(targetView);
@@ -447,13 +448,13 @@ export default function SiteClient({ initialView = "home", category, initialProd
         }
       >
         <div className="flex min-h-[68px] md:min-h-[92px] items-center justify-between px-4 md:px-10">
-          <button type="button" onClick={() => openPage("home")} className="flex items-center gap-3 md:gap-5 text-left">
+          <Link href="/" className="flex items-center gap-3 md:gap-5 text-left">
             <BrandMark className="h-10 w-auto object-contain md:h-14 lg:h-16" />
             <div>
               <div className={`max-w-[240px] md:max-w-[340px] text-[10px] sm:text-xs md:text-sm lg:text-base font-black leading-tight ${isHomePage ? "text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.7)]" : "text-[#0B1B33]"}`}>{COMPANY.full}</div>
               <div className={`text-[8px] md:text-[10px] lg:text-xs font-black uppercase tracking-[0.28em] md:tracking-[0.32em] ${isHomePage ? "text-white/80 drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)]" : "text-[#0B1B33]/65"}`}>STROP.SU</div>
             </div>
-          </button>
+          </Link>
 
           <nav className="hidden items-center gap-2 lg:flex">
             <Link href="/" className={isHomePage ? "rounded-full bg-white px-5 py-2 font-bold text-[#0B1B33] shadow-md transition" : "rounded-full px-5 py-2 font-bold text-[#0B1B33] transition hover:bg-[#0B1B33]/10"}>Главная</Link>
@@ -738,13 +739,7 @@ export default function SiteClient({ initialView = "home", category, initialProd
             <div className="mt-6 md:mt-8 flex flex-wrap gap-3 md:gap-4">
               <button type="button" onClick={goBack} className={buttonOutline}>← Вернуться назад</button>
               {isCatalogFilterActive && (
-                <button
-                  type="button"
-                  onClick={() => setCatalogFilter({ group: "all", kind: "all", type: "", load: "", length: "" })}
-                  className={buttonOutline}
-                >
-                  Показать все товары
-                </button>
+                <Link href="/catalog" className={buttonOutline}>Показать все товары</Link>
               )}
             </div>
 

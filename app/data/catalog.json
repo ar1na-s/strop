@@ -77,7 +77,8 @@
       "sheet": "4сц ",
       "range": "A1:F14"
     },
-    "slug": "strop-tsepnoy-chetyrekhvetvevoy-4sts-2-5-t"
+    "slug": "strop-tsepnoy-chetyrekhvetvevoy-4sts-2-5-t",
+    "image": "/products/studio/chain-4sc.webp"
   },
   {
     "name": "Строп цепной четырёхветвевой 4СЦ 4,3 т",
@@ -157,7 +158,8 @@
       "sheet": "4сц ",
       "range": "H1:M14"
     },
-    "slug": "strop-tsepnoy-chetyrekhvetvevoy-4sts-4-3-t"
+    "slug": "strop-tsepnoy-chetyrekhvetvevoy-4sts-4-3-t",
+    "image": "/products/studio/chain-4sc.webp"
   },
   {
     "name": "Строп цепной четырёхветвевой 4СЦ 6,7 т",
@@ -237,7 +239,8 @@
       "sheet": "4сц ",
       "range": "O1:T14"
     },
-    "slug": "strop-tsepnoy-chetyrekhvetvevoy-4sts-6-7-t"
+    "slug": "strop-tsepnoy-chetyrekhvetvevoy-4sts-6-7-t",
+    "image": "/products/studio/chain-4sc.webp"
   },
   {
     "name": "Строп цепной четырёхветвевой 4СЦ 11,2 т",
@@ -317,7 +320,8 @@
       "sheet": "4сц ",
       "range": "A16:F29"
     },
-    "slug": "strop-tsepnoy-chetyrekhvetvevoy-4sts-11-2-t"
+    "slug": "strop-tsepnoy-chetyrekhvetvevoy-4sts-11-2-t",
+    "image": "/products/studio/chain-4sc.webp"
   },
   {
     "name": "Строп цепной четырёхветвевой 4СЦ 17,0 т",
@@ -393,7 +397,8 @@
       "sheet": "4сц ",
       "range": "H16:M29"
     },
-    "slug": "strop-tsepnoy-chetyrekhvetvevoy-4sts-17-0-t"
+    "slug": "strop-tsepnoy-chetyrekhvetvevoy-4sts-17-0-t",
+    "image": "/products/studio/chain-4sc.webp"
   },
   {
     "name": "Строп цепной четырёхветвевой 4СЦ 26,5 т",
@@ -469,7 +474,8 @@
       "sheet": "4сц ",
       "range": "O16:T29"
     },
-    "slug": "strop-tsepnoy-chetyrekhvetvevoy-4sts-26-5-t"
+    "slug": "strop-tsepnoy-chetyrekhvetvevoy-4sts-26-5-t",
+    "image": "/products/studio/chain-4sc.webp"
   },
   {
     "name": "Строп цепной двухветвевой 2СЦ 1,6 т",
@@ -543,7 +549,8 @@
       "sheet": "2сц",
       "range": "A1:F14"
     },
-    "slug": "strop-tsepnoy-dvukhvetvevoy-2sts-1-6-t"
+    "slug": "strop-tsepnoy-dvukhvetvevoy-2sts-1-6-t",
+    "image": "/products/studio/chain-2sc.webp"
   },
   {
     "name": "Строп цепной двухветвевой 2СЦ 3,15 т",
@@ -617,7 +624,8 @@
       "sheet": "2сц",
       "range": "H1:M14"
     },
-    "slug": "strop-tsepnoy-dvukhvetvevoy-2sts-3-15-t"
+    "slug": "strop-tsepnoy-dvukhvetvevoy-2sts-3-15-t",
+    "image": "/products/studio/chain-2sc.webp"
   },
   {
     "name": "Строп цепной двухветвевой 2СЦ 5,3 т",
@@ -691,7 +699,8 @@
       "sheet": "2сц",
       "range": "O1:T14"
     },
-    "slug": "strop-tsepnoy-dvukhvetvevoy-2sts-5-3-t"
+    "slug": "strop-tsepnoy-dvukhvetvevoy-2sts-5-3-t",
+    "image": "/products/studio/chain-2sc.webp"
   },
   {
     "name": "Строп цепной двухветвевой 2СЦ 8,0 т",
@@ -765,7 +774,8 @@
       "sheet": "2сц",
       "range": "A15:F28"
     },
-    "slug": "strop-tsepnoy-dvukhvetvevoy-2sts-8-0-t"
+    "slug": "strop-tsepnoy-dvukhvetvevoy-2sts-8-0-t",
+    "image": "/products/studio/chain-2sc.webp"
   },
   {
     "name": "Строп цепной двухветвевой 2СЦ 11,2 т",
@@ -842,7 +852,8 @@
       "range": "H15:M28"
     },
     "clarification": "Грузоподъёмность требует подтверждения: в заголовке прайса указано 11,2 т, в строке модели — 17,0 т, для звена — 11,0 т.",
-    "slug": "strop-tsepnoy-dvukhvetvevoy-2sts-11-2-t"
+    "slug": "strop-tsepnoy-dvukhvetvevoy-2sts-11-2-t",
+    "image": "/products/studio/chain-2sc.webp"
   },
   {
     "name": "Строп цепной двухветвевой 2СЦ 17,0 т",
@@ -910,7 +921,8 @@
       "sheet": "2сц",
       "range": "O15:T28"
     },
-    "slug": "strop-tsepnoy-dvukhvetvevoy-2sts-17-0-t"
+    "slug": "strop-tsepnoy-dvukhvetvevoy-2sts-17-0-t",
+    "image": "/products/studio/chain-2sc.webp"
   },
   {
     "name": "Строп цепной одноветвевой 1СЦ 1,12 т",
@@ -985,7 +997,8 @@
       "range": "A1:F14"
     },
     "clarification": "Грузоподъёмность требует подтверждения: в заголовке прайса и для крюка указано 1,12 т, в строке модели — 1,6 т.",
-    "slug": "strop-tsepnoy-odnovetvevoy-1sts-1-12-t"
+    "slug": "strop-tsepnoy-odnovetvevoy-1sts-1-12-t",
+    "image": "/products/studio/chain-1sc.webp"
   },
   {
     "name": "Строп цепной одноветвевой 1СЦ 2,0 т",
@@ -1059,7 +1072,8 @@
       "sheet": "1сц",
       "range": "H1:M14"
     },
-    "slug": "strop-tsepnoy-odnovetvevoy-1sts-2-0-t"
+    "slug": "strop-tsepnoy-odnovetvevoy-1sts-2-0-t",
+    "image": "/products/studio/chain-1sc.webp"
   },
   {
     "name": "Строп цепной одноветвевой 1СЦ 3,15 т",
@@ -1133,7 +1147,8 @@
       "sheet": "1сц",
       "range": "O1:T14"
     },
-    "slug": "strop-tsepnoy-odnovetvevoy-1sts-3-15-t"
+    "slug": "strop-tsepnoy-odnovetvevoy-1sts-3-15-t",
+    "image": "/products/studio/chain-1sc.webp"
   },
   {
     "name": "Строп цепной одноветвевой 1СЦ 5,3 т",
@@ -1207,7 +1222,8 @@
       "sheet": "1сц",
       "range": "A15:F28"
     },
-    "slug": "strop-tsepnoy-odnovetvevoy-1sts-5-3-t"
+    "slug": "strop-tsepnoy-odnovetvevoy-1sts-5-3-t",
+    "image": "/products/studio/chain-1sc.webp"
   },
   {
     "name": "Строп цепной одноветвевой 1СЦ 8,0 т",
@@ -1281,7 +1297,8 @@
       "sheet": "1сц",
       "range": "H15:M28"
     },
-    "slug": "strop-tsepnoy-odnovetvevoy-1sts-8-0-t"
+    "slug": "strop-tsepnoy-odnovetvevoy-1sts-8-0-t",
+    "image": "/products/studio/chain-1sc.webp"
   },
   {
     "name": "Строп цепной одноветвевой 1СЦ 12,5 т",
@@ -1351,7 +1368,8 @@
       "sheet": "1сц",
       "range": "O15:T28"
     },
-    "slug": "strop-tsepnoy-odnovetvevoy-1sts-12-5-t"
+    "slug": "strop-tsepnoy-odnovetvevoy-1sts-12-5-t",
+    "image": "/products/studio/chain-1sc.webp"
   },
   {
     "name": "Ветвь цепная ВЦ 1,12 т",
@@ -1418,7 +1436,8 @@
       "sheet": "вц",
       "range": "A1:E14"
     },
-    "slug": "vetv-tsepnaya-vts-1-12-t"
+    "slug": "vetv-tsepnaya-vts-1-12-t",
+    "image": "/products/studio/chain-vc.webp"
   },
   {
     "name": "Ветвь цепная ВЦ 2,0 т",
@@ -1485,7 +1504,8 @@
       "sheet": "вц",
       "range": "H1:L14"
     },
-    "slug": "vetv-tsepnaya-vts-2-0-t"
+    "slug": "vetv-tsepnaya-vts-2-0-t",
+    "image": "/products/studio/chain-vc.webp"
   },
   {
     "name": "Ветвь цепная ВЦ 3,15 т",
@@ -1552,7 +1572,8 @@
       "sheet": "вц",
       "range": "O1:S14"
     },
-    "slug": "vetv-tsepnaya-vts-3-15-t"
+    "slug": "vetv-tsepnaya-vts-3-15-t",
+    "image": "/products/studio/chain-vc.webp"
   },
   {
     "name": "Ветвь цепная ВЦ 5,3 т",
@@ -1619,7 +1640,8 @@
       "sheet": "вц",
       "range": "A14:E27"
     },
-    "slug": "vetv-tsepnaya-vts-5-3-t"
+    "slug": "vetv-tsepnaya-vts-5-3-t",
+    "image": "/products/studio/chain-vc.webp"
   },
   {
     "name": "Ветвь цепная ВЦ 8,0 т",
@@ -1686,7 +1708,8 @@
       "sheet": "вц",
       "range": "H14:L27"
     },
-    "slug": "vetv-tsepnaya-vts-8-0-t"
+    "slug": "vetv-tsepnaya-vts-8-0-t",
+    "image": "/products/studio/chain-vc.webp"
   },
   {
     "name": "Ветвь цепная ВЦ 12,5 т",
@@ -1753,7 +1776,8 @@
       "sheet": "вц",
       "range": "O14:S27"
     },
-    "slug": "vetv-tsepnaya-vts-12-5-t"
+    "slug": "vetv-tsepnaya-vts-12-5-t",
+    "image": "/products/studio/chain-vc.webp"
   },
   {
     "name": "Цепь крепления с крюками 6 мм (3,1/5,4 т)",
@@ -1803,7 +1827,8 @@
       "sheet": "креп.ц",
       "range": "A3:H3"
     },
-    "slug": "tsep-krepleniya-s-kryukami-6-mm-3-1-5-4-t"
+    "slug": "tsep-krepleniya-s-kryukami-6-mm-3-1-5-4-t",
+    "image": "/products/studio/lashing-chain.webp"
   },
   {
     "name": "Цепь крепления с крюками 8 мм (5,7/8,0 т)",
@@ -1853,7 +1878,8 @@
       "sheet": "креп.ц",
       "range": "A4:H4"
     },
-    "slug": "tsep-krepleniya-s-kryukami-8-mm-5-7-8-0-t"
+    "slug": "tsep-krepleniya-s-kryukami-8-mm-5-7-8-0-t",
+    "image": "/products/studio/lashing-chain.webp"
   },
   {
     "name": "Цепь крепления с крюками 10 мм (9,0/12,6 т)",
@@ -1903,7 +1929,8 @@
       "sheet": "креп.ц",
       "range": "A5:H5"
     },
-    "slug": "tsep-krepleniya-s-kryukami-10-mm-9-0-12-6-t"
+    "slug": "tsep-krepleniya-s-kryukami-10-mm-9-0-12-6-t",
+    "image": "/products/studio/lashing-chain.webp"
   },
   {
     "name": "Цепь крепления с крюками 13 мм (15,0/21,0 т)",
@@ -1953,7 +1980,8 @@
       "sheet": "креп.ц",
       "range": "A6:H6"
     },
-    "slug": "tsep-krepleniya-s-kryukami-13-mm-15-0-21-0-t"
+    "slug": "tsep-krepleniya-s-kryukami-13-mm-15-0-21-0-t",
+    "image": "/products/studio/lashing-chain.webp"
   },
   {
     "name": "Цепь крепления с крюками 16 мм (22,0/29,6 т)",
@@ -2003,7 +2031,8 @@
       "sheet": "креп.ц",
       "range": "A7:H7"
     },
-    "slug": "tsep-krepleniya-s-kryukami-16-mm-22-0-29-6-t"
+    "slug": "tsep-krepleniya-s-kryukami-16-mm-22-0-29-6-t",
+    "image": "/products/studio/lashing-chain.webp"
   },
   {
     "name": "Комплект цепь + талреп натяжения 6 мм (3,1/5,4 т)",
@@ -2054,7 +2083,7 @@
       "range": "A11:H11"
     },
     "slug": "komplekt-tsep-talrep-natyazheniya-6-mm-3-1-5-4-t",
-    "image": "/products/chain-tensioner.jpg"
+    "image": "/products/studio/lashing-kit.webp"
   },
   {
     "name": "Комплект цепь + талреп натяжения 8 мм (5,7/8,0 т)",
@@ -2105,7 +2134,7 @@
       "range": "A12:H12"
     },
     "slug": "komplekt-tsep-talrep-natyazheniya-8-mm-5-7-8-0-t",
-    "image": "/products/chain-tensioner.jpg"
+    "image": "/products/studio/lashing-kit.webp"
   },
   {
     "name": "Комплект цепь + талреп натяжения 10 мм (9,0/12,6 т)",
@@ -2156,7 +2185,7 @@
       "range": "A13:H13"
     },
     "slug": "komplekt-tsep-talrep-natyazheniya-10-mm-9-0-12-6-t",
-    "image": "/products/chain-tensioner.jpg"
+    "image": "/products/studio/lashing-kit.webp"
   },
   {
     "name": "Комплект цепь + талреп натяжения 13 мм (15,0/21,0 т)",
@@ -2207,7 +2236,7 @@
       "range": "A14:H14"
     },
     "slug": "komplekt-tsep-talrep-natyazheniya-13-mm-15-0-21-0-t",
-    "image": "/products/chain-tensioner.jpg"
+    "image": "/products/studio/lashing-kit.webp"
   },
   {
     "name": "Комплект цепь + талреп натяжения 16 мм (22,0/29,6 т)",
@@ -2258,7 +2287,7 @@
       "range": "A15:H15"
     },
     "slug": "komplekt-tsep-talrep-natyazheniya-16-mm-22-0-29-6-t",
-    "image": "/products/chain-tensioner.jpg"
+    "image": "/products/studio/lashing-kit.webp"
   },
   {
     "name": "Талреп натяжения цепи 6-8 мм",
@@ -2277,7 +2306,7 @@
       "range": "A18:C18"
     },
     "slug": "talrep-natyazheniya-tsepi-6-8-mm",
-    "image": "/products/tensioner.gif"
+    "image": "/products/studio/chain-binder.webp"
   },
   {
     "name": "Талреп натяжения цепи 8-10 мм",
@@ -2296,7 +2325,7 @@
       "range": "A19:C19"
     },
     "slug": "talrep-natyazheniya-tsepi-8-10-mm",
-    "image": "/products/tensioner.gif"
+    "image": "/products/studio/chain-binder.webp"
   },
   {
     "name": "Талреп натяжения цепи 10-13 мм",
@@ -2315,7 +2344,7 @@
       "range": "A20:C20"
     },
     "slug": "talrep-natyazheniya-tsepi-10-13-mm",
-    "image": "/products/tensioner.gif"
+    "image": "/products/studio/chain-binder.webp"
   },
   {
     "name": "Талреп натяжения цепи 13-16 мм",
@@ -2334,7 +2363,7 @@
       "range": "A21:C21"
     },
     "slug": "talrep-natyazheniya-tsepi-13-16-mm",
-    "image": "/products/tensioner.gif"
+    "image": "/products/studio/chain-binder.webp"
   },
   {
     "name": "Строп ленточный петлевой СТП 1,0 т",
@@ -2398,7 +2427,7 @@
       "range": "A3:D10"
     },
     "slug": "strop-lentochnyy-petlevoy-stp-1-0-t",
-    "image": "/products/webbing-violet.svg"
+    "image": "/products/studio/webbing-violet.webp"
   },
   {
     "name": "Строп ленточный петлевой СТП 2,0 т",
@@ -2462,7 +2491,7 @@
       "range": "F3:I10"
     },
     "slug": "strop-lentochnyy-petlevoy-stp-2-0-t",
-    "image": "/products/webbing-green.svg"
+    "image": "/products/studio/webbing-green.webp"
   },
   {
     "name": "Строп ленточный петлевой СТП 3,0 т",
@@ -2526,7 +2555,7 @@
       "range": "K3:N10"
     },
     "slug": "strop-lentochnyy-petlevoy-stp-3-0-t",
-    "image": "/products/webbing-yellow.svg"
+    "image": "/products/studio/webbing-yellow.webp"
   },
   {
     "name": "Строп ленточный петлевой СТП 4,0 т",
@@ -2590,7 +2619,7 @@
       "range": "P3:S10"
     },
     "slug": "strop-lentochnyy-petlevoy-stp-4-0-t",
-    "image": "/products/webbing-gray.svg"
+    "image": "/products/studio/webbing-gray.webp"
   },
   {
     "name": "Строп ленточный петлевой СТП 5,0 т",
@@ -2654,7 +2683,7 @@
       "range": "A15:D22"
     },
     "slug": "strop-lentochnyy-petlevoy-stp-5-0-t",
-    "image": "/products/webbing-red.svg"
+    "image": "/products/studio/webbing-red.webp"
   },
   {
     "name": "Строп ленточный петлевой СТП 6,0 т",
@@ -2718,7 +2747,7 @@
       "range": "F15:I22"
     },
     "slug": "strop-lentochnyy-petlevoy-stp-6-0-t",
-    "image": "/products/webbing-brown.svg"
+    "image": "/products/studio/webbing-brown.webp"
   },
   {
     "name": "Строп ленточный петлевой СТП 8,0 т",
@@ -2782,7 +2811,7 @@
       "range": "K15:N22"
     },
     "slug": "strop-lentochnyy-petlevoy-stp-8-0-t",
-    "image": "/products/webbing-blue.svg"
+    "image": "/products/studio/webbing-blue.webp"
   },
   {
     "name": "Строп ленточный петлевой СТП 10,0 т",
@@ -2846,7 +2875,7 @@
       "range": "P15:S22"
     },
     "slug": "strop-lentochnyy-petlevoy-stp-10-0-t",
-    "image": "/products/webbing-orange.svg"
+    "image": "/products/studio/webbing-orange.webp"
   },
   {
     "name": "Строп ленточный петлевой СТП 12,5 т",
@@ -2910,7 +2939,7 @@
       "range": "A27:D34"
     },
     "slug": "strop-lentochnyy-petlevoy-stp-12-5-t",
-    "image": "/products/webbing-orange.svg"
+    "image": "/products/studio/webbing-orange.webp"
   },
   {
     "name": "Строп ленточный петлевой СТП 15,0 т",
@@ -2974,7 +3003,7 @@
       "range": "F27:I34"
     },
     "slug": "strop-lentochnyy-petlevoy-stp-15-0-t",
-    "image": "/products/webbing-orange.svg"
+    "image": "/products/studio/webbing-orange.webp"
   },
   {
     "name": "Строп ленточный петлевой СТП 20,0 т",
@@ -3038,7 +3067,7 @@
       "range": "K27:N34"
     },
     "slug": "strop-lentochnyy-petlevoy-stp-20-0-t",
-    "image": "/products/webbing-orange.svg"
+    "image": "/products/studio/webbing-orange.webp"
   },
   {
     "name": "Строп ленточный петлевой СТП 0,5 т",
@@ -3102,7 +3131,7 @@
       "range": "P27:S34"
     },
     "slug": "strop-lentochnyy-petlevoy-stp-0-5-t",
-    "image": "/products/webbing-violet.svg"
+    "image": "/products/studio/webbing-violet.webp"
   },
   {
     "name": "Ремень стяжной 1,5/2,5 т, 35 мм",
@@ -3130,7 +3159,8 @@
       "sheet": "ремень",
       "range": "A3:E3"
     },
-    "slug": "remen-styazhnoy-1-5-2-5-t-35-mm"
+    "slug": "remen-styazhnoy-1-5-2-5-t-35-mm",
+    "image": "/products/studio/ratchet-strap.webp"
   },
   {
     "name": "Ремень стяжной 2,0/4,5 т, 50 мм",
@@ -3158,7 +3188,8 @@
       "sheet": "ремень",
       "range": "A4:E4"
     },
-    "slug": "remen-styazhnoy-2-0-4-5-t-50-mm"
+    "slug": "remen-styazhnoy-2-0-4-5-t-50-mm",
+    "image": "/products/studio/ratchet-strap.webp"
   },
   {
     "name": "Ремень стяжной 5,0/10,0 т, 50 мм",
@@ -3186,7 +3217,8 @@
       "sheet": "ремень",
       "range": "A5:E5"
     },
-    "slug": "remen-styazhnoy-5-0-10-0-t-50-mm"
+    "slug": "remen-styazhnoy-5-0-10-0-t-50-mm",
+    "image": "/products/studio/ratchet-strap.webp"
   },
   {
     "name": "Ремень стяжной 7,0/10,0 т, 75 мм",
@@ -3214,7 +3246,8 @@
       "sheet": "ремень",
       "range": "A6:E6"
     },
-    "slug": "remen-styazhnoy-7-0-10-0-t-75-mm"
+    "slug": "remen-styazhnoy-7-0-10-0-t-75-mm",
+    "image": "/products/studio/ratchet-strap.webp"
   },
   {
     "name": "Ремень стяжной 10,0/20,0 т, 100 мм",
@@ -3242,7 +3275,8 @@
       "sheet": "ремень",
       "range": "A7:E7"
     },
-    "slug": "remen-styazhnoy-10-0-20-0-t-100-mm"
+    "slug": "remen-styazhnoy-10-0-20-0-t-100-mm",
+    "image": "/products/studio/ratchet-strap.webp"
   },
   {
     "name": "Строп цепной четырёхветвевой 4СЦ 3,15 т",
@@ -3323,7 +3357,8 @@
       "range": "H32:M45"
     },
     "slug": "strop-cepnoy-chetyrehvetvevoy-4sc-3-15-t",
-    "clarification": "В прайсе заголовок указывает 3,15 т, строка модели — 4,75 т. Грузоподъёмность необходимо подтвердить."
+    "clarification": "В прайсе заголовок указывает 3,15 т, строка модели — 4,75 т. Грузоподъёмность необходимо подтвердить.",
+    "image": "/products/studio/chain-4sc.webp"
   },
   {
     "name": "Строп цепной четырёхветвевой 4СЦ 8,0 т",
@@ -3404,7 +3439,8 @@
       "range": "O32:T45"
     },
     "slug": "strop-cepnoy-chetyrehvetvevoy-4sc-8-0-t",
-    "clarification": "В прайсе для позиции 8 т указаны звено 3,15 т и крюк 1,12 т. Комплектацию необходимо подтвердить."
+    "clarification": "В прайсе для позиции 8 т указаны звено 3,15 т и крюк 1,12 т. Комплектацию необходимо подтвердить.",
+    "image": "/products/studio/chain-4sc.webp"
   },
   {
     "name": "Строп круглопрядный СТКК/СТПК 1 т",
@@ -3456,7 +3492,8 @@
     },
     "slug": "strop-kruglopryadnyy-stkk-stpk-1-t",
     "price": 160,
-    "length": "1 м – 6 м"
+    "length": "1 м – 6 м",
+    "image": "/products/studio/round-stkk.webp"
   },
   {
     "name": "Строп круглопрядный СТКК/СТПК 2 т",
@@ -3508,7 +3545,8 @@
     },
     "slug": "strop-kruglopryadnyy-stkk-stpk-2-t",
     "price": 250,
-    "length": "1 м – 6 м"
+    "length": "1 м – 6 м",
+    "image": "/products/studio/round-stkk.webp"
   },
   {
     "name": "Строп круглопрядный СТКК/СТПК 3 т",
@@ -3560,7 +3598,8 @@
     },
     "slug": "strop-kruglopryadnyy-stkk-stpk-3-t",
     "price": 305,
-    "length": "1 м – 6 м"
+    "length": "1 м – 6 м",
+    "image": "/products/studio/round-stkk.webp"
   },
   {
     "name": "Строп круглопрядный СТКК/СТПК 4 т",
@@ -3612,7 +3651,8 @@
     },
     "slug": "strop-kruglopryadnyy-stkk-stpk-4-t",
     "price": 370,
-    "length": "1 м – 6 м"
+    "length": "1 м – 6 м",
+    "image": "/products/studio/round-stkk.webp"
   },
   {
     "name": "Строп круглопрядный СТКК/СТПК 5 т",
@@ -3664,7 +3704,8 @@
     },
     "slug": "strop-kruglopryadnyy-stkk-stpk-5-t",
     "price": 460,
-    "length": "1 м – 6 м"
+    "length": "1 м – 6 м",
+    "image": "/products/studio/round-stkk.webp"
   },
   {
     "name": "Строп круглопрядный СТКК/СТПК 6 т",
@@ -3716,7 +3757,8 @@
     },
     "slug": "strop-kruglopryadnyy-stkk-stpk-6-t",
     "price": 540,
-    "length": "1 м – 6 м"
+    "length": "1 м – 6 м",
+    "image": "/products/studio/round-stkk.webp"
   },
   {
     "name": "Строп круглопрядный СТКК/СТПК 8 т",
@@ -3768,7 +3810,8 @@
     },
     "slug": "strop-kruglopryadnyy-stkk-stpk-8-t",
     "price": 660,
-    "length": "1 м – 6 м"
+    "length": "1 м – 6 м",
+    "image": "/products/studio/round-stkk.webp"
   },
   {
     "name": "Строп круглопрядный СТКК/СТПК 10 т",
@@ -3820,7 +3863,8 @@
     },
     "slug": "strop-kruglopryadnyy-stkk-stpk-10-t",
     "price": 700,
-    "length": "1 м – 6 м"
+    "length": "1 м – 6 м",
+    "image": "/products/studio/round-stkk.webp"
   },
   {
     "name": "Строп круглопрядный СТКК/СТПК 15 т",
@@ -3872,7 +3916,8 @@
     },
     "slug": "strop-kruglopryadnyy-stkk-stpk-15-t",
     "price": 890,
-    "length": "1 м – 6 м"
+    "length": "1 м – 6 м",
+    "image": "/products/studio/round-stkk.webp"
   },
   {
     "name": "Строп круглопрядный СТКК/СТПК 20 т",
@@ -3924,7 +3969,8 @@
     },
     "slug": "strop-kruglopryadnyy-stkk-stpk-20-t",
     "price": 1420,
-    "length": "1 м – 6 м"
+    "length": "1 м – 6 м",
+    "image": "/products/studio/round-stkk.webp"
   },
   {
     "name": "Строп круглопрядный СТКК/СТПК 25 т",
@@ -3972,7 +4018,8 @@
     },
     "slug": "strop-kruglopryadnyy-stkk-stpk-25-t",
     "price": 3330,
-    "length": "2 м – 6 м"
+    "length": "2 м – 6 м",
+    "image": "/products/studio/round-stkk.webp"
   },
   {
     "name": "Строп круглопрядный СТКК/СТПК 30 т",
@@ -4020,7 +4067,8 @@
     },
     "slug": "strop-kruglopryadnyy-stkk-stpk-30-t",
     "price": 3990,
-    "length": "2 м – 6 м"
+    "length": "2 м – 6 м",
+    "image": "/products/studio/round-stkk.webp"
   },
   {
     "name": "Строп круглопрядный СТКК/СТПК 35 т",
@@ -4068,7 +4116,8 @@
     },
     "slug": "strop-kruglopryadnyy-stkk-stpk-35-t",
     "price": 4230,
-    "length": "2 м – 6 м"
+    "length": "2 м – 6 м",
+    "image": "/products/studio/round-stkk.webp"
   },
   {
     "name": "Строп круглопрядный СТКК/СТПК 40 т",
@@ -4116,7 +4165,8 @@
     },
     "slug": "strop-kruglopryadnyy-stkk-stpk-40-t",
     "price": 4670,
-    "length": "2 м – 6 м"
+    "length": "2 м – 6 м",
+    "image": "/products/studio/round-stkk.webp"
   },
   {
     "name": "Строп круглопрядный СТКК/СТПК 45 т",
@@ -4164,7 +4214,8 @@
     },
     "slug": "strop-kruglopryadnyy-stkk-stpk-45-t",
     "price": 5190,
-    "length": "2 м – 6 м"
+    "length": "2 м – 6 м",
+    "image": "/products/studio/round-stkk.webp"
   },
   {
     "name": "Строп круглопрядный СТКК/СТПК 50 т",
@@ -4212,7 +4263,8 @@
     },
     "slug": "strop-kruglopryadnyy-stkk-stpk-50-t",
     "price": 6100,
-    "length": "2 м – 6 м"
+    "length": "2 м – 6 м",
+    "image": "/products/studio/round-stkk.webp"
   },
   {
     "name": "Строп круглопрядный СТКК/СТПК 60 т",
@@ -4256,7 +4308,8 @@
     },
     "slug": "strop-kruglopryadnyy-stkk-stpk-60-t",
     "price": 11000,
-    "length": "3 м – 6 м"
+    "length": "3 м – 6 м",
+    "image": "/products/studio/round-stkk.webp"
   },
   {
     "name": "Строп круглопрядный СТКК/СТПК 70 т",
@@ -4300,7 +4353,8 @@
     },
     "slug": "strop-kruglopryadnyy-stkk-stpk-70-t",
     "price": 13180,
-    "length": "3 м – 6 м"
+    "length": "3 м – 6 м",
+    "image": "/products/studio/round-stkk.webp"
   },
   {
     "name": "Строп круглопрядный СТКК/СТПК 80 т",
@@ -4344,7 +4398,8 @@
     },
     "slug": "strop-kruglopryadnyy-stkk-stpk-80-t",
     "price": 14750,
-    "length": "3 м – 6 м"
+    "length": "3 м – 6 м",
+    "image": "/products/studio/round-stkk.webp"
   },
   {
     "name": "Строп круглопрядный СТКК/СТПК 90 т",
@@ -4388,7 +4443,8 @@
     },
     "slug": "strop-kruglopryadnyy-stkk-stpk-90-t",
     "price": 16310,
-    "length": "3 м – 6 м"
+    "length": "3 м – 6 м",
+    "image": "/products/studio/round-stkk.webp"
   },
   {
     "name": "Строп круглопрядный СТКК/СТПК 100 т",
@@ -4432,7 +4488,8 @@
     },
     "slug": "strop-kruglopryadnyy-stkk-stpk-100-t",
     "price": 17880,
-    "length": "3 м – 6 м"
+    "length": "3 м – 6 м",
+    "image": "/products/studio/round-stkk.webp"
   },
   {
     "name": "Строп круглопрядный СТКК/СТПК 120 т",
@@ -4476,7 +4533,8 @@
     },
     "slug": "strop-kruglopryadnyy-stkk-stpk-120-t",
     "price": 21000,
-    "length": "3 м – 6 м"
+    "length": "3 м – 6 м",
+    "image": "/products/studio/round-stkk.webp"
   },
   {
     "name": "Строп круглопрядный СТКК/СТПК 160 т",
@@ -4520,7 +4578,8 @@
     },
     "slug": "strop-kruglopryadnyy-stkk-stpk-160-t",
     "price": 36250,
-    "length": "3 м – 6 м"
+    "length": "3 м – 6 м",
+    "image": "/products/studio/round-stkk.webp"
   },
   {
     "name": "Строп круглопрядный СТКК/СТПК 200 т",
@@ -4564,7 +4623,8 @@
     },
     "slug": "strop-kruglopryadnyy-stkk-stpk-200-t",
     "price": 44200,
-    "length": "3 м – 6 м"
+    "length": "3 м – 6 м",
+    "image": "/products/studio/round-stkk.webp"
   },
   {
     "name": "Строп канатный УСК1 (СКП) 1 т — чалка канатная",
@@ -4610,7 +4670,8 @@
     },
     "slug": "strop-kanatnyy-usk1-skp-1-t-chalka-kanatnaya",
     "price": 600,
-    "length": "1 м – 5 м"
+    "length": "1 м – 5 м",
+    "image": "/products/studio/wire-usk1.webp"
   },
   {
     "name": "Строп канатный УСК1 (СКП) 1,6 т — чалка канатная",
@@ -4656,7 +4717,8 @@
     },
     "slug": "strop-kanatnyy-usk1-skp-1-6-t-chalka-kanatnaya",
     "price": 700,
-    "length": "1 м – 5 м"
+    "length": "1 м – 5 м",
+    "image": "/products/studio/wire-usk1.webp"
   },
   {
     "name": "Строп канатный УСК1 (СКП) 2 т — чалка канатная",
@@ -4703,7 +4765,8 @@
     "clarification": "В прайсе обнаружено несоответствие цен по длинам или доплаты за метр. Стоимость необходимо подтвердить.",
     "slug": "strop-kanatnyy-usk1-skp-2-t-chalka-kanatnaya",
     "price": 1100,
-    "length": "1 м – 5 м"
+    "length": "1 м – 5 м",
+    "image": "/products/studio/wire-usk1.webp"
   },
   {
     "name": "Строп канатный УСК1 (СКП) 3,2 т — чалка канатная",
@@ -4745,7 +4808,8 @@
     },
     "slug": "strop-kanatnyy-usk1-skp-3-2-t-chalka-kanatnaya",
     "price": 2000,
-    "length": "2 м – 5 м"
+    "length": "2 м – 5 м",
+    "image": "/products/studio/wire-usk1.webp"
   },
   {
     "name": "Строп канатный УСК1 (СКП) 4 т — чалка канатная",
@@ -4787,7 +4851,8 @@
     },
     "slug": "strop-kanatnyy-usk1-skp-4-t-chalka-kanatnaya",
     "price": 2300,
-    "length": "2 м – 5 м"
+    "length": "2 м – 5 м",
+    "image": "/products/studio/wire-usk1.webp"
   },
   {
     "name": "Строп канатный УСК1 (СКП) 5 т — чалка канатная",
@@ -4829,7 +4894,8 @@
     },
     "slug": "strop-kanatnyy-usk1-skp-5-t-chalka-kanatnaya",
     "price": 3500,
-    "length": "2 м – 5 м"
+    "length": "2 м – 5 м",
+    "image": "/products/studio/wire-usk1.webp"
   },
   {
     "name": "Строп канатный УСК1 (СКП) 6,3 т — чалка канатная",
@@ -4871,7 +4937,8 @@
     },
     "slug": "strop-kanatnyy-usk1-skp-6-3-t-chalka-kanatnaya",
     "price": 5000,
-    "length": "2 м – 5 м"
+    "length": "2 м – 5 м",
+    "image": "/products/studio/wire-usk1.webp"
   },
   {
     "name": "Строп канатный УСК1 (СКП) 8 т — чалка канатная",
@@ -4913,7 +4980,8 @@
     },
     "slug": "strop-kanatnyy-usk1-skp-8-t-chalka-kanatnaya",
     "price": 5800,
-    "length": "2 м – 5 м"
+    "length": "2 м – 5 м",
+    "image": "/products/studio/wire-usk1.webp"
   },
   {
     "name": "Строп канатный УСК1 (СКП) 10 т — чалка канатная",
@@ -4956,7 +5024,8 @@
     "clarification": "В прайсе обнаружено несоответствие цен по длинам или доплаты за метр. Стоимость необходимо подтвердить.",
     "slug": "strop-kanatnyy-usk1-skp-10-t-chalka-kanatnaya",
     "price": 7400,
-    "length": "2 м – 5 м"
+    "length": "2 м – 5 м",
+    "image": "/products/studio/wire-usk1.webp"
   },
   {
     "name": "Строп канатный 4СК 1,6 т — четырёхветвевой",
@@ -5002,7 +5071,8 @@
     },
     "slug": "strop-kanatnyy-4sk-1-6-t-chetyrehvetvevoy",
     "price": 2100,
-    "length": "1 м – 5 м"
+    "length": "1 м – 5 м",
+    "image": "/products/studio/wire-4sk.webp"
   },
   {
     "name": "Строп канатный 4СК 2 т — четырёхветвевой",
@@ -5044,7 +5114,8 @@
     },
     "slug": "strop-kanatnyy-4sk-2-t-chetyrehvetvevoy",
     "price": 2700,
-    "length": "2 м – 5 м"
+    "length": "2 м – 5 м",
+    "image": "/products/studio/wire-4sk.webp"
   },
   {
     "name": "Строп канатный 4СК 3,2 т — четырёхветвевой",
@@ -5086,7 +5157,8 @@
     },
     "slug": "strop-kanatnyy-4sk-3-2-t-chetyrehvetvevoy",
     "price": 3800,
-    "length": "2 м – 5 м"
+    "length": "2 м – 5 м",
+    "image": "/products/studio/wire-4sk.webp"
   },
   {
     "name": "Строп канатный 4СК 5 т — четырёхветвевой",
@@ -5128,7 +5200,8 @@
     },
     "slug": "strop-kanatnyy-4sk-5-t-chetyrehvetvevoy",
     "price": 6100,
-    "length": "2 м – 5 м"
+    "length": "2 м – 5 м",
+    "image": "/products/studio/wire-4sk.webp"
   },
   {
     "name": "Строп канатный 4СК 6,3 т — четырёхветвевой",
@@ -5170,7 +5243,8 @@
     },
     "slug": "strop-kanatnyy-4sk-6-3-t-chetyrehvetvevoy",
     "price": 7200,
-    "length": "2 м – 5 м"
+    "length": "2 м – 5 м",
+    "image": "/products/studio/wire-4sk.webp"
   },
   {
     "name": "Строп канатный 4СК 8 т — четырёхветвевой",
@@ -5212,7 +5286,8 @@
     },
     "slug": "strop-kanatnyy-4sk-8-t-chetyrehvetvevoy",
     "price": 9500,
-    "length": "2 м – 5 м"
+    "length": "2 м – 5 м",
+    "image": "/products/studio/wire-4sk.webp"
   },
   {
     "name": "Строп канатный 4СК 10 т — четырёхветвевой",
@@ -5254,7 +5329,8 @@
     },
     "slug": "strop-kanatnyy-4sk-10-t-chetyrehvetvevoy",
     "price": 12700,
-    "length": "2 м – 5 м"
+    "length": "2 м – 5 м",
+    "image": "/products/studio/wire-4sk.webp"
   },
   {
     "name": "Строп канатный 4СК 12,5 т — четырёхветвевой",
@@ -5297,7 +5373,8 @@
     "clarification": "В прайсе обнаружено несоответствие цен по длинам или доплаты за метр. Стоимость необходимо подтвердить.",
     "slug": "strop-kanatnyy-4sk-12-5-t-chetyrehvetvevoy",
     "price": 19900,
-    "length": "2 м – 5 м"
+    "length": "2 м – 5 м",
+    "image": "/products/studio/wire-4sk.webp"
   },
   {
     "name": "Строп канатный 4СК 16 т — четырёхветвевой",
@@ -5339,7 +5416,8 @@
     },
     "slug": "strop-kanatnyy-4sk-16-t-chetyrehvetvevoy",
     "price": 28500,
-    "length": "2 м – 5 м"
+    "length": "2 м – 5 м",
+    "image": "/products/studio/wire-4sk.webp"
   },
   {
     "name": "Спансет текстильный кольцевой чёрный 1 т",
@@ -5382,7 +5460,8 @@
     },
     "slug": "spanset-tekstilnyy-kolcevoy-chernyy-1-t",
     "price": 250,
-    "length": "1 м – 4 м"
+    "length": "1 м – 4 м",
+    "image": "/products/studio/span-black.webp"
   },
   {
     "name": "Спансет текстильный кольцевой чёрный 2 т",
@@ -5425,7 +5504,8 @@
     },
     "slug": "spanset-tekstilnyy-kolcevoy-chernyy-2-t",
     "price": 300,
-    "length": "1 м – 4 м"
+    "length": "1 м – 4 м",
+    "image": "/products/studio/span-black.webp"
   },
   {
     "name": "Спансет текстильный кольцевой чёрный 3 т",
@@ -5468,7 +5548,8 @@
     },
     "slug": "spanset-tekstilnyy-kolcevoy-chernyy-3-t",
     "price": 400,
-    "length": "1 м – 4 м"
+    "length": "1 м – 4 м",
+    "image": "/products/studio/span-black.webp"
   },
   {
     "name": "Спансет со стальным сердечником",
@@ -5481,7 +5562,8 @@
       "sheet": "спансет",
       "range": "E9:E11"
     },
-    "slug": "spanset-so-stalnym-serdechnikom"
+    "slug": "spanset-so-stalnym-serdechnikom",
+    "image": "/products/studio/span-steel.webp"
   },
   {
     "name": "Скоба 2130 СИ гайка 1 т",
@@ -5496,7 +5578,8 @@
       "sheet": "скобы",
       "range": "A4:B4"
     },
-    "slug": "skoba-2130-si-gayka-1-t"
+    "slug": "skoba-2130-si-gayka-1-t",
+    "image": "/products/studio/shackle-2130.webp"
   },
   {
     "name": "Скоба 2130 СИ гайка 1,5 т",
@@ -5511,7 +5594,8 @@
       "sheet": "скобы",
       "range": "A5:B5"
     },
-    "slug": "skoba-2130-si-gayka-1-5-t"
+    "slug": "skoba-2130-si-gayka-1-5-t",
+    "image": "/products/studio/shackle-2130.webp"
   },
   {
     "name": "Скоба 2130 СИ гайка 2 т",
@@ -5526,7 +5610,8 @@
       "sheet": "скобы",
       "range": "A6:B6"
     },
-    "slug": "skoba-2130-si-gayka-2-t"
+    "slug": "skoba-2130-si-gayka-2-t",
+    "image": "/products/studio/shackle-2130.webp"
   },
   {
     "name": "Скоба 2130 СИ гайка 3,25 т",
@@ -5541,7 +5626,8 @@
       "sheet": "скобы",
       "range": "A7:B7"
     },
-    "slug": "skoba-2130-si-gayka-3-25-t"
+    "slug": "skoba-2130-si-gayka-3-25-t",
+    "image": "/products/studio/shackle-2130.webp"
   },
   {
     "name": "Скоба 2130 СИ гайка 4,75 т",
@@ -5556,7 +5642,8 @@
       "sheet": "скобы",
       "range": "A8:B8"
     },
-    "slug": "skoba-2130-si-gayka-4-75-t"
+    "slug": "skoba-2130-si-gayka-4-75-t",
+    "image": "/products/studio/shackle-2130.webp"
   },
   {
     "name": "Скоба 2130 СИ гайка 6,5 т",
@@ -5571,7 +5658,8 @@
       "sheet": "скобы",
       "range": "A9:B9"
     },
-    "slug": "skoba-2130-si-gayka-6-5-t"
+    "slug": "skoba-2130-si-gayka-6-5-t",
+    "image": "/products/studio/shackle-2130.webp"
   },
   {
     "name": "Скоба 2130 СИ гайка 8,5 т",
@@ -5586,7 +5674,8 @@
       "sheet": "скобы",
       "range": "A10:B10"
     },
-    "slug": "skoba-2130-si-gayka-8-5-t"
+    "slug": "skoba-2130-si-gayka-8-5-t",
+    "image": "/products/studio/shackle-2130.webp"
   },
   {
     "name": "Скоба 2130 СИ гайка 9,5 т",
@@ -5601,7 +5690,8 @@
       "sheet": "скобы",
       "range": "A11:B11"
     },
-    "slug": "skoba-2130-si-gayka-9-5-t"
+    "slug": "skoba-2130-si-gayka-9-5-t",
+    "image": "/products/studio/shackle-2130.webp"
   },
   {
     "name": "Скоба 2130 СИ гайка 12 т",
@@ -5616,7 +5706,8 @@
       "sheet": "скобы",
       "range": "A12:B12"
     },
-    "slug": "skoba-2130-si-gayka-12-t"
+    "slug": "skoba-2130-si-gayka-12-t",
+    "image": "/products/studio/shackle-2130.webp"
   },
   {
     "name": "Скоба 2130 СИ гайка 13,5 т",
@@ -5631,7 +5722,8 @@
       "sheet": "скобы",
       "range": "A13:B13"
     },
-    "slug": "skoba-2130-si-gayka-13-5-t"
+    "slug": "skoba-2130-si-gayka-13-5-t",
+    "image": "/products/studio/shackle-2130.webp"
   },
   {
     "name": "Скоба 2130 СИ гайка 17 т",
@@ -5646,7 +5738,8 @@
       "sheet": "скобы",
       "range": "A14:B14"
     },
-    "slug": "skoba-2130-si-gayka-17-t"
+    "slug": "skoba-2130-si-gayka-17-t",
+    "image": "/products/studio/shackle-2130.webp"
   },
   {
     "name": "Скоба 2130 СИ гайка 25 т",
@@ -5661,7 +5754,8 @@
       "sheet": "скобы",
       "range": "A15:B15"
     },
-    "slug": "skoba-2130-si-gayka-25-t"
+    "slug": "skoba-2130-si-gayka-25-t",
+    "image": "/products/studio/shackle-2130.webp"
   },
   {
     "name": "Скоба 2130 СИ гайка 35 т",
@@ -5676,7 +5770,8 @@
       "sheet": "скобы",
       "range": "A16:B16"
     },
-    "slug": "skoba-2130-si-gayka-35-t"
+    "slug": "skoba-2130-si-gayka-35-t",
+    "image": "/products/studio/shackle-2130.webp"
   },
   {
     "name": "Скоба 2130 СИ гайка 55 т",
@@ -5691,7 +5786,8 @@
       "sheet": "скобы",
       "range": "A17:B17"
     },
-    "slug": "skoba-2130-si-gayka-55-t"
+    "slug": "skoba-2130-si-gayka-55-t",
+    "image": "/products/studio/shackle-2130.webp"
   },
   {
     "name": "Скоба 2130 СИ гайка 85 т",
@@ -5706,7 +5802,8 @@
       "sheet": "скобы",
       "range": "A18:B18"
     },
-    "slug": "skoba-2130-si-gayka-85-t"
+    "slug": "skoba-2130-si-gayka-85-t",
+    "image": "/products/studio/shackle-2130.webp"
   },
   {
     "name": "Скоба 2130 СИ гайка 120 т",
@@ -5721,7 +5818,8 @@
       "sheet": "скобы",
       "range": "A19:B19"
     },
-    "slug": "skoba-2130-si-gayka-120-t"
+    "slug": "skoba-2130-si-gayka-120-t",
+    "image": "/products/studio/shackle-2130.webp"
   },
   {
     "name": "Скоба 209 СИ резьба 0,5 т",
@@ -5736,7 +5834,8 @@
       "sheet": "скобы",
       "range": "D4:E4"
     },
-    "slug": "skoba-209-si-rezba-0-5-t"
+    "slug": "skoba-209-si-rezba-0-5-t",
+    "image": "/products/studio/shackle-209.webp"
   },
   {
     "name": "Скоба 209 СИ резьба 0,75 т",
@@ -5751,7 +5850,8 @@
       "sheet": "скобы",
       "range": "D5:E5"
     },
-    "slug": "skoba-209-si-rezba-0-75-t"
+    "slug": "skoba-209-si-rezba-0-75-t",
+    "image": "/products/studio/shackle-209.webp"
   },
   {
     "name": "Скоба 209 СИ резьба 1 т",
@@ -5766,7 +5866,8 @@
       "sheet": "скобы",
       "range": "D6:E6"
     },
-    "slug": "skoba-209-si-rezba-1-t"
+    "slug": "skoba-209-si-rezba-1-t",
+    "image": "/products/studio/shackle-209.webp"
   },
   {
     "name": "Скоба 209 СИ резьба 1,5 т",
@@ -5781,7 +5882,8 @@
       "sheet": "скобы",
       "range": "D7:E7"
     },
-    "slug": "skoba-209-si-rezba-1-5-t"
+    "slug": "skoba-209-si-rezba-1-5-t",
+    "image": "/products/studio/shackle-209.webp"
   },
   {
     "name": "Скоба 209 СИ резьба 2 т",
@@ -5796,7 +5898,8 @@
       "sheet": "скобы",
       "range": "D8:E8"
     },
-    "slug": "skoba-209-si-rezba-2-t"
+    "slug": "skoba-209-si-rezba-2-t",
+    "image": "/products/studio/shackle-209.webp"
   },
   {
     "name": "Скоба 209 СИ резьба 3,25 т",
@@ -5811,7 +5914,8 @@
       "sheet": "скобы",
       "range": "D9:E9"
     },
-    "slug": "skoba-209-si-rezba-3-25-t"
+    "slug": "skoba-209-si-rezba-3-25-t",
+    "image": "/products/studio/shackle-209.webp"
   },
   {
     "name": "Скоба 209 СИ резьба 4,75 т",
@@ -5826,7 +5930,8 @@
       "sheet": "скобы",
       "range": "D10:E10"
     },
-    "slug": "skoba-209-si-rezba-4-75-t"
+    "slug": "skoba-209-si-rezba-4-75-t",
+    "image": "/products/studio/shackle-209.webp"
   },
   {
     "name": "Скоба 209 СИ резьба 6,5 т",
@@ -5841,7 +5946,8 @@
       "sheet": "скобы",
       "range": "D11:E11"
     },
-    "slug": "skoba-209-si-rezba-6-5-t"
+    "slug": "skoba-209-si-rezba-6-5-t",
+    "image": "/products/studio/shackle-209.webp"
   },
   {
     "name": "Скоба 209 СИ резьба 8,5 т",
@@ -5856,7 +5962,8 @@
       "sheet": "скобы",
       "range": "D12:E12"
     },
-    "slug": "skoba-209-si-rezba-8-5-t"
+    "slug": "skoba-209-si-rezba-8-5-t",
+    "image": "/products/studio/shackle-209.webp"
   },
   {
     "name": "Скоба 209 СИ резьба 9,5 т",
@@ -5871,7 +5978,8 @@
       "sheet": "скобы",
       "range": "D13:E13"
     },
-    "slug": "skoba-209-si-rezba-9-5-t"
+    "slug": "skoba-209-si-rezba-9-5-t",
+    "image": "/products/studio/shackle-209.webp"
   },
   {
     "name": "Скоба 209 СИ резьба 12 т",
@@ -5886,7 +5994,8 @@
       "sheet": "скобы",
       "range": "D14:E14"
     },
-    "slug": "skoba-209-si-rezba-12-t"
+    "slug": "skoba-209-si-rezba-12-t",
+    "image": "/products/studio/shackle-209.webp"
   },
   {
     "name": "Скоба 209 СИ резьба 13,5 т",
@@ -5901,7 +6010,8 @@
       "sheet": "скобы",
       "range": "D15:E15"
     },
-    "slug": "skoba-209-si-rezba-13-5-t"
+    "slug": "skoba-209-si-rezba-13-5-t",
+    "image": "/products/studio/shackle-209.webp"
   },
   {
     "name": "Скоба 209 СИ резьба 17 т",
@@ -5916,7 +6026,8 @@
       "sheet": "скобы",
       "range": "D16:E16"
     },
-    "slug": "skoba-209-si-rezba-17-t"
+    "slug": "skoba-209-si-rezba-17-t",
+    "image": "/products/studio/shackle-209.webp"
   },
   {
     "name": "Скоба 209 СИ резьба 25 т",
@@ -5931,7 +6042,8 @@
       "sheet": "скобы",
       "range": "D17:E17"
     },
-    "slug": "skoba-209-si-rezba-25-t"
+    "slug": "skoba-209-si-rezba-25-t",
+    "image": "/products/studio/shackle-209.webp"
   },
   {
     "name": "Скоба 209 СИ резьба 35 т",
@@ -5946,7 +6058,8 @@
       "sheet": "скобы",
       "range": "D18:E18"
     },
-    "slug": "skoba-209-si-rezba-35-t"
+    "slug": "skoba-209-si-rezba-35-t",
+    "image": "/products/studio/shackle-209.webp"
   },
   {
     "name": "Скоба 209 СИ резьба 55 т",
@@ -5961,7 +6074,8 @@
       "sheet": "скобы",
       "range": "D19:E19"
     },
-    "slug": "skoba-209-si-rezba-55-t"
+    "slug": "skoba-209-si-rezba-55-t",
+    "image": "/products/studio/shackle-209.webp"
   },
   {
     "name": "Зажим усиленный 1142 5 мм",
@@ -5977,7 +6091,8 @@
       "sheet": "зажим",
       "range": "A4:B4"
     },
-    "slug": "zazhim-usilennyy-1142-5-mm"
+    "slug": "zazhim-usilennyy-1142-5-mm",
+    "image": "/products/studio/clamp-1142.webp"
   },
   {
     "name": "Зажим усиленный 1142 6 мм",
@@ -5993,7 +6108,8 @@
       "sheet": "зажим",
       "range": "A5:B5"
     },
-    "slug": "zazhim-usilennyy-1142-6-mm"
+    "slug": "zazhim-usilennyy-1142-6-mm",
+    "image": "/products/studio/clamp-1142.webp"
   },
   {
     "name": "Зажим усиленный 1142 8 мм",
@@ -6009,7 +6125,8 @@
       "sheet": "зажим",
       "range": "A6:B6"
     },
-    "slug": "zazhim-usilennyy-1142-8-mm"
+    "slug": "zazhim-usilennyy-1142-8-mm",
+    "image": "/products/studio/clamp-1142.webp"
   },
   {
     "name": "Зажим усиленный 1142 10 мм",
@@ -6025,7 +6142,8 @@
       "sheet": "зажим",
       "range": "A7:B7"
     },
-    "slug": "zazhim-usilennyy-1142-10-mm"
+    "slug": "zazhim-usilennyy-1142-10-mm",
+    "image": "/products/studio/clamp-1142.webp"
   },
   {
     "name": "Зажим усиленный 1142 13 мм",
@@ -6041,7 +6159,8 @@
       "sheet": "зажим",
       "range": "A8:B8"
     },
-    "slug": "zazhim-usilennyy-1142-13-mm"
+    "slug": "zazhim-usilennyy-1142-13-mm",
+    "image": "/products/studio/clamp-1142.webp"
   },
   {
     "name": "Зажим усиленный 1142 16 мм",
@@ -6057,7 +6176,8 @@
       "sheet": "зажим",
       "range": "A9:B9"
     },
-    "slug": "zazhim-usilennyy-1142-16-mm"
+    "slug": "zazhim-usilennyy-1142-16-mm",
+    "image": "/products/studio/clamp-1142.webp"
   },
   {
     "name": "Зажим усиленный 1142 19 мм",
@@ -6073,7 +6193,8 @@
       "sheet": "зажим",
       "range": "A10:B10"
     },
-    "slug": "zazhim-usilennyy-1142-19-mm"
+    "slug": "zazhim-usilennyy-1142-19-mm",
+    "image": "/products/studio/clamp-1142.webp"
   },
   {
     "name": "Зажим усиленный 1142 22 мм",
@@ -6089,7 +6210,8 @@
       "sheet": "зажим",
       "range": "A11:B11"
     },
-    "slug": "zazhim-usilennyy-1142-22-mm"
+    "slug": "zazhim-usilennyy-1142-22-mm",
+    "image": "/products/studio/clamp-1142.webp"
   },
   {
     "name": "Зажим усиленный 1142 26 мм",
@@ -6105,7 +6227,8 @@
       "sheet": "зажим",
       "range": "A12:B12"
     },
-    "slug": "zazhim-usilennyy-1142-26-mm"
+    "slug": "zazhim-usilennyy-1142-26-mm",
+    "image": "/products/studio/clamp-1142.webp"
   },
   {
     "name": "Зажим усиленный 1142 30 мм",
@@ -6121,7 +6244,8 @@
       "sheet": "зажим",
       "range": "A13:B13"
     },
-    "slug": "zazhim-usilennyy-1142-30-mm"
+    "slug": "zazhim-usilennyy-1142-30-mm",
+    "image": "/products/studio/clamp-1142.webp"
   },
   {
     "name": "Зажим усиленный 1142 34 мм",
@@ -6137,7 +6261,8 @@
       "sheet": "зажим",
       "range": "A14:B14"
     },
-    "slug": "zazhim-usilennyy-1142-34-mm"
+    "slug": "zazhim-usilennyy-1142-34-mm",
+    "image": "/products/studio/clamp-1142.webp"
   },
   {
     "name": "Зажим усиленный 1142 40 мм",
@@ -6153,7 +6278,8 @@
       "sheet": "зажим",
       "range": "A15:B15"
     },
-    "slug": "zazhim-usilennyy-1142-40-mm"
+    "slug": "zazhim-usilennyy-1142-40-mm",
+    "image": "/products/studio/clamp-1142.webp"
   },
   {
     "name": "Зажим хозяйственный 741 5 мм",
@@ -6170,7 +6296,8 @@
       "range": "D4:E4"
     },
     "slug": "zazhim-hozyaystvennyy-741-5-mm-d4-e4",
-    "clarification": "В прайсе две позиции одного диаметра с разными ценами. Размер и стоимость необходимо подтвердить."
+    "clarification": "В прайсе две позиции одного диаметра с разными ценами. Размер и стоимость необходимо подтвердить.",
+    "image": "/products/studio/clamp-741.webp"
   },
   {
     "name": "Зажим хозяйственный 741 5 мм",
@@ -6187,7 +6314,8 @@
       "range": "D5:E5"
     },
     "slug": "zazhim-hozyaystvennyy-741-5-mm-d5-e5",
-    "clarification": "В прайсе две позиции одного диаметра с разными ценами. Размер и стоимость необходимо подтвердить."
+    "clarification": "В прайсе две позиции одного диаметра с разными ценами. Размер и стоимость необходимо подтвердить.",
+    "image": "/products/studio/clamp-741.webp"
   },
   {
     "name": "Зажим хозяйственный 741 6 мм",
@@ -6203,7 +6331,8 @@
       "sheet": "зажим",
       "range": "D6:E6"
     },
-    "slug": "zazhim-hozyaystvennyy-741-6-mm"
+    "slug": "zazhim-hozyaystvennyy-741-6-mm",
+    "image": "/products/studio/clamp-741.webp"
   },
   {
     "name": "Зажим хозяйственный 741 8 мм",
@@ -6219,7 +6348,8 @@
       "sheet": "зажим",
       "range": "D7:E7"
     },
-    "slug": "zazhim-hozyaystvennyy-741-8-mm"
+    "slug": "zazhim-hozyaystvennyy-741-8-mm",
+    "image": "/products/studio/clamp-741.webp"
   },
   {
     "name": "Зажим хозяйственный 741 10 мм",
@@ -6235,7 +6365,8 @@
       "sheet": "зажим",
       "range": "D8:E8"
     },
-    "slug": "zazhim-hozyaystvennyy-741-10-mm"
+    "slug": "zazhim-hozyaystvennyy-741-10-mm",
+    "image": "/products/studio/clamp-741.webp"
   },
   {
     "name": "Зажим хозяйственный 741 13 мм",
@@ -6251,7 +6382,8 @@
       "sheet": "зажим",
       "range": "D9:E9"
     },
-    "slug": "zazhim-hozyaystvennyy-741-13-mm"
+    "slug": "zazhim-hozyaystvennyy-741-13-mm",
+    "image": "/products/studio/clamp-741.webp"
   },
   {
     "name": "Зажим хозяйственный 741 16 мм",
@@ -6267,7 +6399,8 @@
       "sheet": "зажим",
       "range": "D10:E10"
     },
-    "slug": "zazhim-hozyaystvennyy-741-16-mm"
+    "slug": "zazhim-hozyaystvennyy-741-16-mm",
+    "image": "/products/studio/clamp-741.webp"
   },
   {
     "name": "Зажим хозяйственный 741 19 мм",
@@ -6283,7 +6416,8 @@
       "sheet": "зажим",
       "range": "D11:E11"
     },
-    "slug": "zazhim-hozyaystvennyy-741-19-mm"
+    "slug": "zazhim-hozyaystvennyy-741-19-mm",
+    "image": "/products/studio/clamp-741.webp"
   },
   {
     "name": "Зажим хозяйственный 741 22 мм",
@@ -6299,7 +6433,8 @@
       "sheet": "зажим",
       "range": "D12:E12"
     },
-    "slug": "zazhim-hozyaystvennyy-741-22-mm"
+    "slug": "zazhim-hozyaystvennyy-741-22-mm",
+    "image": "/products/studio/clamp-741.webp"
   },
   {
     "name": "Зажим хозяйственный 741 26 мм",
@@ -6315,7 +6450,8 @@
       "sheet": "зажим",
       "range": "D13:E13"
     },
-    "slug": "zazhim-hozyaystvennyy-741-26-mm"
+    "slug": "zazhim-hozyaystvennyy-741-26-mm",
+    "image": "/products/studio/clamp-741.webp"
   },
   {
     "name": "Зажим хозяйственный 741 30 мм",
@@ -6331,7 +6467,8 @@
       "sheet": "зажим",
       "range": "D14:E14"
     },
-    "slug": "zazhim-hozyaystvennyy-741-30-mm"
+    "slug": "zazhim-hozyaystvennyy-741-30-mm",
+    "image": "/products/studio/clamp-741.webp"
   },
   {
     "name": "Зажим хозяйственный 741 32 мм",
@@ -6347,7 +6484,8 @@
       "sheet": "зажим",
       "range": "D15:E15"
     },
-    "slug": "zazhim-hozyaystvennyy-741-32-mm"
+    "slug": "zazhim-hozyaystvennyy-741-32-mm",
+    "image": "/products/studio/clamp-741.webp"
   },
   {
     "name": "Зажим хозяйственный 741 34 мм",
@@ -6363,7 +6501,8 @@
       "sheet": "зажим",
       "range": "D16:E16"
     },
-    "slug": "zazhim-hozyaystvennyy-741-34-mm"
+    "slug": "zazhim-hozyaystvennyy-741-34-mm",
+    "image": "/products/studio/clamp-741.webp"
   },
   {
     "name": "Зажим хозяйственный 741 40 мм",
@@ -6379,7 +6518,8 @@
       "sheet": "зажим",
       "range": "D17:E17"
     },
-    "slug": "zazhim-hozyaystvennyy-741-40-mm"
+    "slug": "zazhim-hozyaystvennyy-741-40-mm",
+    "image": "/products/studio/clamp-741.webp"
   },
   {
     "name": "Талреп вилка-вилка М6 (1/4х4)",
@@ -6398,7 +6538,8 @@
       "sheet": "талреп",
       "range": "A5:E5"
     },
-    "slug": "talrep-vilka-vilka-m6-1-4h4"
+    "slug": "talrep-vilka-vilka-m6-1-4h4",
+    "image": "/products/studio/turnbuckle-fork.webp"
   },
   {
     "name": "Талреп вилка-вилка М8 (5/16х4)",
@@ -6417,7 +6558,8 @@
       "sheet": "талреп",
       "range": "A6:E6"
     },
-    "slug": "talrep-vilka-vilka-m8-5-16h4"
+    "slug": "talrep-vilka-vilka-m8-5-16h4",
+    "image": "/products/studio/turnbuckle-fork.webp"
   },
   {
     "name": "Талреп вилка-вилка М10 (3/8х6)",
@@ -6436,7 +6578,8 @@
       "sheet": "талреп",
       "range": "A7:E7"
     },
-    "slug": "talrep-vilka-vilka-m10-3-8h6"
+    "slug": "talrep-vilka-vilka-m10-3-8h6",
+    "image": "/products/studio/turnbuckle-fork.webp"
   },
   {
     "name": "Талреп вилка-вилка М12 (1/2х6)",
@@ -6455,7 +6598,8 @@
       "sheet": "талреп",
       "range": "A8:E8"
     },
-    "slug": "talrep-vilka-vilka-m12-1-2h6"
+    "slug": "talrep-vilka-vilka-m12-1-2h6",
+    "image": "/products/studio/turnbuckle-fork.webp"
   },
   {
     "name": "Талреп вилка-вилка М12 (1/2х9)",
@@ -6474,7 +6618,8 @@
       "sheet": "талреп",
       "range": "A9:E9"
     },
-    "slug": "talrep-vilka-vilka-m12-1-2h9"
+    "slug": "talrep-vilka-vilka-m12-1-2h9",
+    "image": "/products/studio/turnbuckle-fork.webp"
   },
   {
     "name": "Талреп вилка-вилка М12 (1/2х12)",
@@ -6493,7 +6638,8 @@
       "sheet": "талреп",
       "range": "A10:E10"
     },
-    "slug": "talrep-vilka-vilka-m12-1-2h12"
+    "slug": "talrep-vilka-vilka-m12-1-2h12",
+    "image": "/products/studio/turnbuckle-fork.webp"
   },
   {
     "name": "Талреп вилка-вилка М16 (5/8х6)",
@@ -6512,7 +6658,8 @@
       "sheet": "талреп",
       "range": "A11:E11"
     },
-    "slug": "talrep-vilka-vilka-m16-5-8h6"
+    "slug": "talrep-vilka-vilka-m16-5-8h6",
+    "image": "/products/studio/turnbuckle-fork.webp"
   },
   {
     "name": "Талреп вилка-вилка М16 (5/8х9)",
@@ -6531,7 +6678,8 @@
       "sheet": "талреп",
       "range": "A12:E12"
     },
-    "slug": "talrep-vilka-vilka-m16-5-8h9"
+    "slug": "talrep-vilka-vilka-m16-5-8h9",
+    "image": "/products/studio/turnbuckle-fork.webp"
   },
   {
     "name": "Талреп вилка-вилка М16 (5/8х12)",
@@ -6550,7 +6698,8 @@
       "sheet": "талреп",
       "range": "A13:E13"
     },
-    "slug": "talrep-vilka-vilka-m16-5-8h12"
+    "slug": "talrep-vilka-vilka-m16-5-8h12",
+    "image": "/products/studio/turnbuckle-fork.webp"
   },
   {
     "name": "Талреп вилка-вилка М19 (3/4х6)",
@@ -6569,7 +6718,8 @@
       "sheet": "талреп",
       "range": "A14:E14"
     },
-    "slug": "talrep-vilka-vilka-m19-3-4h6"
+    "slug": "talrep-vilka-vilka-m19-3-4h6",
+    "image": "/products/studio/turnbuckle-fork.webp"
   },
   {
     "name": "Талреп вилка-вилка М19 (3/4х9)",
@@ -6588,7 +6738,8 @@
       "sheet": "талреп",
       "range": "A15:E15"
     },
-    "slug": "talrep-vilka-vilka-m19-3-4h9"
+    "slug": "talrep-vilka-vilka-m19-3-4h9",
+    "image": "/products/studio/turnbuckle-fork.webp"
   },
   {
     "name": "Талреп вилка-вилка М19 (3/4х12)",
@@ -6607,7 +6758,8 @@
       "sheet": "талреп",
       "range": "A16:E16"
     },
-    "slug": "talrep-vilka-vilka-m19-3-4h12"
+    "slug": "talrep-vilka-vilka-m19-3-4h12",
+    "image": "/products/studio/turnbuckle-fork.webp"
   },
   {
     "name": "Талреп вилка-вилка М19 (3/4х18)",
@@ -6626,7 +6778,8 @@
       "sheet": "талреп",
       "range": "A17:E17"
     },
-    "slug": "talrep-vilka-vilka-m19-3-4h18"
+    "slug": "talrep-vilka-vilka-m19-3-4h18",
+    "image": "/products/studio/turnbuckle-fork.webp"
   },
   {
     "name": "Талреп вилка-вилка М22 (7/8х12)",
@@ -6645,7 +6798,8 @@
       "sheet": "талреп",
       "range": "A18:E18"
     },
-    "slug": "talrep-vilka-vilka-m22-7-8h12"
+    "slug": "talrep-vilka-vilka-m22-7-8h12",
+    "image": "/products/studio/turnbuckle-fork.webp"
   },
   {
     "name": "Талреп вилка-вилка М22 (7/8х18)",
@@ -6664,7 +6818,8 @@
       "sheet": "талреп",
       "range": "A19:E19"
     },
-    "slug": "talrep-vilka-vilka-m22-7-8h18"
+    "slug": "talrep-vilka-vilka-m22-7-8h18",
+    "image": "/products/studio/turnbuckle-fork.webp"
   },
   {
     "name": "Талреп вилка-вилка М26 (1х12)",
@@ -6683,7 +6838,8 @@
       "sheet": "талреп",
       "range": "A20:E20"
     },
-    "slug": "talrep-vilka-vilka-m26-1h12"
+    "slug": "talrep-vilka-vilka-m26-1h12",
+    "image": "/products/studio/turnbuckle-fork.webp"
   },
   {
     "name": "Талреп вилка-вилка М26 (1х18)",
@@ -6702,7 +6858,8 @@
       "sheet": "талреп",
       "range": "A21:E21"
     },
-    "slug": "talrep-vilka-vilka-m26-1h18"
+    "slug": "talrep-vilka-vilka-m26-1h18",
+    "image": "/products/studio/turnbuckle-fork.webp"
   },
   {
     "name": "Талреп вилка-вилка М26 (1х24)",
@@ -6721,7 +6878,8 @@
       "sheet": "талреп",
       "range": "A22:E22"
     },
-    "slug": "talrep-vilka-vilka-m26-1h24"
+    "slug": "talrep-vilka-vilka-m26-1h24",
+    "image": "/products/studio/turnbuckle-fork.webp"
   },
   {
     "name": "Талреп вилка-вилка М32 (1 1/4х12)",
@@ -6740,7 +6898,8 @@
       "sheet": "талреп",
       "range": "A23:E23"
     },
-    "slug": "talrep-vilka-vilka-m32-1-1-4h12"
+    "slug": "talrep-vilka-vilka-m32-1-1-4h12",
+    "image": "/products/studio/turnbuckle-fork.webp"
   },
   {
     "name": "Талреп вилка-вилка М32 (1 1/4х18)",
@@ -6759,7 +6918,8 @@
       "sheet": "талреп",
       "range": "A24:E24"
     },
-    "slug": "talrep-vilka-vilka-m32-1-1-4h18"
+    "slug": "talrep-vilka-vilka-m32-1-1-4h18",
+    "image": "/products/studio/turnbuckle-fork.webp"
   },
   {
     "name": "Талреп вилка-вилка М32 (1 1/4х24)",
@@ -6778,7 +6938,8 @@
       "sheet": "талреп",
       "range": "A25:E25"
     },
-    "slug": "talrep-vilka-vilka-m32-1-1-4h24"
+    "slug": "talrep-vilka-vilka-m32-1-1-4h24",
+    "image": "/products/studio/turnbuckle-fork.webp"
   },
   {
     "name": "Талреп вилка-вилка М40 (1 1/2х12)",
@@ -6797,7 +6958,8 @@
       "sheet": "талреп",
       "range": "A26:E26"
     },
-    "slug": "talrep-vilka-vilka-m40-1-1-2h12"
+    "slug": "talrep-vilka-vilka-m40-1-1-2h12",
+    "image": "/products/studio/turnbuckle-fork.webp"
   },
   {
     "name": "Талреп вилка-вилка М40 (1 1/2х18)",
@@ -6816,7 +6978,8 @@
       "sheet": "талреп",
       "range": "A27:E27"
     },
-    "slug": "talrep-vilka-vilka-m40-1-1-2h18"
+    "slug": "talrep-vilka-vilka-m40-1-1-2h18",
+    "image": "/products/studio/turnbuckle-fork.webp"
   },
   {
     "name": "Талреп вилка-вилка М40 (1 1/2х24)",
@@ -6835,7 +6998,8 @@
       "sheet": "талреп",
       "range": "A28:E28"
     },
-    "slug": "talrep-vilka-vilka-m40-1-1-2h24"
+    "slug": "talrep-vilka-vilka-m40-1-1-2h24",
+    "image": "/products/studio/turnbuckle-fork.webp"
   },
   {
     "name": "Трос буксировочный ленточный с петлями 5 т 4 м",
@@ -6850,7 +7014,8 @@
       "sheet": "буксир",
       "range": "A3"
     },
-    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-5-t-4-m"
+    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-5-t-4-m",
+    "image": "/products/studio/tow-webbing.webp"
   },
   {
     "name": "Трос буксировочный ленточный с петлями 7 т 4 м",
@@ -6865,7 +7030,8 @@
       "sheet": "буксир",
       "range": "A4"
     },
-    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-7-t-4-m"
+    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-7-t-4-m",
+    "image": "/products/studio/tow-webbing.webp"
   },
   {
     "name": "Трос буксировочный ленточный с петлями 14 т 4 м",
@@ -6880,7 +7046,8 @@
       "sheet": "буксир",
       "range": "A5"
     },
-    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-14-t-4-m"
+    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-14-t-4-m",
+    "image": "/products/studio/tow-webbing.webp"
   },
   {
     "name": "Трос буксировочный ленточный с петлями 21 т 4 м",
@@ -6895,7 +7062,8 @@
       "sheet": "буксир",
       "range": "A6"
     },
-    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-21-t-4-m"
+    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-21-t-4-m",
+    "image": "/products/studio/tow-webbing.webp"
   },
   {
     "name": "Трос буксировочный ленточный с петлями 35 т 4 м",
@@ -6910,7 +7078,8 @@
       "sheet": "буксир",
       "range": "A7"
     },
-    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-35-t-4-m"
+    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-35-t-4-m",
+    "image": "/products/studio/tow-webbing.webp"
   },
   {
     "name": "Трос буксировочный ленточный с петлями 42 т 4 м",
@@ -6925,7 +7094,8 @@
       "sheet": "буксир",
       "range": "A8"
     },
-    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-42-t-4-m"
+    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-42-t-4-m",
+    "image": "/products/studio/tow-webbing.webp"
   },
   {
     "name": "Трос буксировочный ленточный с петлями 5 т 6 м",
@@ -6940,7 +7110,8 @@
       "sheet": "буксир",
       "range": "A9"
     },
-    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-5-t-6-m"
+    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-5-t-6-m",
+    "image": "/products/studio/tow-webbing.webp"
   },
   {
     "name": "Трос буксировочный ленточный с петлями 7 т 6 м",
@@ -6955,7 +7126,8 @@
       "sheet": "буксир",
       "range": "A10"
     },
-    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-7-t-6-m"
+    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-7-t-6-m",
+    "image": "/products/studio/tow-webbing.webp"
   },
   {
     "name": "Трос буксировочный ленточный с петлями 14 т 6 м",
@@ -6970,7 +7142,8 @@
       "sheet": "буксир",
       "range": "A11"
     },
-    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-14-t-6-m"
+    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-14-t-6-m",
+    "image": "/products/studio/tow-webbing.webp"
   },
   {
     "name": "Трос буксировочный ленточный с петлями 21 т 6 м",
@@ -6985,7 +7158,8 @@
       "sheet": "буксир",
       "range": "A12"
     },
-    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-21-t-6-m"
+    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-21-t-6-m",
+    "image": "/products/studio/tow-webbing.webp"
   },
   {
     "name": "Трос буксировочный ленточный с петлями 35 т 6 м",
@@ -7000,7 +7174,8 @@
       "sheet": "буксир",
       "range": "A13"
     },
-    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-35-t-6-m"
+    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-35-t-6-m",
+    "image": "/products/studio/tow-webbing.webp"
   },
   {
     "name": "Трос буксировочный ленточный с петлями 42 т 6 м",
@@ -7015,7 +7190,8 @@
       "sheet": "буксир",
       "range": "A14"
     },
-    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-42-t-6-m"
+    "slug": "tros-buksirovochnyy-lentochnyy-s-petlyami-42-t-6-m",
+    "image": "/products/studio/tow-webbing.webp"
   },
   {
     "name": "Трос буксировочный синтетический динамический с петлями 15 т 8 м",
@@ -7030,7 +7206,8 @@
       "sheet": "буксир",
       "range": "A17"
     },
-    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-15-t-8-m"
+    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-15-t-8-m",
+    "image": "/products/studio/tow-dynamic.webp"
   },
   {
     "name": "Трос буксировочный синтетический динамический с петлями 25 т 8 м",
@@ -7045,7 +7222,8 @@
       "sheet": "буксир",
       "range": "A18"
     },
-    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-25-t-8-m"
+    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-25-t-8-m",
+    "image": "/products/studio/tow-dynamic.webp"
   },
   {
     "name": "Трос буксировочный синтетический динамический с петлями 30 т 8 м",
@@ -7060,7 +7238,8 @@
       "sheet": "буксир",
       "range": "A19"
     },
-    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-30-t-8-m"
+    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-30-t-8-m",
+    "image": "/products/studio/tow-dynamic.webp"
   },
   {
     "name": "Трос буксировочный синтетический динамический с петлями 40 т 8 м",
@@ -7075,7 +7254,8 @@
       "sheet": "буксир",
       "range": "A20"
     },
-    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-40-t-8-m"
+    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-40-t-8-m",
+    "image": "/products/studio/tow-dynamic.webp"
   },
   {
     "name": "Трос буксировочный синтетический динамический с петлями 50 т 8 м",
@@ -7090,7 +7270,8 @@
       "sheet": "буксир",
       "range": "A21"
     },
-    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-50-t-8-m"
+    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-50-t-8-m",
+    "image": "/products/studio/tow-dynamic.webp"
   },
   {
     "name": "Трос буксировочный синтетический динамический с петлями 70 т 8 м",
@@ -7105,7 +7286,8 @@
       "sheet": "буксир",
       "range": "A22"
     },
-    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-70-t-8-m"
+    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-70-t-8-m",
+    "image": "/products/studio/tow-dynamic.webp"
   },
   {
     "name": "Трос буксировочный синтетический динамический с петлями 100 т 8 м",
@@ -7120,7 +7302,8 @@
       "sheet": "буксир",
       "range": "A23"
     },
-    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-100-t-8-m"
+    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-100-t-8-m",
+    "image": "/products/studio/tow-dynamic.webp"
   },
   {
     "name": "Трос буксировочный синтетический динамический с петлями 15 т 12 м",
@@ -7135,7 +7318,8 @@
       "sheet": "буксир",
       "range": "A24"
     },
-    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-15-t-12-m"
+    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-15-t-12-m",
+    "image": "/products/studio/tow-dynamic.webp"
   },
   {
     "name": "Трос буксировочный синтетический динамический с петлями 25 т 12 м",
@@ -7150,7 +7334,8 @@
       "sheet": "буксир",
       "range": "A25"
     },
-    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-25-t-12-m"
+    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-25-t-12-m",
+    "image": "/products/studio/tow-dynamic.webp"
   },
   {
     "name": "Трос буксировочный синтетический динамический с петлями 30 т 12 м",
@@ -7165,7 +7350,8 @@
       "sheet": "буксир",
       "range": "A26"
     },
-    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-30-t-12-m"
+    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-30-t-12-m",
+    "image": "/products/studio/tow-dynamic.webp"
   },
   {
     "name": "Трос буксировочный синтетический динамический с петлями 40 т 12 м",
@@ -7180,7 +7366,8 @@
       "sheet": "буксир",
       "range": "A27"
     },
-    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-40-t-12-m"
+    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-40-t-12-m",
+    "image": "/products/studio/tow-dynamic.webp"
   },
   {
     "name": "Трос буксировочный синтетический динамический с петлями 50 т 12 м",
@@ -7195,7 +7382,8 @@
       "sheet": "буксир",
       "range": "A28"
     },
-    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-50-t-12-m"
+    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-50-t-12-m",
+    "image": "/products/studio/tow-dynamic.webp"
   },
   {
     "name": "Трос буксировочный синтетический динамический с петлями 70 т 12 м",
@@ -7210,7 +7398,8 @@
       "sheet": "буксир",
       "range": "A29"
     },
-    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-70-t-12-m"
+    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-70-t-12-m",
+    "image": "/products/studio/tow-dynamic.webp"
   },
   {
     "name": "Трос буксировочный синтетический динамический с петлями 100 т 12 м",
@@ -7225,7 +7414,8 @@
       "sheet": "буксир",
       "range": "A30"
     },
-    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-100-t-12-m"
+    "slug": "tros-buksirovochnyy-sinteticheskiy-dinamicheskiy-s-petlyami-100-t-12-m",
+    "image": "/products/studio/tow-dynamic.webp"
   },
   {
     "name": "Трос буксировочный стальной с петлями диаметр 16 мм 15 т 4 м",
@@ -7240,7 +7430,8 @@
       "sheet": "буксир",
       "range": "A33"
     },
-    "slug": "tros-buksirovochnyy-stalnoy-s-petlyami-diametr-16-mm-15-t-4-m"
+    "slug": "tros-buksirovochnyy-stalnoy-s-petlyami-diametr-16-mm-15-t-4-m",
+    "image": "/products/studio/tow-steel.webp"
   },
   {
     "name": "Трос буксировочный стальной с петлями диаметр 20 мм 20 т 4 м",
@@ -7255,7 +7446,8 @@
       "sheet": "буксир",
       "range": "A34"
     },
-    "slug": "tros-buksirovochnyy-stalnoy-s-petlyami-diametr-20-mm-20-t-4-m"
+    "slug": "tros-buksirovochnyy-stalnoy-s-petlyami-diametr-20-mm-20-t-4-m",
+    "image": "/products/studio/tow-steel.webp"
   },
   {
     "name": "Трос буксировочный стальной с петлями диаметр 22 мм 25 т 4 м",
@@ -7270,7 +7462,8 @@
       "sheet": "буксир",
       "range": "A35"
     },
-    "slug": "tros-buksirovochnyy-stalnoy-s-petlyami-diametr-22-mm-25-t-4-m"
+    "slug": "tros-buksirovochnyy-stalnoy-s-petlyami-diametr-22-mm-25-t-4-m",
+    "image": "/products/studio/tow-steel.webp"
   },
   {
     "name": "Трос буксировочный стальной с петлями диаметр 24 мм 30 т 4 м",
@@ -7285,7 +7478,8 @@
       "sheet": "буксир",
       "range": "A36"
     },
-    "slug": "tros-buksirovochnyy-stalnoy-s-petlyami-diametr-24-mm-30-t-4-m"
+    "slug": "tros-buksirovochnyy-stalnoy-s-petlyami-diametr-24-mm-30-t-4-m",
+    "image": "/products/studio/tow-steel.webp"
   },
   {
     "name": "Трос буксировочный стальной с петлями диаметр 27 мм 45 т 4 м",
@@ -7300,7 +7494,8 @@
       "sheet": "буксир",
       "range": "A37"
     },
-    "slug": "tros-buksirovochnyy-stalnoy-s-petlyami-diametr-27-mm-45-t-4-m"
+    "slug": "tros-buksirovochnyy-stalnoy-s-petlyami-diametr-27-mm-45-t-4-m",
+    "image": "/products/studio/tow-steel.webp"
   },
   {
     "name": "Трос буксировочный стальной с петлями диаметр 30 мм 65 т 4 м",
@@ -7315,7 +7510,8 @@
       "sheet": "буксир",
       "range": "A38"
     },
-    "slug": "tros-buksirovochnyy-stalnoy-s-petlyami-diametr-30-mm-65-t-4-m"
+    "slug": "tros-buksirovochnyy-stalnoy-s-petlyami-diametr-30-mm-65-t-4-m",
+    "image": "/products/studio/tow-steel.webp"
   },
   {
     "name": "Трос буксировочный стальной с петлями диаметр 16 мм 15 т 6 м",
@@ -7330,7 +7526,8 @@
       "sheet": "буксир",
       "range": "A39"
     },
-    "slug": "tros-buksirovochnyy-stalnoy-s-petlyami-diametr-16-mm-15-t-6-m"
+    "slug": "tros-buksirovochnyy-stalnoy-s-petlyami-diametr-16-mm-15-t-6-m",
+    "image": "/products/studio/tow-steel.webp"
   },
   {
     "name": "Трос буксировочный стальной с петлями диаметр 20 мм 20 т 6 м",
@@ -7345,7 +7542,8 @@
       "sheet": "буксир",
       "range": "A40"
     },
-    "slug": "tros-buksirovochnyy-stalnoy-s-petlyami-diametr-20-mm-20-t-6-m"
+    "slug": "tros-buksirovochnyy-stalnoy-s-petlyami-diametr-20-mm-20-t-6-m",
+    "image": "/products/studio/tow-steel.webp"
   },
   {
     "name": "Трос буксировочный стальной с петлями диаметр 22 мм 25 т 6 м",
@@ -7360,7 +7558,8 @@
       "sheet": "буксир",
       "range": "A41"
     },
-    "slug": "tros-buksirovochnyy-stalnoy-s-petlyami-diametr-22-mm-25-t-6-m"
+    "slug": "tros-buksirovochnyy-stalnoy-s-petlyami-diametr-22-mm-25-t-6-m",
+    "image": "/products/studio/tow-steel.webp"
   },
   {
     "name": "Трос буксировочный стальной с петлями диаметр 24 мм 30 т 6 м",
@@ -7375,7 +7574,8 @@
       "sheet": "буксир",
       "range": "A42"
     },
-    "slug": "tros-buksirovochnyy-stalnoy-s-petlyami-diametr-24-mm-30-t-6-m"
+    "slug": "tros-buksirovochnyy-stalnoy-s-petlyami-diametr-24-mm-30-t-6-m",
+    "image": "/products/studio/tow-steel.webp"
   },
   {
     "name": "Трос буксировочный стальной с петлями диаметр 27 мм 45 т 6 м",
@@ -7390,7 +7590,8 @@
       "sheet": "буксир",
       "range": "A43"
     },
-    "slug": "tros-buksirovochnyy-stalnoy-s-petlyami-diametr-27-mm-45-t-6-m"
+    "slug": "tros-buksirovochnyy-stalnoy-s-petlyami-diametr-27-mm-45-t-6-m",
+    "image": "/products/studio/tow-steel.webp"
   },
   {
     "name": "Трос буксировочный стальной с петлями диаметр 30 мм 65 т 6 м",
@@ -7405,6 +7606,7 @@
       "sheet": "буксир",
       "range": "A44"
     },
-    "slug": "tros-buksirovochnyy-stalnoy-s-petlyami-diametr-30-mm-65-t-6-m"
+    "slug": "tros-buksirovochnyy-stalnoy-s-petlyami-diametr-30-mm-65-t-6-m",
+    "image": "/products/studio/tow-steel.webp"
   }
 ]

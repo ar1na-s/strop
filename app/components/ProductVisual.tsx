@@ -101,9 +101,9 @@ export function ComponentDimensions({ product }: { product: Product }) {
   return <div className={styles.componentDimensions}>
     <h4>Размеры комплектующих, мм</h4>
     <div className={styles.componentDrawings}>
-      <figure><a href={product.type==='4СЦ'?'/products/drawings/master-link.png':'/products/drawings/link.jpg'} target="_blank" rel="noreferrer"><img src={product.type==='4СЦ'?'/products/drawings/master-link.png':'/products/drawings/link.jpg'} width="110" height="192" alt="Чертёж звена из таблицы поставщика" loading="lazy"/></a><figcaption>Звено<br/>B = {d.width||'уточняется'}<br/>{product.type==='4СЦ'?'L':'A'} = {d.linkLength||'уточняется'}</figcaption></figure>
-      {product.type!=='ВЦ'&&<figure><a href="/products/drawings/hook.png" target="_blank" rel="noreferrer"><img src="/products/drawings/hook.png" width="110" height="145" alt="Чертёж крюка с обозначениями H и P1 из таблицы поставщика" loading="lazy"/></a><figcaption>Крюк<br/>H = {d.hookH||'уточняется'}<br/>P1 = {d.hookP||'уточняется'}</figcaption></figure>}
+      <figure><a href="/products/drawings/link-schematic-v1.svg" target="_blank" rel="noreferrer"><img src="/products/drawings/link-schematic-v1.svg" width="110" height="120" alt="Размерная схема звена" loading="lazy"/></a><figcaption>Звено<br/>B = {d.width||'уточняется'}<br/>{product.type==='4СЦ'?'L':'A'} = {d.linkLength||'уточняется'}</figcaption></figure>
+      {product.type!=='ВЦ'&&<figure><a href="/products/drawings/hook-schematic-v1.svg" target="_blank" rel="noreferrer"><img src="/products/drawings/hook-schematic-v1.svg" width="110" height="120" alt="Размерная схема крюка и его сечения" loading="lazy"/></a><figcaption>Крюк<br/>H = {d.hookH||'уточняется'}<br/>P1 = {d.hookP||'уточняется'}</figcaption></figure>}
     </div>
-    <p>H обозначает высоту сечения крюка. Габаритная высота изделия зависит от исполнения и положения ветвей.</p>
+    <p>Схемы не в масштабе. H обозначает высоту сечения крюка. Габаритная высота изделия зависит от исполнения и положения ветвей.</p>
   </div>;
 }
