@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 420"><title>Крюк стропа. Вид и сечение А–А</title><defs><marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto-start-reverse"><path d="M0 0L8 3L0 6Z" fill="#111"/></marker><pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0V7" stroke="#111" stroke-width=".6"/></pattern></defs><rect width="360" height="420" fill="white"/><style>.outline{fill:white;stroke:#111;stroke-width:1.8;stroke-linejoin:round}.thin{fill:none;stroke:#111;stroke-width:.7}.axis{fill:none;stroke:#111;stroke-width:.6;stroke-dasharray:13 3 2 3}.dimension{fill:none;stroke:#111;stroke-width:.7;marker-start:url(#arrow);marker-end:url(#arrow)}text{fill:#111;font-family:Arial,sans-serif;font-size:13;font-weight:400}.label{font-size:11}</style>
+<path class="axis" d="M147 22V112M82 57H215"/>
+<circle class="outline" cx="147" cy="57" r="29"/><circle class="outline" cx="147" cy="57" r="15"/>
+<path class="outline" d="M135 83C130 105 137 121 123 140C104 166 76 186 79 222C82 266 124 289 163 275C189 266 205 242 205 214L190 187L184 217C181 242 158 257 139 247C113 234 120 214 140 197C166 176 183 155 177 127L160 83Z"/>
+<path class="outline" d="M167 121L192 182L189 194L158 132Z"/><circle class="outline" cx="166" cy="129" r="3"/>
+<path class="thin" d="M88 248L125 212"/><path d="M82 254L96 240M118 218L132 204" stroke="#111" stroke-width="2.2"/><text x="71" y="272">А</text><text x="128" y="204">А</text>
+<text x="277" y="214" text-anchor="middle">А–А</text>
+<ellipse cx="277" cy="253" rx="25" ry="19" fill="url(#hatch)" stroke="#111" stroke-width="1.6"/>
+<path class="axis" d="M237 253H316M277 221V286"/>
+<path class="thin" d="M247 234H222M247 272H222M252 279V310M302 279V310"/>
+<path class="dimension" d="M229 234V272M252 300H302"/>
+<text transform="translate(219 253) rotate(-90)" text-anchor="middle">H</text><text x="277" y="319" text-anchor="middle">P1</text>
+<path d="M24 366H336M24 391H336" class="thin"/><text x="180" y="383" text-anchor="middle">КРЮК СТРОПА</text><text x="180" y="408" text-anchor="middle" class="label">H и P1 — размеры сечения, а не габариты крюка</text></svg>
